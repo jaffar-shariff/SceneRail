@@ -1,9 +1,9 @@
 ---
-name: masteraiskill-video-studio
+name: scenerail-video-studio
 description: Plan, script, research, storyboard, style, render, and quality-check original AI-agent-produced videos from Shorts to long-form explainers. Use when a user asks to create, improve, or render a video, motion graphic, documentary explainer, data story, paper-card animation, or complete MP4.
 ---
 
-# Masteraiskill Video Studio
+# SceneRail Video Studio
 
 Turn the user's brief into a coherent, technically verified video. The finished video—not the prompt, storyboard, or code—is the primary deliverable.
 

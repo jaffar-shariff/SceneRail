@@ -1,6 +1,6 @@
-# Masteraiskill Style Atlas
+# SceneRail Style Atlas
 
-A visual index for original, code-driven video design. Pick a style by the job the story needs to do—not by a trend. The names below are Masteraiskill presets; the sample concepts are illustrative directions, not claims that finished demos are included.
+A visual index for original, code-driven video design. Pick a style by the job the story needs to do—not by a trend. The names below are SceneRail presets; the sample concepts are illustrative directions, not claims that finished demos are included.
 
 **How to use this atlas:** choose one lead style and, only when useful, one supporting style. Read its recipe, adapt the rules to the topic, then record the final palette, type, composition, materials, motion, captions, and audio in the project's style bible. Render an opening frame, a dense information frame, and a closing frame before building the full video.
 
