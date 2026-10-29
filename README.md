@@ -62,26 +62,7 @@ Browse the [SceneRail Style Atlas](styles/STYLEBOOK.md) for original visual dire
 
 ### A few visual directions
 
-A gallery-style overview inspired by the SceneRail Style Atlas: choose a visual language by what the story needs to communicate, then open its dedicated recipe for production rules. The overview is an original vector graphic; the linked previews below are individual style studies, not finished-video screenshots or factual evidence.
-
-<p align="center"><img src="assets/scenerail-style-atlas.svg" alt="SceneRail Style Atlas showing the video workflow and 37 original visual styles organized into six families" width="100%"></p>
-
-#### Selected individual style previews
-
-<table>
-<tr>
-<td width="25%" align="center" valign="top"><a href="styles/paper-signal/STYLE.md"><img src="styles/paper-signal/preview.svg" width="230" alt="Paper Signal visual sample"></a><br><strong><a href="styles/paper-signal/STYLE.md">Paper Signal</a></strong><br><sub>Tactile 2D cut-paper</sub></td>
-<td width="25%" align="center" valign="top"><a href="styles/signal-ledger/STYLE.md"><img src="styles/signal-ledger/preview.svg" width="230" alt="Signal Ledger visual sample"></a><br><strong><a href="styles/signal-ledger/STYLE.md">Signal Ledger</a></strong><br><sub>Evidence-led editorial data</sub></td>
-<td width="25%" align="center" valign="top"><a href="styles/chalkthread-lab/STYLE.md"><img src="styles/chalkthread-lab/preview.svg" width="230" alt="Chalkthread Lab visual sample"></a><br><strong><a href="styles/chalkthread-lab/STYLE.md">Chalkthread Lab</a></strong><br><sub>Chalkboard reasoning</sub></td>
-<td width="25%" align="center" valign="top"><a href="styles/causal-loom/STYLE.md"><img src="styles/causal-loom/preview.svg" width="230" alt="Causal Loom visual sample"></a><br><strong><a href="styles/causal-loom/STYLE.md">Causal Loom</a></strong><br><sub>Causal links and systems</sub></td>
-</tr>
-<tr>
-<td width="25%" align="center" valign="top"><a href="styles/isometric-foundry/STYLE.md"><img src="styles/isometric-foundry/preview.svg" width="230" alt="Isometric Foundry visual sample"></a><br><strong><a href="styles/isometric-foundry/STYLE.md">Isometric Foundry</a></strong><br><sub>Spatial systems and layers</sub></td>
-<td width="25%" align="center" valign="top"><a href="styles/terminal-bloom/STYLE.md"><img src="styles/terminal-bloom/preview.svg" width="230" alt="Terminal Bloom visual sample"></a><br><strong><a href="styles/terminal-bloom/STYLE.md">Terminal Bloom</a></strong><br><sub>Dark interface and restrained light</sub></td>
-<td width="25%" align="center" valign="top"><a href="styles/storybook-drift/STYLE.md"><img src="styles/storybook-drift/preview.svg" width="230" alt="Storybook Drift visual sample"></a><br><strong><a href="styles/storybook-drift/STYLE.md">Storybook Drift</a></strong><br><sub>Warm illustrated scenes</sub></td>
-<td width="25%" align="center" valign="top"><a href="styles/groundtruth-grid/STYLE.md"><img src="styles/groundtruth-grid/preview.svg" width="230" alt="Groundtruth Grid visual sample"></a><br><strong><a href="styles/groundtruth-grid/STYLE.md">Groundtruth Grid</a></strong><br><sub>Measured routes and maps</sub></td>
-</tr>
-</table>
+SceneRail includes 37 original visual-style recipes, each with its own guide and preview. Browse the [Style Atlas](styles/STYLEBOOK.md) to explore the styles and open a guide for its palette, composition, motion rules, and production checklist.
 
 **The Frame Purpose Contract** makes quality more than a prompt promise. Every planned scene states the viewer's question, visual argument, concrete on-screen action, topic-specific reason, composition, change from the prior scene, motion purpose, and hold reason. Claims and asset rights must be traceable too. Run `npm run validate:all` before rendering and complete the [Creative Quality review](docs/CREATIVE_QUALITY.md) on actual output frames. The checks are designed to catch generic and repetitive plans; they do not pretend a script can certify artistic quality by itself.
 
