@@ -10,7 +10,11 @@ description: Original visual style guide for Broadcast Pulse; suited to news exp
 **Best suited for:** News explainers, recaps, current events  
 **Example concept:** The week in five economic signals
 
-[← Browse all styles](../STYLEBOOK.md#broadcast-pulse)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#broadcast-pulse)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for broadcast-pulse, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

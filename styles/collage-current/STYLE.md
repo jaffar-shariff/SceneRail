@@ -10,7 +10,11 @@ description: Original visual style guide for Collage Current; suited to culture,
 **Best suited for:** Culture, history, commentary  
 **Example concept:** How a trend moved from niche to mainstream
 
-[← Browse all styles](../STYLEBOOK.md#collage-current)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#collage-current)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for collage-current, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

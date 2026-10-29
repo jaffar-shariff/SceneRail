@@ -10,7 +10,11 @@ description: Original visual style guide for Casefile Motion; suited to investig
 **Best suited for:** Investigations, business stories, mysteries  
 **Example concept:** Tracing how a product decision changed a company
 
-[← Browse all styles](../STYLEBOOK.md#casefile-motion)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#casefile-motion)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for casefile-motion, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

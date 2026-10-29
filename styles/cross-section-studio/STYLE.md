@@ -10,7 +10,11 @@ description: Original visual style guide for Cross-Section Studio; suited to pro
 **Best suited for:** Product internals, biology, engineering  
 **Example concept:** What is inside a battery
 
-[← Browse all styles](../STYLEBOOK.md#cross-section-studio)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#cross-section-studio)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for cross-section-studio, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

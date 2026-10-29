@@ -10,7 +10,11 @@ description: Original visual style guide for Chalkthread Lab; suited to teaching
 **Best suited for:** Teaching, formulas, systems  
 **Example concept:** How compound growth builds over time
 
-[← Browse all styles](../STYLEBOOK.md#chalkthread-lab)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#chalkthread-lab)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for chalkthread-lab, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

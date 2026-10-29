@@ -10,7 +10,11 @@ description: Original visual style guide for Causal Loom; suited to economics, p
 **Best suited for:** Economics, policy, science  
 **Example concept:** How a supply shock travels into retail prices
 
-[← Browse all styles](../STYLEBOOK.md#causal-loom)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#causal-loom)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for causal-loom, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

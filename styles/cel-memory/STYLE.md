@@ -10,7 +10,11 @@ description: Original visual style guide for Cel Memory; suited to history, cult
 **Best suited for:** History, cultural stories, illustrative biography  
 **Example concept:** The same street seen across three eras
 
-[← Browse all styles](../STYLEBOOK.md#cel-memory)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#cel-memory)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for cel-memory, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

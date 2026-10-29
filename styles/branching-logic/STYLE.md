@@ -10,7 +10,11 @@ description: Original visual style guide for Branching Logic; suited to strategy
 **Best suited for:** Strategy, choices, algorithms  
 **Example concept:** The decision tree behind a delivery estimate
 
-[← Browse all styles](../STYLEBOOK.md#branching-logic)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#branching-logic)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for branching-logic, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 
