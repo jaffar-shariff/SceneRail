@@ -1,0 +1,19 @@
+{
+  "name": "masteraiskill",
+  "owner": {
+    "name": "Jaffar Shariff"
+  },
+  "metadata": {
+    "description": "AI-agent video production workflows and visual style systems",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "masteraiskill-video-studio",
+      "source": "./",
+      "description": "Create original short-form and long-form videos with agent-neutral production skills.",
+      "version": "1.0.0",
+      "category": "productivity"
+    }
+  ]
+}
