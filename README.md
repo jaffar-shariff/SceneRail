@@ -32,6 +32,20 @@ Designed for coding agents such as Claude Code, OpenAI Codex, Google Antigravity
 5. Build scenes from one canonical timeline, render previews, inspect contact sheets, and fix problems.
 6. Export and verify the final MP4. Report the exact path and measured metadata.
 
+## Run the current sample
+
+Requirements: a compatible Node.js LTS version and FFmpeg/ffprobe for media inspection.
+
+```bash
+npm install
+npm run studio
+npm run render:sample
+python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 --expect-fps 30
+python -m unittest discover -s tests -v
+```
+
+The sample is a visual test composition with illustrative chart values and no narration by default. Do not use those values as real-world facts.
+
 ## Repository map
 
 - `AGENTS.md` — global agent operating contract.
