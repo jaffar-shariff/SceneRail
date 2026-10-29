@@ -56,7 +56,7 @@ def check(root: Path) -> list[str]:
 
         # Also check paths shown as inline code, which are easy to leave stale
         # after moving a file even when they are not Markdown hyperlinks.
-        without_fences = FENCE_RE.sub(lambda match: "\\n" * match.group(0).count("\\n"), markdown)
+        without_fences = FENCE_RE.sub(lambda match: "\n" * match.group(0).count("\n"), markdown)
         for match in INLINE_CODE_RE.finditer(without_fences):
             target = match.group(1).strip().rstrip(".,:;")
             if not target.startswith(REPO_PATH_PREFIXES) or any(char in target for char in "<>{}*"):
@@ -64,14 +64,14 @@ def check(root: Path) -> list[str]:
             path_target = target.split("#", 1)[0].split("?", 1)[0]
             if not path_target or " " in path_target:
                 continue
-            resolved = (source.parent / unquote(path_target)).resolve()
+            resolved = (root / unquote(path_target)).resolve()
             try:
                 resolved.relative_to(root)
             except ValueError:
                 failures.append(f"{source.relative_to(root)}: inline path escapes repository root: {target}")
                 continue
             if not resolved.exists():
-                line = without_fences.count("\\n", 0, match.start()) + 1
+                line = without_fences.count("\n", 0, match.start()) + 1
                 failures.append(f"{source.relative_to(root)}:{line}: missing inline repository path: {target}")
     return failures
 
