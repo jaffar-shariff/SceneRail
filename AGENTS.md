@@ -37,6 +37,14 @@ Use references to understand broad design principles. Make original scene constr
 
 Use approval gates for story and visual direction unless the user explicitly authorizes autonomous execution. Do not interrupt the user to approve every minor detail.
 
+### Frame Purpose Contract — no interchangeable filler
+
+Before building detailed scenes, produce a storyboard that satisfies `templates/STORYBOARD.schema.json` and `docs/CREATIVE_QUALITY.md`. Every scene must answer: What question is the viewer carrying? What is the visual argument? What exact object, data, shape, or interaction changes on screen? What makes the image specific to this topic? Why this composition? What meaningfully changes from the previous scene? Why does movement help, and why must the final state hold?
+
+Reject descriptions that could be pasted into almost any video unchanged. “Cinematic visuals,” “engaging animation,” “show some data,” “add B-roll,” and “make it pop” are not scene plans. Specify the subject, relationship, action, framing, reveal, and payoff. Reuse a motif only when its meaning develops. Vary visual operations and composition for narrative reasons, not to meet a quota. Do not use random icon collections, generic particle fog, meaningless camera moves, or repeated centered cards as substitutes for an explanation.
+
+Track claims as sourced facts, estimates, interpretations, or illustrative statements. Every real-world asset needs a rights/provenance record; unknown rights are a blocker. Run `python scripts/validate_storyboard.py project/storyboard.json --strict --report project/qa/storyboard-report.json` (adapt the path to the real project) and resolve failures before rendering. Then complete the creative review on rendered frames. A structural pass is not an aesthetic pass.
+
 ### D. One canonical timeline
 Use one timeline data source to drive frame timing, scenes, transitions, narration cues, captions, and sound cues. Prefer integer frame indices as the source of truth; convert audio timestamps with a documented rounding rule. Do not hardcode separate competing versions of the same timing.
 
@@ -58,7 +66,7 @@ Before final rendering:
 5. Check narration-to-visual correspondence, clipping, overlaps, contrast, text legibility, composition, wrong data labels, missing assets, blank/frozen frames, and pacing.
 6. Fix issues supported by evidence, then re-render affected segments and inspect again.
 
-Encoding successfully does not establish aesthetic quality. Actually inspect frames; don't claim inspection if none occurred.
+Encoding successfully does not establish aesthetic quality. Actually inspect frames; don't claim inspection if none occurred. Apply the [Creative Quality playbook](docs/CREATIVE_QUALITY.md) and record a scene-by-scene review using `templates/CREATIVE_REVIEW.md`. If the current agent cannot visually inspect output frames, mark that gate BLOCKED / MANUAL REVIEW rather than passing it.
 
 ### G. Final render and verification
 Render the final MP4 and verify:
