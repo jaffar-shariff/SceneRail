@@ -1,42 +1,79 @@
 # Masteraiskill
 
-**An agent-driven, code-first production system for long-form explainer videos.**
+<p align="center">
+  <strong>From an idea to a finished video.</strong><br>
+  An AI-agent video studio for short-form, long-form, and motion-driven storytelling.
+</p>
 
-Give a coding agent a topic, script, or production brief. Masteraiskill guides it through research, narrative design, storyboarding, visual systems, motion graphics, narration, captions, rendering, quality checks, and delivery of a finished MP4.
+<p align="center">
+  <a href="https://github.com/jaffar-shariff/Masteraiskill/actions/workflows/ci.yml"><img src="https://github.com/jaffar-shariff/Masteraiskill/actions/workflows/ci.yml/badge.svg" alt="Masteraiskill CI"></a>
+  <img src="https://img.shields.io/badge/Output-MP4-3b82f6" alt="MP4 output">
+  <img src="https://img.shields.io/badge/Renderer-Remotion%20%2B%20FFmpeg-8b5cf6" alt="Remotion and FFmpeg">
+</p>
 
-Designed for coding agents such as Claude Code, OpenAI Codex, Google Antigravity, and other agents that can read repository instructions and run local tools. Exact compatibility depends on the agent's available filesystem, terminal, and permissions.
+Masteraiskill gives AI coding agents a structured production workflow for turning a topic, script, research pack, or creative brief into a coherent video. It brings narrative planning, original motion design, scene timing, narration, captions, rendering, and quality checks into one code-first workspace.
 
-## Product goal
+Use it with coding agents such as Claude Code, OpenAI Codex, Google Antigravity, or another agent with repository and terminal access. The core instructions are agent-neutral; individual tools and integrations depend on your environment.
 
-**The finished MP4 is the main deliverable.** Code, scene data, logs, intermediate frames, and project files support reliable production; they are not a substitute for the video itself.
+## What you can create
 
-## Core principles
+| Video format | Production approach |
+|---|---|
+| **YouTube Shorts, Reels, TikTok** | Strong opening hook, vertical framing, bold captions, quick scene rhythm, sound hits, and a clear payoff |
+| **Long-form YouTube explainers** | Chapter structure, narration-first scripts, progressive reveals, data visualization, visual callbacks, and pacing across the full runtime |
+| **Business, finance, and economics** | Comparisons, timelines, charts, money flows, cause-and-effect diagrams, and number-led storytelling |
+| **Company stories and history** | Chaptered narrative, event timelines, original editorial graphics, maps, documents, and source-aware visuals |
+| **Science, technology, and education** | Step-by-step diagrams, process animations, technical breakdowns, geometric scenes, and familiar visual analogies |
+| **Product and software explainers** | UI walkthroughs, feature sequences, interface overlays, feature comparisons, and clear benefit-led narration |
+| **Data stories and recaps** | Source-backed charts, animated statistics, ranking reveals, and template-driven personalized videos |
+| **Whiteboard and sketch explainers** | Draw-on paths, sequential handwriting, guided diagrams, and marker-style movement |
+| **Paper-card and 2D collage videos** | Layered cut-paper compositions, editorial objects, texture, controlled parallax, and handmade visual language |
+| **Isometric and exploded-view scenes** | Layered systems, product internals, infrastructure, process stacks, and spatial diagrams |
+| **Documentary and mixed-media edits** | Approved footage, archival visuals, maps, annotations, captions, and original graphics unified by one visual system |
+| **Motion-graphics-led videos** | Kinetic typography, title sequences, lower thirds, charts, transitions, and data-driven animations |
 
-- Long-form explainers first; support other formats when requested.
-- Research and story before visual effects.
-- One coherent style bible with scene-specific variation.
-- One canonical timeline for visuals, narration, captions, transitions, and sound cues.
-- Deterministic, frame-accurate animation wherever practical.
-- Preview, render, inspect, fix, and verify; a successful encode alone is not quality assurance.
-- Prefer the smallest reliable implementation and reuse healthy project components.
-- Keep external providers optional, ask before paid calls or downloads, and never assume credentials exist.
-- Track source claims and asset provenance.
-- Report only checks actually performed.
+Choose one primary visual system for a film and vary scenes to suit the explanation. The aim is cohesive storytelling—not a grab bag of unrelated effects.
 
-## Start here
+## How the production workflow works
 
-1. Open this repository in your coding agent.
-2. Read `AGENTS.md` and `PROMPT.md`.
-3. Provide a topic, desired duration, audience, visual direction, narration preference, and constraints.
-4. Produce a narration-first story plan and style direction.
-5. Build scenes from one canonical timeline, render previews, inspect contact sheets, and fix problems.
-6. Export and verify the final MP4. Report the exact path and measured metadata.
+1. **Understand the brief** — topic, audience, runtime, aspect ratio, visual tone, narration, references, delivery needs, and constraints.
+2. **Research and shape the story** — establish a thesis, verify important claims, structure the script, and build chapters or beats suited to the format.
+3. **Lock the visual language** — set typography, color meanings, layout, materials, motion rules, caption treatment, and audio identity.
+4. **Build a scene plan** — map each spoken beat to a purposeful visual and record assets, transitions, and timing.
+5. **Animate from one timeline** — use shared frame timing for scenes, narration, captions, transitions, and sound cues.
+6. **Render previews** — generate representative frames and low-cost renders before committing to a full export.
+7. **Inspect and improve** — review contact sheets, correct clipping, pacing, overlaps, weak contrast, timing drift, missing assets, and confusing visuals.
+8. **Export and verify** — render the MP4, inspect measured media properties, sample frames across the video, and report the result accurately.
 
-## Run the current sample
+## Built for agent-driven production
 
-Requirements: a compatible Node.js LTS version and FFmpeg/ffprobe for media inspection.
+- **MP4-first delivery:** the finished video is the main output; code and intermediate files support reliable production.
+- **Narrative-led:** write and structure the story before building detailed visuals.
+- **Long-form aware:** chapter progression, coverage, visual variety, and QA across the entire runtime—not just the first 30 seconds.
+- **Short-form aware:** vertical-safe composition, hook timing, readable captions, and concise visual beats.
+- **Deterministic motion:** prefer scene state driven by frame/time and explicit inputs so frames can be re-rendered reliably.
+- **Modular scene craft:** diagrams, charts, timelines, comparisons, title cards, paper-card compositions, whiteboard reveals, isometric scenes, and kinetic typography.
+- **Synchronized audio:** narration, captions, music, and SFX share a consistent timing model.
+- **Quality gates:** file validation is combined with representative-frame inspection; successful encoding alone is not treated as proof of quality.
+- **Flexible integrations:** external image, video, speech, and audio services are optional. Never assume credentials exist or incur paid calls without permission.
+- **Evidence-first debugging:** reproduce a failure, find the smallest responsible cause, fix it, and verify the correction.
+- **Source-aware assets:** maintain provenance for research claims, footage, images, fonts, and audio.
+
+## Quick start
+
+### Requirements
+
+- Node.js LTS compatible with the pinned Remotion packages
+- FFmpeg and ffprobe for MP4 verification and frame sampling
+- Python 3 for validation utilities
+- Pillow for creating labelled contact sheets
+
+### Preview and render the included composition
 
 ```bash
+git clone https://github.com/jaffar-shariff/Masteraiskill.git
+cd Masteraiskill
+
 npm install
 npm run studio
 npm run render:sample
@@ -44,28 +81,37 @@ python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 -
 python -m unittest discover -s tests -v
 ```
 
-The sample is a visual test composition with illustrative chart values and no narration by default. Do not use those values as real-world facts.
+To create a contact sheet for visual review:
 
-## Repository map
+```bash
+python -m pip install -r requirements-qa.txt
+python scripts/render_qa_frames.py out/masteraiskill-demo.mp4 --count 12 --output-dir out/qa/frames
+python scripts/create_contact_sheet.py out/qa/frames --output out/qa/contact-sheet.png
+```
 
-- `AGENTS.md` — global agent operating contract.
-- `PROMPT.md` — reusable master production prompt.
-- `docs/ARCHITECTURE.md` — pipeline and renderer architecture.
-- `docs/QUALITY_GATES.md` — acceptance criteria and QA loop.
-- `docs/REFERENCE_ANALYSIS.md` — cross-repository technical synthesis.
-- `docs/SKILL_AUDIT.md` — skill-by-skill decisions for the supplied references.
-- `docs/STYLE_PRESETS.md` — original visual style systems to choose from.
-- `docs/RENDERER.md` — renderer setup, licensing notes and current limitations.
-- `docs/QUALITY_GATES.md` — measurable checks and delivery criteria.
-- `docs/ROADMAP.md` — phased build plan.
-- `templates/` — project brief, style bible, and scene timeline schema.
-- `skills/` — focused production skills loaded only when relevant, including long-form narrative, scene craft, narration timing, asset provenance, rendering/verification and skill routing.
-- `scripts/` — production and validation utilities as they are implemented.
+The included Remotion composition demonstrates a title sequence, progressive diagram, animated comparison bars, and closing card. Its example chart uses illustrative values—not factual research data—and narration is optional in the sample composition.
 
-## Current status
+## Use Masteraiskill with your own topic
 
-**Foundation phase.** The operating contract and production design are being established before choosing a mandatory renderer. This repository is not yet a tested, complete MP4-rendering engine; the roadmap tracks implementation and validation.
+Open the repository in your coding agent, then start with [`PROMPT.md`](PROMPT.md). Provide the topic, audience, target duration, desired format, visual direction, narration preference, and any required sources or assets. Read [`AGENTS.md`](AGENTS.md) for the full operating contract.
 
-## Third-party references
+For each new video, keep a project brief, script, source ledger, storyboard, style bible, canonical timeline, asset manifest, and QA record as appropriate to the task. The final MP4 remains the primary deliverable.
 
-The reference repositories inform technical research and original workflow design. Do not copy protected code, skill text, templates, artwork, or audio without permission. Record required attribution and preserve licenses for any component actually reused. See `docs/REFERENCE_ANALYSIS.md`.
+## Project map
+
+- [`AGENTS.md`](AGENTS.md) — production rules for the coding agent.
+- [`PROMPT.md`](PROMPT.md) — master production prompt.
+- [`src/Root.tsx`](src/Root.tsx) — included Remotion sample composition.
+- [`templates/PROJECT_BRIEF.md`](templates/PROJECT_BRIEF.md) — video brief template.
+- [`templates/STYLE_BIBLE.md`](templates/STYLE_BIBLE.md) — visual identity template.
+- [`templates/SCENE_SCHEMA.json`](templates/SCENE_SCHEMA.json) — canonical scene/timeline structure.
+- [`skills/`](skills/) — task-focused production instructions.
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — system architecture.
+- [`docs/STYLE_PRESETS.md`](docs/STYLE_PRESETS.md) — original visual style systems.
+- [`docs/QUALITY_GATES.md`](docs/QUALITY_GATES.md) — production acceptance criteria.
+- [`docs/RENDERER.md`](docs/RENDERER.md) — renderer usage and configuration.
+- [`scripts/`](scripts/) — environment preflight, timeline validation, frame sampling, contact sheets, and MP4 inspection.
+
+## Quality standard
+
+A video is delivered only after the output file and its technical properties are verified, representative frames are inspected, and known limitations are reported. If a check cannot be performed, it is marked as not verified—not silently assumed to have passed.
