@@ -62,7 +62,11 @@ Browse the [SceneRail Style Atlas](styles/STYLEBOOK.md) for original visual dire
 
 ### A few visual directions
 
-These original vector studies show the intended visual grammar; they are not screenshots of finished videos or factual evidence.
+A gallery-style overview inspired by the SceneRail Style Atlas: choose a visual language by what the story needs to communicate, then open its dedicated recipe for production rules. The overview is an original vector graphic; the linked previews below are individual style studies, not finished-video screenshots or factual evidence.
+
+<p align="center"><img src="assets/scenerail-style-atlas.svg" alt="SceneRail Style Atlas showing the video workflow and 37 original visual styles organized into six families" width="100%"></p>
+
+#### Selected individual style previews
 
 <table>
 <tr>
