@@ -1,0 +1,209 @@
+{
+  "title": "GPT vs Opus: Where GPT-6.1 Sol Has the Edge",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "hook",
+      "chapter": "The question",
+      "start_frame": 0,
+      "duration_frames": 180,
+      "type": "title",
+      "purpose": "Introduce a provocative model comparison while immediately qualifying the claim.",
+      "narration_segment_id": "vo-hook",
+      "caption_segment_ids": [
+        "cap-hook"
+      ],
+      "transition_in": "fade",
+      "transition_out": "cut",
+      "asset_ids": [],
+      "notes": "Two model cards establish the comparison; avoid winner claims before evidence appears."
+    },
+    {
+      "id": "token-price",
+      "chapter": "Price",
+      "start_frame": 180,
+      "duration_frames": 240,
+      "type": "comparison",
+      "purpose": "Make standard API input and output prices directly comparable.",
+      "narration_segment_id": "vo-price",
+      "caption_segment_ids": [
+        "cap-price-a",
+        "cap-price-b"
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "asset_ids": [],
+      "notes": "Show published standard per-million-token prices; exclude caches and special modes from the main metric."
+    },
+    {
+      "id": "automation-bench",
+      "chapter": "Selected workflow evidence",
+      "start_frame": 420,
+      "duration_frames": 240,
+      "type": "comparison",
+      "purpose": "Explain one vendor-reported business-workflow comparison without inventing absolute scores.",
+      "narration_segment_id": "vo-automation",
+      "caption_segment_ids": [
+        "cap-automation-a",
+        "cap-automation-b"
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "asset_ids": [],
+      "notes": "Show the 2.2 percentage-point margin and approximately one-third cost only with vendor attribution and setup caveat."
+    },
+    {
+      "id": "science-task-cost",
+      "chapter": "Selected workflow evidence",
+      "start_frame": 660,
+      "duration_frames": 270,
+      "type": "chart",
+      "purpose": "Visualize the reported average cost per task on a scientific workflow benchmark.",
+      "narration_segment_id": "vo-science",
+      "caption_segment_ids": [
+        "cap-science-a",
+        "cap-science-b"
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "asset_ids": [],
+      "notes": "Scale bars from 5.47 and 23.21 dollars; state maximum-effort condition and remind that cost is not a quality score."
+    },
+    {
+      "id": "coding-counterexample",
+      "chapter": "The counterexample",
+      "start_frame": 930,
+      "duration_frames": 210,
+      "type": "comparison",
+      "purpose": "Prevent the video from implying GPT wins across all model tasks.",
+      "narration_segment_id": "vo-counterexample",
+      "caption_segment_ids": [
+        "cap-counterexample-a",
+        "cap-counterexample-b"
+      ],
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "asset_ids": [],
+      "notes": "Use Opus 5.5 66.4% vs GPT-6 Astra 57.9% on Terminal-Bench 4.0; label effort settings and that this is not Sol."
+    },
+    {
+      "id": "verdict",
+      "chapter": "The verdict",
+      "start_frame": 1140,
+      "duration_frames": 210,
+      "type": "chapter_card",
+      "purpose": "Summarize the limited advantage and give viewers a reproducible model-selection rule.",
+      "narration_segment_id": "vo-verdict",
+      "caption_segment_ids": [
+        "cap-verdict"
+      ],
+      "transition_in": "cut",
+      "transition_out": "fade",
+      "asset_ids": [],
+      "notes": "End on task-specific evaluation, tracking quality, elapsed time and complete cost."
+    }
+  ],
+  "narration": [
+    {
+      "id": "vo-hook",
+      "start_frame": 0,
+      "end_frame": 180,
+      "text": "Is GPT better than Opus? That depends on what you measure. The strongest case is not that one model wins every task. It is where GPT gets you more for each dollar."
+    },
+    {
+      "id": "vo-price",
+      "start_frame": 180,
+      "end_frame": 420,
+      "text": "Start with listed API prices. GPT-6.1 Sol lists at two dollars per million input tokens and ten dollars per million output. Opus 5.5 lists at four and twenty. That is half the standard token price on both sides, but not half the cost of every completed job."
+    },
+    {
+      "id": "vo-automation",
+      "start_frame": 420,
+      "end_frame": 660,
+      "text": "On AutomationBench, OpenAI reports GPT-6.1 Sol beating Opus 5.5 by 2.2 percentage points at medium reasoning, at roughly one-third the task cost. This is a vendor-reported comparison, not a universal score."
+    },
+    {
+      "id": "vo-science",
+      "start_frame": 660,
+      "end_frame": 930,
+      "text": "For a science-workflow evaluation, OpenAI reports average task costs of five dollars and forty-seven cents for GPT-6.1 Sol, versus twenty-three dollars and twenty-one cents for Opus 5.5 at maximum effort. Cost is only one part of the result."
+    },
+    {
+      "id": "vo-counterexample",
+      "start_frame": 930,
+      "end_frame": 1140,
+      "text": "And Opus has wins too. Anthropic reports Opus 5.5 at 66.4 percent on Terminal-Bench 4.0, versus 57.9 for GPT-6 Astra. Different effort settings matter, but this alone rejects a blanket winner claim."
+    },
+    {
+      "id": "vo-verdict",
+      "start_frame": 1140,
+      "end_frame": 1350,
+      "text": "The fair conclusion: GPT-6.1 Sol's edge is price and cost efficiency on selected workflows. Opus remains formidable at coding. Test both on your tasks, tracking quality, time, and total cost."
+    }
+  ],
+  "captions": [
+    {
+      "id": "cap-hook",
+      "start_frame": 12,
+      "end_frame": 167,
+      "text": "GPT vs OPUS: WHERE GPT-6.1 SOL HAS THE EDGE"
+    },
+    {
+      "id": "cap-price-a",
+      "start_frame": 196,
+      "end_frame": 295,
+      "text": "Standard API price per 1M tokens"
+    },
+    {
+      "id": "cap-price-b",
+      "start_frame": 300,
+      "end_frame": 408,
+      "text": "50% lower input and output rates — not necessarily 50% lower task cost"
+    },
+    {
+      "id": "cap-automation-a",
+      "start_frame": 442,
+      "end_frame": 530,
+      "text": "+2.2 percentage points on AutomationBench at medium reasoning"
+    },
+    {
+      "id": "cap-automation-b",
+      "start_frame": 535,
+      "end_frame": 642,
+      "text": "OpenAI-reported comparison · about one-third the task cost"
+    },
+    {
+      "id": "cap-science-a",
+      "start_frame": 700,
+      "end_frame": 780,
+      "text": "Terminal-Bench Science 0.1 · maximum reasoning effort"
+    },
+    {
+      "id": "cap-science-b",
+      "start_frame": 785,
+      "end_frame": 914,
+      "text": "$5.47 vs $23.21 reported average cost per task; cost is not a quality score"
+    },
+    {
+      "id": "cap-counterexample-a",
+      "start_frame": 958,
+      "end_frame": 1035,
+      "text": "Opus 5.5: 66.4% · GPT-6 Astra: 57.9%"
+    },
+    {
+      "id": "cap-counterexample-b",
+      "start_frame": 1040,
+      "end_frame": 1125,
+      "text": "Terminal-Bench 4.0 · different effort settings; not a GPT-6.1 Sol comparison"
+    },
+    {
+      "id": "cap-verdict",
+      "start_frame": 1174,
+      "end_frame": 1335,
+      "text": "Choose by workload. Track quality, time, and total cost."
+    }
+  ],
+  "audio_cues": []
+}

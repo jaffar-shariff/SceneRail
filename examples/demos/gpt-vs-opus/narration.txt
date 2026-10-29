@@ -1,0 +1,21 @@
+SCENERAIL DEMO — VOICEOVER SCRIPT
+GPT vs Opus: Where GPT-6.1 Sol Has the Edge
+Runtime: 45 seconds at 30 fps. The exported demo is currently a silent visual cut; this script is timed for a later narration pass.
+
+00:00–00:06 — HOOK
+Is GPT better than Opus? That depends on what you measure. The strongest case isn't that one model wins every task. It's where GPT gets you more for each dollar.
+
+00:06–00:14 — TOKEN PRICES
+Start with listed API prices. GPT-6.1 Sol lists at two dollars per million input tokens and ten dollars per million output. Opus 5.5 lists at four and twenty. That's half the standard token price on both sides, but not half the cost of every completed job.
+
+00:14–00:22 — AUTOMATIONBENCH
+On AutomationBench, OpenAI reports GPT-6.1 Sol beating Opus 5.5 by 2.2 percentage points at medium reasoning, at roughly one-third the task cost. This is a vendor-reported comparison, not a universal score.
+
+00:22–00:31 — SCIENCE TASK COST
+For a science-workflow evaluation, OpenAI reports average task costs of five dollars and forty-seven cents for GPT-6.1 Sol, versus twenty-three dollars and twenty-one cents for Opus 5.5 at maximum effort. Cost is only one part of the result.
+
+00:31–00:38 — COUNTEREXAMPLE
+And Opus has wins too. Anthropic reports Opus 5.5 at 66.4 percent on Terminal-Bench 4.0, versus 57.9 for GPT-6 Astra. Different effort settings matter, but this alone rejects a blanket winner claim.
+
+00:38–00:45 — VERDICT
+The fair conclusion: GPT-6.1 Sol's edge is price and cost efficiency on selected workflows. Opus remains formidable at coding. Test both on your tasks, tracking quality, time, and total cost.

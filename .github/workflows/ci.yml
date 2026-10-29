@@ -31,8 +31,18 @@ jobs:
         run: python scripts/check_svg_assets.py
       - name: Validate example timeline
         run: python scripts/validate_timeline.py examples/timeline.json --strict
+      - name: Validate GPT vs Opus demo timeline
+        run: python scripts/validate_timeline.py examples/demos/gpt-vs-opus/timeline.json --strict
+      - name: Validate GPT vs Opus storyboard contract
+        run: python scripts/validate_storyboard.py examples/demos/gpt-vs-opus/storyboard.json --strict --report out/qa/gpt-vs-opus-storyboard-report.json
       - name: Validate example storyboard
         run: python scripts/validate_storyboard.py examples/storyboard.json --strict --report out/qa/storyboard-report.json
+      - name: Upload GPT vs Opus storyboard report
+        uses: actions/upload-artifact@v4
+        with:
+          name: scenerail-gpt-vs-opus-storyboard-report
+          path: out/qa/gpt-vs-opus-storyboard-report.json
+          if-no-files-found: error
       - name: Upload storyboard validation report
         uses: actions/upload-artifact@v4
         with:
@@ -61,12 +71,29 @@ jobs:
         run: npm run render:sample
       - name: Verify MP4 metadata
         run: python scripts/probe_mp4.py out/scenerail-demo.mp4 --expect-size 1920x1080 --expect-fps 30
+      - name: Render GPT vs Opus Interface Theatre demo
+        run: npm run render:gpt-vs-opus
+      - name: Verify GPT vs Opus MP4 metadata
+        run: python scripts/probe_mp4.py out/gpt-vs-opus-interface-theatre.mp4 --expect-size 1920x1080 --expect-fps 30
+      - name: Sample GPT vs Opus demo frames and contact sheet
+        run: |
+          python scripts/render_qa_frames.py out/gpt-vs-opus-interface-theatre.mp4 --count 12 --output-dir out/qa/gpt-vs-opus-frames
+          python scripts/create_contact_sheet.py out/qa/gpt-vs-opus-frames --output out/qa/gpt-vs-opus-contact-sheet.png
       - name: Install contact-sheet helper
         run: python -m pip install --disable-pip-version-check -r requirements-qa.txt
       - name: Sample frames and create contact sheet
         run: |
           python scripts/render_qa_frames.py out/scenerail-demo.mp4 --count 12 --output-dir out/qa/frames
           python scripts/create_contact_sheet.py out/qa/frames --output out/qa/contact-sheet.png
+      - name: Upload GPT vs Opus demo MP4 and visual QA
+        uses: actions/upload-artifact@v4
+        with:
+          name: scenerail-gpt-vs-opus-interface-theatre-demo
+          path: |
+            out/gpt-vs-opus-interface-theatre.mp4
+            out/qa/gpt-vs-opus-contact-sheet.png
+            out/qa/gpt-vs-opus-frames/
+          if-no-files-found: error
       - name: Upload sample MP4
         uses: actions/upload-artifact@v4
         with:

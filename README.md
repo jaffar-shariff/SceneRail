@@ -60,6 +60,11 @@ See [INSTALL.md](INSTALL.md) for global installation, native Claude Code plugin 
 
 Browse the [SceneRail Style Atlas](styles/STYLEBOOK.md) for original visual directions and individual recipes.
 
+### Demo: GPT vs Opus — Interface Theatre
+
+A 45-second, source-led demo comparing GPT-6.1 Sol with Claude Opus 5.5. It covers public token pricing, selected vendor-reported workflow results, and a counterexample where Opus leads a reported coding benchmark. See the [demo project and source ledger](examples/demos/gpt-vs-opus/README.md), or render it with `npm run render:gpt-vs-opus`.
+
+
 ### A few visual directions
 
 SceneRail includes 37 original visual-style recipes, each with its own guide and preview. Browse the [Style Atlas](styles/STYLEBOOK.md) to explore the styles and open a guide for its palette, composition, motion rules, and production checklist.

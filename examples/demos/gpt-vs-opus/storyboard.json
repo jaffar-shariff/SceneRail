@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "title": "GPT vs Opus: Where GPT-6.1 Sol Has the Edge",
+  "format": "short-form",
+  "audience": "AI tool users, developers, and technology-curious viewers comparing frontier models",
+  "thesis": "GPT-6.1 Sol has a defensible edge in standard token prices and selected vendor-reported workflow costs, but it is not a universal winner over Claude Opus 5.5.",
+  "payoff": "The useful winner is the model that solves your own tasks with the best measured balance of quality, time, and total cost.",
+  "style_id": "interface-theatre",
+  "visual_system": {
+    "name": "Interface Theatre",
+    "signature_motif": "A restrained comparison console uses paired model cards, task labels, highlighted metric strips, and focus rings to reveal one measurement at a time.",
+    "palette_logic": "Deep navy is the neutral workspace, teal marks GPT-6.1 Sol evidence, violet marks Claude Opus evidence, amber flags caveats, and white marks the shared conclusion.",
+    "typography": "Use a compact high-contrast sans serif; large numerals carry the metric while medium labels clarify model, unit, effort setting, and source.",
+    "composition_grammar": "Alternate paired comparison cards, a single delta panel, a proportional cost chart, and a counterexample benchmark table; reserve the most negative space for the verdict.",
+    "motion_grammar": "Focus rings activate the relevant panel, meters grow from zero to stated values, and small source labels persist; never animate unstated scores or suggest real-time live benchmark data.",
+    "avoid": [
+      "Do not imply a vendor-reported benchmark is independently audited.",
+      "Do not use absolute scores where the source provides only a difference.",
+      "Do not equate low task cost with higher answer quality.",
+      "Do not state that one model wins every task or benchmark."
+    ]
+  },
+  "chapters": [
+    {
+      "id": "question",
+      "purpose": "Open with the broad model question and narrow it to measurable advantages rather than a universal ranking."
+    },
+    {
+      "id": "price",
+      "purpose": "Show standard input and output token prices on a like-for-like per-million-token basis."
+    },
+    {
+      "id": "workflow",
+      "purpose": "Present selected workflow evidence with clear vendor attribution, effort settings, units, and caveats."
+    },
+    {
+      "id": "counterpoint",
+      "purpose": "Show a credible coding benchmark where Opus 5.5 leads a reported GPT model, limiting the claim."
+    },
+    {
+      "id": "verdict",
+      "purpose": "Deliver the defensible takeaway and tell viewers how to compare models on their own real tasks."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-api-price",
+      "kind": "fact",
+      "text": "GPT-6.1 Sol standard API rates are 2 dollars input and 10 dollars output per million tokens, within the listed standard pricing tier.",
+      "source_ids": [
+        "openai-sol"
+      ]
+    },
+    {
+      "id": "claim-opus-price",
+      "kind": "fact",
+      "text": "Claude Opus 5.5 lists standard API rates of 4 dollars input and 20 dollars output per million tokens.",
+      "source_ids": [
+        "anthropic-opus"
+      ]
+    },
+    {
+      "id": "claim-automation-edge",
+      "kind": "fact",
+      "text": "OpenAI reports GPT-6.1 Sol 2.2 percentage points above Opus 5.5 on AutomationBench at medium reasoning and around one-third of the task cost.",
+      "source_ids": [
+        "openai-sol"
+      ]
+    },
+    {
+      "id": "claim-science-cost",
+      "kind": "fact",
+      "text": "OpenAI reports maximum-effort Terminal-Bench Science 0.1 average task costs of 5.47 dollars for GPT-6.1 Sol and 23.21 dollars for Opus 5.5.",
+      "source_ids": [
+        "openai-sol"
+      ]
+    },
+    {
+      "id": "claim-opus-coding-edge",
+      "kind": "fact",
+      "text": "Anthropic reports Terminal-Bench 4.0 scores of 66.4 percent for Opus 5.5 and 57.9 percent for GPT-6 Astra with different effort settings.",
+      "source_ids": [
+        "anthropic-opus"
+      ]
+    },
+    {
+      "id": "claim-no-universal-winner",
+      "kind": "interpretation",
+      "text": "The cited results support task-specific trade-offs, not a universal ranking across every model task and production workflow.",
+      "source_ids": [
+        "openai-sol",
+        "anthropic-opus"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "openai-sol",
+      "title": "Introducing GPT-6.1 Sol",
+      "locator": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "support_note": "OpenAI-published standard pricing, AutomationBench comparison, and Terminal-Bench Science cost per task; treat the comparison as vendor-reported."
+    },
+    {
+      "id": "anthropic-opus",
+      "title": "Claude Opus 5.5",
+      "locator": "https://www.anthropic.com/claude-opus-5-5",
+      "support_note": "Anthropic-published pricing and Terminal-Bench 4.0 table; its notes specify different effort settings and benchmark limitations."
+    }
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "hook",
+      "chapter": "question",
+      "narrative_function": "hook",
+      "viewer_question": "What does it actually mean to say GPT is better than Opus?",
+      "visual_argument": "A paired interface makes the comparison look concrete before the narration narrows the claim to selected measurable trade-offs.",
+      "visible_action": "Two labeled model panels slide into a shared comparison workspace and reveal their model names without a winner badge.",
+      "topic_specificity": "The panels name GPT-6.1 Sol and Claude Opus 5.5 so the claim is about concrete releases rather than vague model families.",
+      "composition": "Use a large split headline above equal-width model cards with equal visual weight; keep the qualifier directly below the headline.",
+      "change_from_previous": "This is the opening image; it establishes the two-model question rather than recycling another data chart.",
+      "motion_purpose": "A measured entrance creates focus on the question while delaying any metric until the viewer knows the comparison.",
+      "hold_reason": "Hold both model names and the qualifier long enough to read before shifting to listed rates.",
+      "visual_operation": "contrast",
+      "claim_ids": [
+        "claim-no-universal-winner"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "token-price",
+      "chapter": "price",
+      "narrative_function": "evidence",
+      "viewer_question": "Is the listed token price materially different before a task even starts?",
+      "visual_argument": "The published standard input and output rates are half as high for GPT-6.1 Sol as for Opus 5.5.",
+      "visible_action": "A two-column rate card displays input and output prices with proportional horizontal bars and an explicit per-million-token unit.",
+      "topic_specificity": "The exact model identifiers and separate input/output rows prevent generic pricing claims and avoid confusing output costs with total task costs.",
+      "composition": "Use balanced side-by-side model cards; align every price on the same row, put the dollar amount at the right edge, and reserve teal and violet for the two models.",
+      "change_from_previous": "Move from a broad title and two hero panels to a compact rate table whose aligned rows enable direct comparison.",
+      "motion_purpose": "Bars extend to their proportional listed values so viewers can compare rates at a glance without reading a dense table.",
+      "hold_reason": "Keep the per-million-token unit and the note about caching and special modes visible while the 50-percent takeaway lands.",
+      "visual_operation": "compare",
+      "claim_ids": [
+        "claim-api-price",
+        "claim-opus-price"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "automation-bench",
+      "chapter": "workflow",
+      "narrative_function": "mechanism",
+      "viewer_question": "Does the lower listed price show up in any measured workflow result?",
+      "visual_argument": "One OpenAI-reported AutomationBench comparison describes a small measured score lead alongside a substantially lower task cost.",
+      "visible_action": "A delta panel reveals plus 2.2 percentage points, then a separate cost bar indicates roughly one-third of the reported task cost.",
+      "topic_specificity": "The scene names AutomationBench, medium reasoning effort, and OpenAI as the reporting source so the figure is not passed off as an absolute universal score.",
+      "composition": "Place the percentage-point delta in a large left panel and a separate paired cost meter on the right; keep attribution and the fallback/setup caveat beneath the meters.",
+      "change_from_previous": "Replace exact token-price rows with a task-level result and separate score change from cost, preventing the viewer from treating the metrics as interchangeable.",
+      "motion_purpose": "Reveal the score margin first and cost relationship second; sequencing shows that a performance metric and an expense metric answer different questions.",
+      "hold_reason": "Hold the vendor attribution, benchmark name, and medium-effort setting together with the two metrics.",
+      "visual_operation": "reveal",
+      "claim_ids": [
+        "claim-automation-edge",
+        "claim-no-universal-winner"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "science-task-cost",
+      "chapter": "workflow",
+      "narrative_function": "evidence",
+      "viewer_question": "How far apart can the reported costs get on a scientific workflow?",
+      "visual_argument": "The reported maximum-effort task-cost figures differ by more than four times, which highlights a cost-efficiency advantage but does not itself rank quality.",
+      "visible_action": "Two vertical bars grow from a common baseline to 5.47 dollars and 23.21 dollars, with a calculated lower-cost callout and benchmark/mode labels.",
+      "topic_specificity": "The scene names Terminal-Bench Science 0.1, maximum effort, and average cost per task; it never invents an undisclosed score.",
+      "composition": "Give the chart the larger right portion of the frame, keep cost figures above bars, and place the 76-percent calculation and quality caveat in a left information rail.",
+      "change_from_previous": "Move from a split score-and-cost panel to a single-unit vertical chart so the cost gap can be seen without suggesting a new benchmark score.",
+      "motion_purpose": "Bars rise from the same baseline in proportion to reported costs; the movement communicates scale rather than drama.",
+      "hold_reason": "Keep both exact amounts and the maximum-effort label visible long enough for comparison, with the cost-is-not-quality caveat remaining on screen.",
+      "visual_operation": "compare",
+      "claim_ids": [
+        "claim-science-cost",
+        "claim-no-universal-winner"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "coding-counterexample",
+      "chapter": "counterpoint",
+      "narrative_function": "counterpoint",
+      "viewer_question": "What would disprove the claim that GPT wins everything?",
+      "visual_argument": "A reported Terminal-Bench 4.0 comparison goes the other way: Claude Opus 5.5 scores higher than GPT-6 Astra.",
+      "visible_action": "The two published percentages animate into a pair of bars and a caveat card identifies Opus xhigh effort and GPT Astra high effort.",
+      "topic_specificity": "The GPT model is explicitly labeled GPT-6 Astra, not GPT-6.1 Sol, and the effort mismatch is made visible so this counterexample cannot be misread as the same comparison as the preceding cost results.",
+      "composition": "Keep the benchmark comparison in the broad left panel and a narrow right rail labeled what this means; use small but readable effort-setting notes beneath the percentages.",
+      "change_from_previous": "Shift the visual emphasis from GPT's selected cost advantage to an Opus-led coding benchmark, changing both the metric and the model pairing.",
+      "motion_purpose": "Both bars reveal their published percentages at the same pace, then the caveat gains a focus border to signal the limits of the comparison.",
+      "hold_reason": "Hold the exact scores, source and different-effort note together so the counterexample is not separated from its qualification.",
+      "visual_operation": "contrast",
+      "claim_ids": [
+        "claim-opus-coding-edge",
+        "claim-no-universal-winner"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "verdict",
+      "chapter": "verdict",
+      "narrative_function": "payoff",
+      "viewer_question": "What should a viewer conclude and do with this comparison?",
+      "visual_argument": "GPT-6.1 Sol has a concrete value case on listed rates and selected task-cost reports, while Opus remains competitive and leads the cited Terminal-Bench 4.0 comparison.",
+      "visible_action": "Two closing model cards summarize the distinct strengths, then a single recommendation states to test both against quality, time and total cost on the user's own workload.",
+      "topic_specificity": "The verdict reconnects the exact pricing and benchmark evidence while retaining the coding counterexample instead of repeating an unqualified headline.",
+      "composition": "Return to two balanced cards, then place the test-your-own-workload rule in one full-width lower strip and the source URLs along the bottom edge.",
+      "change_from_previous": "Recompose the benchmark detail into a balanced conclusion with a practical decision rule instead of presenting one more score.",
+      "motion_purpose": "The two summaries enter in sequence and resolve into one steady rule; no new numbers appear during the closing beat.",
+      "hold_reason": "Hold the conclusion and the two primary source URLs for several seconds so viewers can retain the takeaway and find the source ledger.",
+      "visual_operation": "resolve",
+      "claim_ids": [
+        "claim-api-price",
+        "claim-automation-edge",
+        "claim-science-cost",
+        "claim-opus-coding-edge",
+        "claim-no-universal-winner"
+      ],
+      "asset_ids": []
+    }
+  ]
+}

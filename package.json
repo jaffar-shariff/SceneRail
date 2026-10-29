@@ -14,7 +14,9 @@
     "validate:all": "npm run validate:svg && npm run validate:timeline && npm run validate:storyboard && npm run validate:links",
     "probe:sample": "python scripts/probe_mp4.py out/scenerail-demo.mp4",
     "test": "python -m unittest discover -s tests -v",
-    "validate:svg": "python scripts/check_svg_assets.py"
+    "validate:svg": "python scripts/check_svg_assets.py",
+    "render:gpt-vs-opus": "remotion render src/index.ts GPTvsOpusInterfaceTheatre out/gpt-vs-opus-interface-theatre.mp4 --codec=h264",
+    "render:gpt-vs-opus:preview": "remotion render src/index.ts GPTvsOpusInterfaceTheatre out/gpt-vs-opus-preview.mp4 --scale=0.5 --codec=h264"
   },
   "dependencies": {
     "@remotion/cli": "4.0.539",

@@ -1,4 +1,5 @@
 import React, {type CSSProperties, type ReactNode} from "react";
+import {GPTvsOpusComposition} from "./GPTvsOpusDemo";
 import {
   AbsoluteFill,
   Audio,
@@ -194,6 +195,7 @@ const SceneRailDemo: React.FC<DemoProps> = ({videoTitle, narrationFile}) => {
 
 export const Root: React.FC = () => (
   <>
+    <GPTvsOpusComposition />
     <Composition
       id="SceneRailDemo"
       component={SceneRailDemo}
