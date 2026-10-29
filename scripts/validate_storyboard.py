@@ -57,9 +57,14 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
     for field in required:
         if field not in data:
             errors.append(f"missing required field '{field}'")
-    if data.get("schema_version") != 1:
-        errors.append("schema_version must be 1")
-    if data.get("format") not in {"short-form", "long-form", "multi-deliverable", "custom"}:
+    allowed_project_fields = set(required)
+    for field in sorted(set(data) - allowed_project_fields):
+        errors.append(f"unknown project field '{field}'")
+    version = data.get("schema_version")
+    if not isinstance(version, int) or isinstance(version, bool) or version != 1:
+        errors.append("schema_version must be integer 1")
+    format_value = data.get("format")
+    if not isinstance(format_value, str) or format_value not in {"short-form", "long-form", "multi-deliverable", "custom"}:
         errors.append("format must be short-form, long-form, multi-deliverable, or custom")
     for field, minimum in PROJECT_TEXT.items():
         check_text(data, field, "project", minimum, errors)
@@ -75,6 +80,8 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
     if not isinstance(system, dict):
         errors.append("visual_system must be an object")
     else:
+        for field in sorted(set(system) - set(STYLE_TEXT) - {"avoid"}):
+            errors.append(f"unknown visual_system field '{field}'")
         for field, minimum in STYLE_TEXT.items():
             check_text(system, field, "visual_system", minimum, errors)
         avoid = system.get("avoid")
@@ -104,6 +111,8 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
         prefix = f"chapters[{i}]"
         read_id(chapter, prefix, chapter_ids, errors)
         if isinstance(chapter, dict):
+            for field in sorted(set(chapter) - {"id", "purpose"}):
+                errors.append(f"{prefix} has unknown field '{field}'")
             check_text(chapter, "purpose", prefix, 12, errors)
 
     source_ids: set[str] = set()
@@ -111,6 +120,8 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
         prefix = f"sources[{i}]"
         read_id(source, prefix, source_ids, errors)
         if isinstance(source, dict):
+            for field in sorted(set(source) - {"id", "title", "locator", "support_note"}):
+                errors.append(f"{prefix} has unknown field '{field}'")
             for field, minimum in (("title", 3), ("locator", 4), ("support_note", 12)):
                 check_text(source, field, prefix, minimum, errors)
 
@@ -121,9 +132,12 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
         claim_id = read_id(claim, prefix, claim_ids, errors)
         if not isinstance(claim, dict):
             continue
+        for field in sorted(set(claim) - {"id", "kind", "text", "source_ids"}):
+            errors.append(f"{prefix} has unknown field '{field}'")
         kind = claim.get("kind")
-        if kind not in CLAIM_KINDS:
+        if not isinstance(kind, str) or kind not in CLAIM_KINDS:
             errors.append(f"{prefix}.kind must be one of: {', '.join(sorted(CLAIM_KINDS))}")
+            kind = None
         check_text(claim, "text", prefix, 12, errors)
         refs = claim.get("source_ids")
         if not isinstance(refs, list) or any(not isinstance(ref, str) for ref in refs):
@@ -142,10 +156,12 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
         read_id(asset, prefix, asset_ids, errors)
         if not isinstance(asset, dict):
             continue
+        for field in sorted(set(asset) - {"id", "kind", "origin", "rights", "rights_evidence"}):
+            errors.append(f"{prefix} has unknown field '{field}'")
         for field, minimum in (("kind", 3), ("origin", 5), ("rights_evidence", 5)):
             check_text(asset, field, prefix, minimum, errors)
         rights = asset.get("rights")
-        if rights not in ASSET_RIGHTS:
+        if not isinstance(rights, str) or rights not in ASSET_RIGHTS:
             errors.append(f"{prefix}.rights must be one of: {', '.join(sorted(ASSET_RIGHTS))}")
         elif rights == "unknown":
             errors.append(f"{prefix} has unknown asset rights; replace it or establish permission before rendering")
@@ -161,16 +177,19 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
         read_id(scene, prefix, scene_ids, errors)
         if not isinstance(scene, dict):
             continue
+        allowed_scene_fields = {"id", "chapter", "narrative_function", "viewer_question", "visual_argument", "visible_action", "topic_specificity", "composition", "change_from_previous", "motion_purpose", "hold_reason", "visual_operation", "claim_ids", "asset_ids"}
+        for field in sorted(set(scene) - allowed_scene_fields):
+            errors.append(f"{prefix} has unknown field '{field}'")
         chapter = scene.get("chapter")
         if not isinstance(chapter, str) or chapter not in chapter_ids:
             errors.append(f"{prefix}.chapter must reference a declared chapter id")
         function = scene.get("narrative_function")
-        if function not in FUNCTIONS:
+        if not isinstance(function, str) or function not in FUNCTIONS:
             errors.append(f"{prefix}.narrative_function must be one of: {', '.join(sorted(FUNCTIONS))}")
         else:
             used_functions.append(function)
         operation = scene.get("visual_operation")
-        if operation not in OPERATIONS:
+        if not isinstance(operation, str) or operation not in OPERATIONS:
             errors.append(f"{prefix}.visual_operation must be one of: {', '.join(sorted(OPERATIONS))}")
         else:
             operations.append(operation)
@@ -200,9 +219,11 @@ def validate(data: Any, repo_root: Path | None = None) -> tuple[list[str], list[
                 errors.append(f"{prefix} references unknown asset id '{ref}'")
             used_assets.add(ref)
 
-    if scene_items and isinstance(scene_items[0], dict) and scene_items[0].get("narrative_function") not in {"hook", "orientation", "question"}:
+    first_function = scene_items[0].get("narrative_function") if scene_items and isinstance(scene_items[0], dict) else None
+    last_function = scene_items[-1].get("narrative_function") if scene_items and isinstance(scene_items[-1], dict) else None
+    if scene_items and (not isinstance(first_function, str) or first_function not in {"hook", "orientation", "question"}):
         warnings.append("opening scene does not establish a hook, orientation, or question")
-    if scene_items and isinstance(scene_items[-1], dict) and scene_items[-1].get("narrative_function") not in {"payoff", "synthesis"}:
+    if scene_items and (not isinstance(last_function, str) or last_function not in {"payoff", "synthesis"}):
         warnings.append("final scene does not resolve the story with a payoff or synthesis")
     for field, values in (("visual_argument", arguments), ("visible_action", actions)):
         for value, count in Counter(values).items():
