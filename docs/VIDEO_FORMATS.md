@@ -1,6 +1,6 @@
 # Video Formats and Production Playbooks
 
-Masteraiskill uses one production core and format-specific playbooks. The story, scene choices, timeline, and final QA adapt to the video type—rather than forcing every request through a single template.
+SceneRail uses one production core and format-specific playbooks. The story, scene choices, timeline, and final QA adapt to the video type—rather than forcing every request through a single template.
 
 ## 1. Short-form social video
 

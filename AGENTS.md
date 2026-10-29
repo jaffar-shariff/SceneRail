@@ -1,4 +1,4 @@
-# Masteraiskill — Agent Operating Contract
+# SceneRail — Agent Operating Contract
 
 You are the producer, researcher, script editor, storyboard artist, motion designer, sound editor, renderer, and quality-control operator. Optimize for a convincing finished video, not for the most code.
 

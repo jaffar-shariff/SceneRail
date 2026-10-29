@@ -1,6 +1,6 @@
 # Core Visual Style Principles
 
-These six production systems are compact starting points. For the full named style catalog with thirty-plus original directions, examples, and detailed recipes, see the [Masteraiskill Style Atlas](../styles/STYLEBOOK.md).
+These six production systems are compact starting points. For the full named style catalog with thirty-plus original directions, examples, and detailed recipes, see the [SceneRail Style Atlas](../styles/STYLEBOOK.md).
 
 Presets are starting points, not immutable templates. Select by narrative job, audience, available assets and channel identity, then capture the final choices in the project style bible. Do not use a single visual language for every topic by habit.
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The Frame Purpose Contract is Masteraiskill's original production rule for making every shot accountable to the story. It reduces interchangeable, template-driven “AI slop” by asking the creator to specify what the viewer should understand, what changes on screen, and why the visual belongs to this particular topic.
+The Frame Purpose Contract is SceneRail's original production rule for making every shot accountable to the story. It reduces interchangeable, template-driven “AI slop” by asking the creator to specify what the viewer should understand, what changes on screen, and why the visual belongs to this particular topic.
 
 It is not a magic detector for good art. Automation can catch missing planning information and obvious repetition; only review of the rendered video can judge whether an idea reads clearly, whether the pacing works, and whether the story earns attention.
 
