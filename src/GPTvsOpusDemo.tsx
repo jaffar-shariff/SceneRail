@@ -76,15 +76,33 @@ const TokenStream:React.FC<{frame:number;color:string;count:number}> = ({frame,c
  {Array.from({length:count},(_,i)=>{const x=(frame*2.3+i*23)%(count*23);return <div key={i} style={{width:13+(i%4)*5,height:7+(i%3)*4,borderRadius:2,background:color,opacity:.25+(i%5)*.13,transform:"translateX("+x+"px)",flexShrink:0}}/>;})}
 </div>;
 
-const RateRow:React.FC<{label:string;gpt:number;opus:number;max:number;frame:number;color:string}> = ({label,gpt,opus,max,frame,color})=>{
- const p=prog(frame,10,58);
- return <div style={{marginTop:22}}>
-  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:19,marginBottom:10}}><span style={{color:K.muted,fontWeight:700,letterSpacing:.5}}>{label}</span><span style={{fontSize:14,color:K.dim}}>USD / 1M tokens</span></div>
-  {[{name:"GPT-6.1 Sol",v:gpt,c:K.teal},{name:"Opus 5.5",v:opus,c:K.purple}].map(row=><div key={row.name} style={{display:"grid",gridTemplateColumns:"125px 1fr 90px",alignItems:"center",gap:15,marginBottom:9}}>
-   <span style={{fontSize:15,color:row.c,fontWeight:850}}>{row.name}</span><div style={{height:19,borderRadius:4,background:"#223547",overflow:"hidden"}}><div style={{width:(row.v/max*100*p)+"%",height:"100%",background:"linear-gradient(90deg,"+row.c+","+color+")",boxShadow:"0 0 24px "+row.c+"44"}}/></div><span style={{fontSize:23,fontWeight:900,textAlign:"right"}>{"$"}{row.v.toFixed(2)}</span>
-  </div>)}
-  <TokenStream frame={frame} color={color} count={8}/>
- </div>;
+const RateRow:React.FC<{label:string;gpt:number;opus:number;max:number;frame:number;color:string}> = ({label,gpt,opus,max,frame,color}) => {
+ const p = prog(frame, 10, 58);
+ const gptWidth = (gpt / max * 100 * p) + "%";
+ const opusWidth = (opus / max * 100 * p) + "%";
+ return (
+  <div style={{marginTop:22}}>
+   <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:19,marginBottom:10}}>
+    <span style={{color:K.muted,fontWeight:700,letterSpacing:.5}}>{label}</span>
+    <span style={{fontSize:14,color:K.dim}}>USD / 1M tokens</span>
+   </div>
+   <div style={{display:"grid",gridTemplateColumns:"125px 1fr 90px",alignItems:"center",gap:15,marginBottom:9}}>
+    <span style={{fontSize:15,color:K.teal,fontWeight:850}}>GPT-6.1 Sol</span>
+    <div style={{height:19,borderRadius:4,background:"#223547",overflow:"hidden"}}>
+     <div style={{width:gptWidth,height:"100%",background:K.teal,boxShadow:"0 0 24px #5fe3c744"}} />
+    </div>
+    <span style={{fontSize:23,fontWeight:900,textAlign:"right"}}>$ {gpt.toFixed(2)}</span>
+   </div>
+   <div style={{display:"grid",gridTemplateColumns:"125px 1fr 90px",alignItems:"center",gap:15,marginBottom:11}}>
+    <span style={{fontSize:15,color:K.purple,fontWeight:850}}>Opus 5.5</span>
+    <div style={{height:19,borderRadius:4,background:"#223547",overflow:"hidden"}}>
+     <div style={{width:opusWidth,height:"100%",background:K.purple,boxShadow:"0 0 24px #b99aff44"}} />
+    </div>
+    <span style={{fontSize:23,fontWeight:900,textAlign:"right"}}>$ {opus.toFixed(2)}</span>
+   </div>
+   <TokenStream frame={frame} color={color} count={8} />
+  </div>
+ );
 };
 
 const Price:React.FC=()=>{
