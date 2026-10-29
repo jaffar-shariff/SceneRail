@@ -13,6 +13,12 @@ SceneRail gives AI coding agents a structured production workflow for turning a 
 
 Use it with Claude Code, OpenAI Codex, Google Antigravity, and many other compatible coding agents. The production instructions use a portable Agent Skills format, with a native Claude Code plugin package as an additional installation option.
 
+## The production workflow
+
+<img src="assets/scenerail-workflow.svg" alt="SceneRail workflow: define the brief, shape the story, choose a style, craft each scene, compose and render, then review and verify" width="100%">
+
+SceneRail treats a video as a sequence of intentional visual arguments. The scene plan, style guide, timing data, narration, and render checks should agree before the full export.
+
 ## Install in your AI coding agent
 
 **Recommended — install the skill collection and choose your agent:**
