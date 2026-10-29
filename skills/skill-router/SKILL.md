@@ -1,6 +1,6 @@
 ---
 name: skill-router
-description: Select only the relevant Masteraiskill skills for a video task and keep the production context focused.
+description: Select only the relevant SceneRail skills for a video task and keep the production context focused.
 ---
 
 # Skill Router

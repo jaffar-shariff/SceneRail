@@ -9,13 +9,13 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 class DistributionPackageTests(unittest.TestCase):
     def test_portable_plugin_manifest(self):
         manifest = json.loads((ROOT / "plugin.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["name"], "masteraiskill-video-studio")
+        self.assertEqual(manifest["name"], "scenerail-video-studio")
         self.assertTrue((ROOT / manifest["extensions"]["com.openai"]["onboardingSkill"]).is_file())
 
     def test_claude_plugin_and_marketplace_manifests(self):
         plugin = json.loads((ROOT / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
         marketplace = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
-        self.assertEqual(plugin["name"], "masteraiskill-video-studio")
+        self.assertEqual(plugin["name"], "scenerail-video-studio")
         self.assertTrue(any(p["name"] == plugin["name"] for p in marketplace["plugins"]))
 
     def test_skill_frontmatter(self):

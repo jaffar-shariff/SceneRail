@@ -51,7 +51,7 @@ After rendering an MP4 and ensuring FFmpeg/ffprobe are on PATH:
 
 ```bash
 python -m pip install -r requirements-qa.txt
-python scripts/render_qa_frames.py out/masteraiskill-demo.mp4 --count 12 --output-dir out/qa/frames
+python scripts/render_qa_frames.py out/scenerail-demo.mp4 --count 12 --output-dir out/qa/frames
 python scripts/create_contact_sheet.py out/qa/frames --output out/qa/contact-sheet.png
 ```
 
