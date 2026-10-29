@@ -9,7 +9,8 @@
     "render:sample:preview": "remotion render src/index.ts MasteraiskillDemo out/masteraiskill-preview.mp4 --scale=0.5 --codec=h264",
     "preflight": "python scripts/preflight.py",
     "validate:timeline": "python scripts/validate_timeline.py examples/timeline.json",
-    "probe:sample": "python scripts/probe_mp4.py out/masteraiskill-demo.mp4"
+    "probe:sample": "python scripts/probe_mp4.py out/masteraiskill-demo.mp4",
+    "test": "python -m unittest discover -s tests -v"
   },
   "dependencies": {
     "@remotion/cli": "4.0.539",
