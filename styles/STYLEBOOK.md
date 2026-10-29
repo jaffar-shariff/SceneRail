@@ -10,73 +10,73 @@ A visual index for original, code-driven video design. Pick a style by the job t
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Signal Ledger](#signal-ledger) | `signal-ledger` | Crisp editorial grid, restrained accent color, large evidence-led numbers | Finance, economics, company analysis | Why a $5 product can anchor a billion-dollar business |
-| [Margin Archive](#margin-archive) | `margin-archive` | Annotated documents, paper margins, source notes, restrained highlights | History, research, policy | The small clause that changed an industry |
-| [Casefile Motion](#casefile-motion) | `casefile-motion` | Evidence cards, linked clues, date stamps, deliberate reveals | Investigations, business stories, mysteries | Tracing how a product decision changed a company |
-| [Timecode Atlas](#timecode-atlas) | `timecode-atlas` | Event rails, map fragments, dates, synchronized layers | Company histories, wars, inventions, biographies | A decade of decisions in six chapters |
-| [Groundtruth Grid](#groundtruth-grid) | `groundtruth-grid` | Geographic grids, labeled routes, measured overlays | Geography, logistics, infrastructure | How a package moves across a continent |
-| [Broadcast Pulse](#broadcast-pulse) | `broadcast-pulse` | Lower thirds, headline bands, concise live-data panels | News explainers, recaps, current events | The week in five economic signals |
-| [Foundry Notes](#foundry-notes) | `foundry-notes` | Technical sketches, margin labels, mechanical callouts | Engineering, manufacturing, product origins | Inside the machine that sorts millions of parcels |
+| [Signal Ledger](signal-ledger/STYLE.md) | `signal-ledger` | Crisp editorial grid, restrained accent color, large evidence-led numbers | Finance, economics, company analysis | Why a $5 product can anchor a billion-dollar business |
+| [Margin Archive](margin-archive/STYLE.md) | `margin-archive` | Annotated documents, paper margins, source notes, restrained highlights | History, research, policy | The small clause that changed an industry |
+| [Casefile Motion](casefile-motion/STYLE.md) | `casefile-motion` | Evidence cards, linked clues, date stamps, deliberate reveals | Investigations, business stories, mysteries | Tracing how a product decision changed a company |
+| [Timecode Atlas](timecode-atlas/STYLE.md) | `timecode-atlas` | Event rails, map fragments, dates, synchronized layers | Company histories, wars, inventions, biographies | A decade of decisions in six chapters |
+| [Groundtruth Grid](groundtruth-grid/STYLE.md) | `groundtruth-grid` | Geographic grids, labeled routes, measured overlays | Geography, logistics, infrastructure | How a package moves across a continent |
+| [Broadcast Pulse](broadcast-pulse/STYLE.md) | `broadcast-pulse` | Lower thirds, headline bands, concise live-data panels | News explainers, recaps, current events | The week in five economic signals |
+| [Foundry Notes](foundry-notes/STYLE.md) | `foundry-notes` | Technical sketches, margin labels, mechanical callouts | Engineering, manufacturing, product origins | Inside the machine that sorts millions of parcels |
 
 ### Handmade 2D and illustration
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Paper Signal](#paper-signal) | `paper-signal` | Flat cut-paper shapes, tactile grain, hand-cut edges, layered shadows | Finance, business, explainers | A tiny price tag connected to a huge system |
-| [Cutshape Theatre](#cutshape-theatre) | `cutshape-theatre` | Bold flat silhouettes and geometric props arranged like a stage | Abstract concepts, cause and effect | Two choices pulling an entire company in opposite directions |
-| [Inkline Journey](#inkline-journey) | `inkline-journey` | Fine ink contours, selective washes, drawn paths | Travel, science, personal history | Following the route of a useful invention |
-| [Chalkthread Lab](#chalkthread-lab) | `chalkthread-lab` | Chalk lines, smudged labels, clean board space | Teaching, formulas, systems | How compound growth builds over time |
-| [Scribble Circuit](#scribble-circuit) | `scribble-circuit` | Loose hand-drawn arrows, doodled symbols, deliberate imperfections | Friendly explainers, creator-led stories | The surprisingly simple loop behind a subscription |
-| [Storybook Drift](#storybook-drift) | `storybook-drift` | Illustrated scenes, limited palettes, page-turn composition | Science for general audiences, narrative history | A seed's journey through a city |
-| [Collage Current](#collage-current) | `collage-current` | Flat editorial collage, cropped shapes, mixed textures kept in one palette | Culture, history, commentary | How a trend moved from niche to mainstream |
+| [Paper Signal](paper-signal/STYLE.md) | `paper-signal` | Flat cut-paper shapes, tactile grain, hand-cut edges, layered shadows | Finance, business, explainers | A tiny price tag connected to a huge system |
+| [Cutshape Theatre](cutshape-theatre/STYLE.md) | `cutshape-theatre` | Bold flat silhouettes and geometric props arranged like a stage | Abstract concepts, cause and effect | Two choices pulling an entire company in opposite directions |
+| [Inkline Journey](inkline-journey/STYLE.md) | `inkline-journey` | Fine ink contours, selective washes, drawn paths | Travel, science, personal history | Following the route of a useful invention |
+| [Chalkthread Lab](chalkthread-lab/STYLE.md) | `chalkthread-lab` | Chalk lines, smudged labels, clean board space | Teaching, formulas, systems | How compound growth builds over time |
+| [Scribble Circuit](scribble-circuit/STYLE.md) | `scribble-circuit` | Loose hand-drawn arrows, doodled symbols, deliberate imperfections | Friendly explainers, creator-led stories | The surprisingly simple loop behind a subscription |
+| [Storybook Drift](storybook-drift/STYLE.md) | `storybook-drift` | Illustrated scenes, limited palettes, page-turn composition | Science for general audiences, narrative history | A seed's journey through a city |
+| [Collage Current](collage-current/STYLE.md) | `collage-current` | Flat editorial collage, cropped shapes, mixed textures kept in one palette | Culture, history, commentary | How a trend moved from niche to mainstream |
 
 ### Data, economics, and systems
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Number Stage](#number-stage) | `number-stage` | One dominant metric per beat, clear units, strong count-up hierarchy | Statistics, business, finance | The cost hidden inside a monthly subscription |
-| [Causal Loom](#causal-loom) | `causal-loom` | Interlocking nodes and arrows that reveal one causal link at a time | Economics, policy, science | How a supply shock travels into retail prices |
-| [Flowline Atlas](#flowline-atlas) | `flowline-atlas` | Flow bands, moving tokens, proportional widths, visible destinations | Supply chains, money, energy, logistics | Where a dollar goes after a customer spends it |
-| [Market Mechanics](#market-mechanics) | `market-mechanics` | Offer/demand panels, price markers, clean comparative motion | Markets, pricing, business models | Why two similar products sell at very different prices |
-| [Scale Ladder](#scale-ladder) | `scale-ladder` | The same object shown across changing scales with explicit labels | Tech, science, infrastructure | From one data packet to a global network |
-| [Branching Logic](#branching-logic) | `branching-logic` | Decision trees, forked paths, highlighted consequences | Strategy, choices, algorithms | The decision tree behind a delivery estimate |
+| [Number Stage](number-stage/STYLE.md) | `number-stage` | One dominant metric per beat, clear units, strong count-up hierarchy | Statistics, business, finance | The cost hidden inside a monthly subscription |
+| [Causal Loom](causal-loom/STYLE.md) | `causal-loom` | Interlocking nodes and arrows that reveal one causal link at a time | Economics, policy, science | How a supply shock travels into retail prices |
+| [Flowline Atlas](flowline-atlas/STYLE.md) | `flowline-atlas` | Flow bands, moving tokens, proportional widths, visible destinations | Supply chains, money, energy, logistics | Where a dollar goes after a customer spends it |
+| [Market Mechanics](market-mechanics/STYLE.md) | `market-mechanics` | Offer/demand panels, price markers, clean comparative motion | Markets, pricing, business models | Why two similar products sell at very different prices |
+| [Scale Ladder](scale-ladder/STYLE.md) | `scale-ladder` | The same object shown across changing scales with explicit labels | Tech, science, infrastructure | From one data packet to a global network |
+| [Branching Logic](branching-logic/STYLE.md) | `branching-logic` | Decision trees, forked paths, highlighted consequences | Strategy, choices, algorithms | The decision tree behind a delivery estimate |
 
 ### Typography, interfaces, and digital culture
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Type Pulse](#type-pulse) | `type-pulse` | Expressive kinetic typography with strong reading order | Hooks, chapter openers, punchy short-form | Three words that explain a business model |
-| [Screenlane](#screenlane) | `screenlane` | Browser-like panels, cursor paths, zoomed interface details | Software, apps, workflows | How an order travels through an online store |
-| [Glyph Reactor](#glyph-reactor) | `glyph-reactor` | Letterforms become diagrams, masks, or geometric transitions | Brand stories, concepts, title sequences | Turning one word into a visual argument |
-| [Interface Theatre](#interface-theatre) | `interface-theatre` | Designed UI stages with focus rings, overlays, and annotated actions | Product explainers, tutorials, SaaS | One feature shown through a real user problem |
-| [Terminal Bloom](#terminal-bloom) | `terminal-bloom` | Monospace type, log-like transitions, restrained luminous accents | AI, programming, networks, cybersecurity education | What happens between a request and a response |
+| [Type Pulse](type-pulse/STYLE.md) | `type-pulse` | Expressive kinetic typography with strong reading order | Hooks, chapter openers, punchy short-form | Three words that explain a business model |
+| [Screenlane](screenlane/STYLE.md) | `screenlane` | Browser-like panels, cursor paths, zoomed interface details | Software, apps, workflows | How an order travels through an online store |
+| [Glyph Reactor](glyph-reactor/STYLE.md) | `glyph-reactor` | Letterforms become diagrams, masks, or geometric transitions | Brand stories, concepts, title sequences | Turning one word into a visual argument |
+| [Interface Theatre](interface-theatre/STYLE.md) | `interface-theatre` | Designed UI stages with focus rings, overlays, and annotated actions | Product explainers, tutorials, SaaS | One feature shown through a real user problem |
+| [Terminal Bloom](terminal-bloom/STYLE.md) | `terminal-bloom` | Monospace type, log-like transitions, restrained luminous accents | AI, programming, networks, cybersecurity education | What happens between a request and a response |
 
 ### Spatial, mechanical, and object-led
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Isometric Foundry](#isometric-foundry) | `isometric-foundry` | Consistent axonometric geometry, layered infrastructure, disciplined lighting | Factories, platforms, cities, networks | How an online order moves through a warehouse |
-| [Cross-Section Studio](#cross-section-studio) | `cross-section-studio` | Cutaway views and separated layers with clear labels | Product internals, biology, engineering | What is inside a battery |
-| [Orbit Assembly](#orbit-assembly) | `orbit-assembly` | Components arranged around a stable center, deliberate assembly | Technology, mechanisms, system architecture | The pieces that make a recommendation engine work |
-| [Miniature Field](#miniature-field) | `miniature-field` | Compact diorama compositions with readable silhouettes and controlled depth | Cities, transport, scale, environment | A city reduced to its essential moving systems |
-| [Shadow Cabinet](#shadow-cabinet) | `shadow-cabinet` | Dramatic silhouettes, spotlight reveals, limited visible detail | Mystery, invention, historical turning points | The invention that changed a factory floor |
+| [Isometric Foundry](isometric-foundry/STYLE.md) | `isometric-foundry` | Consistent axonometric geometry, layered infrastructure, disciplined lighting | Factories, platforms, cities, networks | How an online order moves through a warehouse |
+| [Cross-Section Studio](cross-section-studio/STYLE.md) | `cross-section-studio` | Cutaway views and separated layers with clear labels | Product internals, biology, engineering | What is inside a battery |
+| [Orbit Assembly](orbit-assembly/STYLE.md) | `orbit-assembly` | Components arranged around a stable center, deliberate assembly | Technology, mechanisms, system architecture | The pieces that make a recommendation engine work |
+| [Miniature Field](miniature-field/STYLE.md) | `miniature-field` | Compact diorama compositions with readable silhouettes and controlled depth | Cities, transport, scale, environment | A city reduced to its essential moving systems |
+| [Shadow Cabinet](shadow-cabinet/STYLE.md) | `shadow-cabinet` | Dramatic silhouettes, spotlight reveals, limited visible detail | Mystery, invention, historical turning points | The invention that changed a factory floor |
 
 ### Characters and narrative animation
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Rubberline Cast](#rubberline-cast) | `rubberline-cast` | Simple elastic characters, expressive poses, reusable character shapes | Light educational stories, everyday economics | A customer and a shopkeeper negotiate a price |
-| [Cel Memory](#cel-memory) | `cel-memory` | Flat painted shapes, frame-like scene changes, limited cel palette | History, cultural stories, illustrative biography | The same street seen across three eras |
-| [Silhouette Folio](#silhouette-folio) | `silhouette-folio` | High-contrast figures, layered scenic cutouts, symbolic action | Fables, origin stories, abstract narratives | A founder's choices shown as a series of doors |
+| [Rubberline Cast](rubberline-cast/STYLE.md) | `rubberline-cast` | Simple elastic characters, expressive poses, reusable character shapes | Light educational stories, everyday economics | A customer and a shopkeeper negotiate a price |
+| [Cel Memory](cel-memory/STYLE.md) | `cel-memory` | Flat painted shapes, frame-like scene changes, limited cel palette | History, cultural stories, illustrative biography | The same street seen across three eras |
+| [Silhouette Folio](silhouette-folio/STYLE.md) | `silhouette-folio` | High-contrast figures, layered scenic cutouts, symbolic action | Fables, origin stories, abstract narratives | A founder's choices shown as a series of doors |
 
 ### Procedural and cinematic abstraction
 
 | Style | Style ID | Visual signature | Best suited for | Example concept |
 |---|---|---|---|---|
-| [Signal Bloom](#signal-bloom) | `signal-bloom` | Procedural line fields and controlled light transitions | Networks, signals, invisible systems | How information spreads through a network |
-| [Particle Grammar](#particle-grammar) | `particle-grammar` | Particles obey a visible rule and form explanatory shapes | Physics, scale, emergence | How many small interactions create a large pattern |
-| [Microcosm Engine](#microcosm-engine) | `microcosm-engine` | Close-up abstract worlds with strong focal hierarchy | Biology, materials, computation | A microscopic process explained through three states |
-| [Depth Signal](#depth-signal) | `depth-signal` | Layered light, parallax, depth planes, sparse geometry | Intangible ideas, transitions, chapter breaks | Moving from a single device to a connected world |
+| [Signal Bloom](signal-bloom/STYLE.md) | `signal-bloom` | Procedural line fields and controlled light transitions | Networks, signals, invisible systems | How information spreads through a network |
+| [Particle Grammar](particle-grammar/STYLE.md) | `particle-grammar` | Particles obey a visible rule and form explanatory shapes | Physics, scale, emergence | How many small interactions create a large pattern |
+| [Microcosm Engine](microcosm-engine/STYLE.md) | `microcosm-engine` | Close-up abstract worlds with strong focal hierarchy | Biology, materials, computation | A microscopic process explained through three states |
+| [Depth Signal](depth-signal/STYLE.md) | `depth-signal` | Layered light, parallax, depth planes, sparse geometry | Intangible ideas, transitions, chapter breaks | Moving from a single device to a connected world |
 
 ## Style recipes
 

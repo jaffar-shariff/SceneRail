@@ -30,10 +30,21 @@ class DistributionPackageTests(unittest.TestCase):
 
     def test_style_atlas_has_named_styles(self):
         atlas = (ROOT / "styles/STYLEBOOK.md").read_text(encoding="utf-8")
-        ids = re.findall(r"\| \[[^]]+\]\(#[-a-z]+\) \| `([-a-z]+)` \|", atlas)
-        self.assertGreaterEqual(len(ids), 30)
+        rows = []
+        for line in atlas.splitlines():
+            if line.startswith("| [") and "STYLE.md)" in line:
+                cells = line.split("|")
+                link_cell = cells[1].strip()
+                link = link_cell.split("](", 1)[1].rstrip(")")
+                link_id = link.split("/", 1)[0]
+                style_id = cells[2].strip().strip("`")
+                rows.append((link_cell, link_id, style_id))
+        self.assertGreaterEqual(len(rows), 30)
+        ids = [row[2] for row in rows]
         self.assertEqual(len(ids), len(set(ids)))
-
+        for _, link_id, style_id in rows:
+            self.assertEqual(link_id, style_id)
+            self.assertTrue((ROOT / "styles" / link_id / "STYLE.md").is_file(), link_id)
     def test_installer_docs_cover_major_agents(self):
         content = (ROOT / "INSTALL.md").read_text(encoding="utf-8").lower()
         for item in ("claude code", "codex", "antigravity", "npx skills add"):
