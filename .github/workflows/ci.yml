@@ -53,5 +53,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: masteraiskill-sample-mp4
-          path: |\n            out/masteraiskill-demo.mp4\n            out/qa/contact-sheet.png\n            out/qa/frames/
+          path: |
+            out/masteraiskill-demo.mp4
+            out/qa/contact-sheet.png
+            out/qa/frames/
           if-no-files-found: error
