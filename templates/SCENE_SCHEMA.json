@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Masteraiskill Scene Timeline",
+  "type": "object",
+  "required": ["fps", "width", "height", "scenes"],
+  "properties": {
+    "fps": { "type": "integer", "minimum": 1, "maximum": 120 },
+    "width": { "type": "integer", "minimum": 16 },
+    "height": { "type": "integer", "minimum": 16 },
+    "title": { "type": "string" },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "start_frame", "duration_frames", "type", "purpose"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+          "chapter": { "type": "string" },
+          "start_frame": { "type": "integer", "minimum": 0 },
+          "duration_frames": { "type": "integer", "minimum": 1 },
+          "type": { "type": "string", "enum": ["title", "paper_card", "diagram", "chart", "timeline", "comparison", "map", "whiteboard", "isometric", "object_breakdown", "kinetic_type", "footage", "chapter_card", "custom"] },
+          "purpose": { "type": "string", "minLength": 1 },
+          "narration_segment_id": { "type": ["string", "null"] },
+          "caption_segment_ids": { "type": "array", "items": { "type": "string" } },
+          "transition_in": { "type": "string" },
+          "transition_out": { "type": "string" },
+          "asset_ids": { "type": "array", "items": { "type": "string" } },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "narration": { "type": "array", "items": { "type": "object" } },
+    "captions": { "type": "array", "items": { "type": "object" } },
+    "audio_cues": { "type": "array", "items": { "type": "object" } }
+  },
+  "additionalProperties": false
+}
