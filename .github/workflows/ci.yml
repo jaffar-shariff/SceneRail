@@ -43,9 +43,15 @@ jobs:
         run: npm run render:sample
       - name: Verify MP4 metadata
         run: python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 --expect-fps 30
+      - name: Install contact-sheet helper
+        run: python -m pip install --disable-pip-version-check -r requirements-qa.txt
+      - name: Sample frames and create contact sheet
+        run: |
+          python scripts/render_qa_frames.py out/masteraiskill-demo.mp4 --count 12 --output-dir out/qa/frames
+          python scripts/create_contact_sheet.py out/qa/frames --output out/qa/contact-sheet.png
       - name: Upload sample MP4
         uses: actions/upload-artifact@v4
         with:
           name: masteraiskill-sample-mp4
-          path: out/masteraiskill-demo.mp4
+          path: |\n            out/masteraiskill-demo.mp4\n            out/qa/contact-sheet.png\n            out/qa/frames/
           if-no-files-found: error
