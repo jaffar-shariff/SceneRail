@@ -10,7 +10,11 @@ description: Original visual style guide for Interface Theatre; suited to produc
 **Best suited for:** Product explainers, tutorials, SaaS  
 **Example concept:** One feature shown through a real user problem
 
-[← Browse all styles](../STYLEBOOK.md#interface-theatre)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#interface-theatre)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for interface-theatre, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

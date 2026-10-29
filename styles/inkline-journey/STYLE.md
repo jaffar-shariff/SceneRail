@@ -10,7 +10,11 @@ description: Original visual style guide for Inkline Journey; suited to travel, 
 **Best suited for:** Travel, science, personal history  
 **Example concept:** Following the route of a useful invention
 
-[← Browse all styles](../STYLEBOOK.md#inkline-journey)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#inkline-journey)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for inkline-journey, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

@@ -10,7 +10,11 @@ description: Original visual style guide for Groundtruth Grid; suited to geograp
 **Best suited for:** Geography, logistics, infrastructure  
 **Example concept:** How a package moves across a continent
 
-[← Browse all styles](../STYLEBOOK.md#groundtruth-grid)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#groundtruth-grid)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for groundtruth-grid, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

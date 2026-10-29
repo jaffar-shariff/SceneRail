@@ -10,7 +10,11 @@ description: Original visual style guide for Foundry Notes; suited to engineerin
 **Best suited for:** Engineering, manufacturing, product origins  
 **Example concept:** Inside the machine that sorts millions of parcels
 
-[← Browse all styles](../STYLEBOOK.md#foundry-notes)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#foundry-notes)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for foundry-notes, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

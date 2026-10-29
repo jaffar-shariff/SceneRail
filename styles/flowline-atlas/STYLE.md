@@ -10,7 +10,11 @@ description: Original visual style guide for Flowline Atlas; suited to supply ch
 **Best suited for:** Supply chains, money, energy, logistics  
 **Example concept:** Where a dollar goes after a customer spends it
 
-[← Browse all styles](../STYLEBOOK.md#flowline-atlas)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#flowline-atlas)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for flowline-atlas, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

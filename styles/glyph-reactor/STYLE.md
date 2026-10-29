@@ -10,7 +10,11 @@ description: Original visual style guide for Glyph Reactor; suited to brand stor
 **Best suited for:** Brand stories, concepts, title sequences  
 **Example concept:** Turning one word into a visual argument
 
-[← Browse all styles](../STYLEBOOK.md#glyph-reactor)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#glyph-reactor)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for glyph-reactor, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

@@ -10,7 +10,11 @@ description: Original visual style guide for Depth Signal; suited to intangible 
 **Best suited for:** Intangible ideas, transitions, chapter breaks  
 **Example concept:** Moving from a single device to a connected world
 
-[← Browse all styles](../STYLEBOOK.md#depth-signal)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#depth-signal)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for depth-signal, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

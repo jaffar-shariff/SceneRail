@@ -10,7 +10,11 @@ description: Original visual style guide for Cutshape Theatre; suited to abstrac
 **Best suited for:** Abstract concepts, cause and effect  
 **Example concept:** Two choices pulling an entire company in opposite directions
 
-[← Browse all styles](../STYLEBOOK.md#cutshape-theatre)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#cutshape-theatre)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for cutshape-theatre, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 
