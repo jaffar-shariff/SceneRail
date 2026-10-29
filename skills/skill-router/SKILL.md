@@ -11,6 +11,7 @@ Read the top-level `AGENTS.md` once at task start. Load specialist skills by nee
 - Multi-minute explainer, history, business, technology, documentary essay: `longform-explainer`.
 - Choosing visual metaphor, diagrams, charts, whiteboard, paper-card, isometric or custom scenes: `scene-craft`.
 - Preview, contact sheets, rendering, media metadata, defects or final acceptance: `render-verify`.
+- Narration/voiceover synchronization, captions and timed audio: `narration-timing`.
 - Research claims, outside images/footage, typography, fonts, music, SFX, or generated/user assets: `asset-provenance`.
 
 ## Working rules
