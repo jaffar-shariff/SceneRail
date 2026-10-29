@@ -11,9 +11,10 @@
     "validate:timeline": "python scripts/validate_timeline.py examples/timeline.json --strict",
     "validate:storyboard": "python scripts/validate_storyboard.py examples/storyboard.json --strict",
     "validate:links": "python scripts/check_repo_links.py",
-    "validate:all": "npm run validate:timeline && npm run validate:storyboard && npm run validate:links",
+    "validate:all": "npm run validate:svg && npm run validate:timeline && npm run validate:storyboard && npm run validate:links",
     "probe:sample": "python scripts/probe_mp4.py out/scenerail-demo.mp4",
-    "test": "python -m unittest discover -s tests -v"
+    "test": "python -m unittest discover -s tests -v",
+    "validate:svg": "python scripts/check_svg_assets.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.539",

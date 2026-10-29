@@ -27,6 +27,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Check local Markdown links
         run: python scripts/check_repo_links.py
+      - name: Validate SVG assets
+        run: python scripts/check_svg_assets.py
       - name: Validate example timeline
         run: python scripts/validate_timeline.py examples/timeline.json --strict
       - name: Validate example storyboard
