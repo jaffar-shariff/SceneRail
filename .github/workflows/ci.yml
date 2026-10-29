@@ -1,0 +1,47 @@
+name: Masteraiskill CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  timeline-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run timeline validator tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate example timeline
+        run: python scripts/validate_timeline.py examples/timeline.json
+
+  remotion-render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Ensure Remotion browser
+        run: npx remotion browser ensure
+      - name: Type-check renderer
+        run: npx tsc --noEmit
+      - name: Render sample MP4
+        run: npm run render:sample
+      - name: Verify MP4 metadata
+        run: python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 --expect-fps 30
+      - name: Upload sample MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: masteraiskill-sample-mp4
+          path: out/masteraiskill-demo.mp4
+          if-no-files-found: error
