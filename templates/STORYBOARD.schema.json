@@ -1,0 +1,386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Masteraiskill Frame Purpose Contract",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "title",
+    "format",
+    "audience",
+    "thesis",
+    "payoff",
+    "style_id",
+    "visual_system",
+    "chapters",
+    "claims",
+    "sources",
+    "assets",
+    "scenes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "format": {
+      "enum": [
+        "short-form",
+        "long-form",
+        "multi-deliverable",
+        "custom"
+      ]
+    },
+    "audience": {
+      "type": "string",
+      "minLength": 5
+    },
+    "thesis": {
+      "type": "string",
+      "minLength": 20
+    },
+    "payoff": {
+      "type": "string",
+      "minLength": 15
+    },
+    "style_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "visual_system": {
+      "$ref": "#/$defs/visualSystem"
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/chapter"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/scene"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "visualSystem": {
+      "type": "object",
+      "required": [
+        "name",
+        "signature_motif",
+        "palette_logic",
+        "typography",
+        "composition_grammar",
+        "motion_grammar",
+        "avoid"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 3
+        },
+        "signature_motif": {
+          "type": "string",
+          "minLength": 15
+        },
+        "palette_logic": {
+          "type": "string",
+          "minLength": 15
+        },
+        "typography": {
+          "type": "string",
+          "minLength": 15
+        },
+        "composition_grammar": {
+          "type": "string",
+          "minLength": 15
+        },
+        "motion_grammar": {
+          "type": "string",
+          "minLength": 15
+        },
+        "avoid": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "chapter": {
+      "type": "object",
+      "required": [
+        "id",
+        "purpose"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 12
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "text",
+        "source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "kind": {
+          "enum": [
+            "fact",
+            "estimate",
+            "interpretation",
+            "illustrative"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 12
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "fact",
+                  "estimate"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source_ids": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "locator",
+        "support_note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 4
+        },
+        "support_note": {
+          "type": "string",
+          "minLength": 12
+        }
+      },
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "origin",
+        "rights",
+        "rights_evidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 3
+        },
+        "origin": {
+          "type": "string",
+          "minLength": 5
+        },
+        "rights": {
+          "enum": [
+            "original",
+            "user-provided",
+            "licensed",
+            "public-domain",
+            "generated",
+            "unknown"
+          ]
+        },
+        "rights_evidence": {
+          "type": "string",
+          "minLength": 5
+        }
+      },
+      "additionalProperties": false
+    },
+    "scene": {
+      "type": "object",
+      "required": [
+        "id",
+        "chapter",
+        "narrative_function",
+        "viewer_question",
+        "visual_argument",
+        "visible_action",
+        "topic_specificity",
+        "composition",
+        "change_from_previous",
+        "motion_purpose",
+        "hold_reason",
+        "visual_operation",
+        "claim_ids",
+        "asset_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "chapter": {
+          "type": "string"
+        },
+        "narrative_function": {
+          "enum": [
+            "hook",
+            "orientation",
+            "question",
+            "mechanism",
+            "evidence",
+            "counterpoint",
+            "synthesis",
+            "payoff",
+            "transition",
+            "pause"
+          ]
+        },
+        "viewer_question": {
+          "type": "string",
+          "minLength": 8
+        },
+        "visual_argument": {
+          "type": "string",
+          "minLength": 20
+        },
+        "visible_action": {
+          "type": "string",
+          "minLength": 20
+        },
+        "topic_specificity": {
+          "type": "string",
+          "minLength": 20
+        },
+        "composition": {
+          "type": "string",
+          "minLength": 15
+        },
+        "change_from_previous": {
+          "type": "string",
+          "minLength": 15
+        },
+        "motion_purpose": {
+          "type": "string",
+          "minLength": 12
+        },
+        "hold_reason": {
+          "type": "string",
+          "minLength": 12
+        },
+        "visual_operation": {
+          "enum": [
+            "isolate",
+            "reveal",
+            "compare",
+            "trace",
+            "assemble",
+            "transform",
+            "demonstrate",
+            "reframe",
+            "resolve",
+            "map",
+            "annotate",
+            "deconstruct",
+            "contrast",
+            "pause"
+          ]
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "asset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

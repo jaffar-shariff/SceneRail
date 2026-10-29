@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "title": "A Parcel Is a Chain of Decisions",
+  "format": "long-form",
+  "audience": "Curious general viewers who enjoy clear visual explanations",
+  "thesis": "A delivery is not one continuous trip; it is a sequence of handoffs, records, and decisions.",
+  "payoff": "The parcel reaches its destination because separate steps reconnect into one traceable journey.",
+  "style_id": "paper-signal",
+  "visual_system": {
+    "name": "Paper Signal",
+    "signature_motif": "One acid-lime envelope leaves a printed route fragment at each handoff; the fragments join only at the end.",
+    "palette_logic": "Warm off-white is the physical world, charcoal marks uncertainty, and acid lime is reserved for the parcel's next step.",
+    "typography": "Use a compact grotesk for labels and a large condensed face for chapter statements; keep essential data off textured paper.",
+    "composition_grammar": "Begin with one isolated object, widen to reveal the system, use aligned station cards for comparisons, and return to the envelope.",
+    "motion_grammar": "Every slide represents a handoff, every stamp records a state change, and only the final movement connects the route.",
+    "avoid": [
+      "No fake three-dimensional bevels or plastic materials.",
+      "No decorative icons that do not represent a real step.",
+      "No repeated centered title card for every chapter.",
+      "No invented performance statistics presented as facts."
+    ]
+  },
+  "chapters": [
+    {
+      "id": "promise",
+      "purpose": "Establish the simple promise of delivery and create a question about what it requires."
+    },
+    {
+      "id": "handoffs",
+      "purpose": "Show that delivery depends on distinct handoffs and their records."
+    },
+    {
+      "id": "resolution",
+      "purpose": "Reconnect the separate steps and deliver the opening payoff."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-handoff-model",
+      "kind": "interpretation",
+      "text": "A delivery can be explained as a series of connected handoffs.",
+      "source_ids": []
+    },
+    {
+      "id": "claim-route-fragments",
+      "kind": "illustrative",
+      "text": "Printed route fragments are a visual metaphor for a record accumulating across steps.",
+      "source_ids": []
+    },
+    {
+      "id": "claim-final-join",
+      "kind": "illustrative",
+      "text": "The joined route is a designed explanation, not operational tracking data.",
+      "source_ids": []
+    }
+  ],
+  "sources": [],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "hook-envelope",
+      "chapter": "promise",
+      "narrative_function": "hook",
+      "viewer_question": "How does one small parcel cross a much larger system?",
+      "visual_argument": "An isolated envelope appears too small to explain the journey implied by its destination label.",
+      "visible_action": "A single lime envelope slides into an empty paper field; a route label is visible but its path is absent.",
+      "topic_specificity": "The destination label creates the parcel-delivery promise while the missing route makes the hidden system the subject.",
+      "composition": "Keep the envelope low and right of center; leave a large unmarked route-shaped gap above it.",
+      "change_from_previous": "This is the establishing image; later scenes add context rather than repeat a title layout.",
+      "motion_purpose": "The single slide establishes the object and gives the viewer one focal point.",
+      "hold_reason": "Hold the destination label long enough to read before revealing how much the simple promise hides.",
+      "visual_operation": "isolate",
+      "claim_ids": [
+        "claim-handoff-model"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "stations-appear",
+      "chapter": "handoffs",
+      "narrative_function": "orientation",
+      "viewer_question": "What sits between the sender and the recipient?",
+      "visual_argument": "The route becomes a set of separate stations rather than one uninterrupted line.",
+      "visible_action": "Three paper stations unfold left to right; the envelope moves only when one station hands it to the next.",
+      "topic_specificity": "The repeated handoff is the core mechanic, so motion is attached to station-to-station transfer.",
+      "composition": "Use a wide horizontal route with the envelope in motion and each station in a separate third of the frame.",
+      "change_from_previous": "Move from one isolated object to a wide process map with multiple points of attention.",
+      "motion_purpose": "Each transfer creates a new state, making the process legible instead of adding decorative movement.",
+      "hold_reason": "Pause after the third station appears so viewers can trace the route from origin to destination.",
+      "visual_operation": "assemble",
+      "claim_ids": [
+        "claim-handoff-model"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "record-stamp",
+      "chapter": "handoffs",
+      "narrative_function": "mechanism",
+      "viewer_question": "What changes when the parcel changes hands?",
+      "visual_argument": "A handoff becomes visible as a state change recorded on the parcel's route strip.",
+      "visible_action": "A square paper stamp lands beside the envelope; its route fragment prints into the strip and remains after the envelope moves on.",
+      "topic_specificity": "A stamped fragment is a physical metaphor for information a process must carry between separate steps.",
+      "composition": "Use a close crop with the envelope at lower left and the emerging record strip running diagonally toward upper right.",
+      "change_from_previous": "Replace the full route view with a tactile close-up to explain one handoff in detail.",
+      "motion_purpose": "The stamp impact marks the exact point where the parcel's state changes.",
+      "hold_reason": "Hold the new mark after impact so viewers can compare the before and after states.",
+      "visual_operation": "reveal",
+      "claim_ids": [
+        "claim-route-fragments"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "handoff-compare",
+      "chapter": "handoffs",
+      "narrative_function": "counterpoint",
+      "viewer_question": "Why are the handoffs separate instead of one long move?",
+      "visual_argument": "Side-by-side station cards expose the information that has to survive each transfer.",
+      "visible_action": "Two paper panels compare a parcel leaving one station with the same parcel arriving at the next; one strip bridges both panels.",
+      "topic_specificity": "The matched parcel and bridging strip make continuity across a handoff the comparison, not a generic arrow.",
+      "composition": "Split the canvas into sender and receiver panels with a continuous route strip through the center.",
+      "change_from_previous": "Shift from close-up detail to a paired comparison that shows two states at once.",
+      "motion_purpose": "Movement across the center strip lets viewers inspect what is preserved between states.",
+      "hold_reason": "Keep both states visible long enough to compare their labels and connecting strip.",
+      "visual_operation": "compare",
+      "claim_ids": [
+        "claim-handoff-model"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "route-reframe",
+      "chapter": "resolution",
+      "narrative_function": "synthesis",
+      "viewer_question": "How do separate records become one understandable journey?",
+      "visual_argument": "Fragments from earlier scenes form a continuous route only when the handoffs are considered together.",
+      "visible_action": "Earlier stamped fragments slide into alignment around the envelope; the route becomes continuous while station cards recede.",
+      "topic_specificity": "The resolution pays off the repeated fragment motif and makes the chain—not a single movement—the point.",
+      "composition": "Arrange fragments along a rising diagonal that ends at the envelope; reused shapes return in new relationships.",
+      "change_from_previous": "Move from side-by-side states to an integrated whole; the pieces return with an altered meaning.",
+      "motion_purpose": "Alignment is the argument: separate pieces become a legible system when connected.",
+      "hold_reason": "Hold the joined route so viewers can inspect how the separate marks connect.",
+      "visual_operation": "transform",
+      "claim_ids": [
+        "claim-final-join"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "destination-payoff",
+      "chapter": "resolution",
+      "narrative_function": "payoff",
+      "viewer_question": "What did the route reveal that the opening image hid?",
+      "visual_argument": "The same envelope now sits inside a complete route, making invisible work around a simple promise visible.",
+      "visible_action": "The envelope reaches the destination card; the completed route remains and the opening label returns in a smaller contextualized form.",
+      "topic_specificity": "Returning the opening object and label creates a payoff from the route system built across the film.",
+      "composition": "Center the envelope at the route end and place the opening promise above it with negative space around the takeaway.",
+      "change_from_previous": "Return to the hero object from the opening, now with the full process visible around it.",
+      "motion_purpose": "The final move resolves the route and stops; no further motion signals completion.",
+      "hold_reason": "Leave the final sentence and joined route still for a deliberate ending hold.",
+      "visual_operation": "resolve",
+      "claim_ids": [
+        "claim-final-join"
+      ],
+      "asset_ids": []
+    }
+  ]
+}
