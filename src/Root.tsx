@@ -179,11 +179,11 @@ const MasteraiskillDemo: React.FC<DemoProps> = ({videoTitle, narrationFile}) => 
     <AbsoluteFill style={{backgroundColor: C.background}}>
       <Sequence from={0} durationInFrames={150}><Opening title={videoTitle}/></Sequence>
       <Sequence from={120} durationInFrames={240}><Mechanism/></Sequence>
-      <Sequence from={330} durationInFrames={240}><DataReveal/></Sequence>
-      <Sequence from={540} durationInFrames={240}><Closing/></Sequence>
+      <Sequence from={330} durationInFrames={300}><DataReveal/></Sequence>
+      <Sequence from={600} durationInFrames={150}><Closing/></Sequence>
       {narrationFile ? <Audio src={staticFile(narrationFile)} volume={1} /> : null}
       <AbsoluteFill style={{top: "auto", bottom: 26, left: 48, right: 48, height: 3, background: "#ffffff22"}}>
-        <div style={{height: "100%", width: "100%", background: C.cyan, transformOrigin: "left", transform: `scaleX(${interpolate(useCurrentFrame(), [0, 899], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"})})`}}/>
+        <div style={{height: "100%", width: "100%", background: C.cyan, transformOrigin: "left", transform: `scaleX(${interpolate(useCurrentFrame(), [0, 749], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"})})`}}/>
       </AbsoluteFill>
       <div style={{...BASE, position: "absolute", right: 50, top: 30, fontSize: 15, color: "#c6d2dc", letterSpacing: 2}}>MASTERAI / {fps} FPS</div>
     </AbsoluteFill>
@@ -195,7 +195,7 @@ export const Root: React.FC = () => (
     <Composition
       id="MasteraiskillDemo"
       component={MasteraiskillDemo}
-      durationInFrames={900}
+      durationInFrames={750}
       fps={30}
       width={1920}
       height={1080}
