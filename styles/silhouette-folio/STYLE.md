@@ -10,7 +10,11 @@ description: Original visual style guide for Silhouette Folio; suited to fables,
 **Best suited for:** Fables, origin stories, abstract narratives  
 **Example concept:** A founder's choices shown as a series of doors
 
-[← Browse all styles](../STYLEBOOK.md#silhouette-folio)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#silhouette-folio)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for silhouette-folio, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

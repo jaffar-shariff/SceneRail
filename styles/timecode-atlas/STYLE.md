@@ -10,7 +10,11 @@ description: Original visual style guide for Timecode Atlas; suited to company h
 **Best suited for:** Company histories, wars, inventions, biographies  
 **Example concept:** A decade of decisions in six chapters
 
-[← Browse all styles](../STYLEBOOK.md#timecode-atlas)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#timecode-atlas)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for timecode-atlas, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

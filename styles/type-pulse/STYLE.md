@@ -10,7 +10,11 @@ description: Original visual style guide for Type Pulse; suited to hooks, chapte
 **Best suited for:** Hooks, chapter openers, punchy short-form  
 **Example concept:** Three words that explain a business model
 
-[← Browse all styles](../STYLEBOOK.md#type-pulse)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#type-pulse)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for type-pulse, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

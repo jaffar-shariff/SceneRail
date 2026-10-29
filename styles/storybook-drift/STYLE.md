@@ -10,7 +10,11 @@ description: Original visual style guide for Storybook Drift; suited to science 
 **Best suited for:** Science for general audiences, narrative history  
 **Example concept:** A seed's journey through a city
 
-[← Browse all styles](../STYLEBOOK.md#storybook-drift)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#storybook-drift)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for storybook-drift, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

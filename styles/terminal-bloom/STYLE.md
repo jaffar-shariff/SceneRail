@@ -10,7 +10,11 @@ description: Original visual style guide for Terminal Bloom; suited to ai, progr
 **Best suited for:** AI, programming, networks, cybersecurity education  
 **Example concept:** What happens between a request and a response
 
-[← Browse all styles](../STYLEBOOK.md#terminal-bloom)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#terminal-bloom)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for terminal-bloom, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 
