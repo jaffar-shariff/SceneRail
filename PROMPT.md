@@ -32,11 +32,12 @@ Deliver a final MP4 with strong narrative, original and coherent visuals, profes
 4. Build a single thesis and a long-form outline with chapters and progressive reveals. Never pad runtime with repetition.
 5. Draft narration and beat map first. Once voiceover exists, synchronize visuals and captions to its actual timing.
 6. Create a style bible. Keep a consistent visual grammar while varying scene composition to suit the story.
-7. Store timing in a canonical timeline. It must drive scene starts/ends, transitions, narration, captions, music, and SFX.
+7. Write a storyboard that satisfies `templates/STORYBOARD.schema.json` and the Frame Purpose Contract in `docs/CREATIVE_QUALITY.md`. Every scene needs a viewer question, visual argument, specific visible action, topic-specific reason, composition, meaningful change from its predecessor, motion purpose, and hold reason. Run `python scripts/validate_storyboard.py path/to/storyboard.json --strict --report out/qa/storyboard-report.json`; fix every failure. Generic “cinematic,” “dynamic,” “engaging,” “B-roll,” or “add effects” descriptions are not substitutes for a concrete visual plan.
+8. Store timing in a canonical timeline. It must drive scene starts/ends, transitions, narration, captions, music, and SFX.
 8. Build only the scenes needed. Use reusable primitives where they remove duplication, not as a speculative framework.
-9. Render low-cost previews and sample frames. Inspect contact sheets across the entire timeline. Find and fix clipping, overlaps, low contrast, awkward pacing, visual/narration mismatch, discontinuity, wrong values, missing assets, and transition artifacts.
+9. Render low-cost previews and sample frames. Inspect contact sheets across the entire timeline, every distinct scene type, chapter transitions, dense text/data moments, and the ending. Use the Creative Quality review sheet. Ask what feels interchangeable with a generic template, what claim remains unexplained, which shot repeats information, and whether the opening promise is paid off. Fix clipping, overlaps, low contrast, awkward pacing, visual/narration mismatch, discontinuity, wrong values, missing assets, and transition artifacts.
 10. Mix voice, music, and SFX deliberately. Verify technical audio properties and be honest if no human listening occurred.
-11. Render the final MP4. Verify file existence, metadata, representative frames, audio streams, ending integrity, and any check available for captions/timing. Fix failures and recheck.
+11. Render the final MP4. Verify file existence, metadata, representative frames, audio streams, ending integrity, and any check available for captions/timing. Fix failures and recheck. A clean validator cannot certify artistic quality.
 12. Deliver the MP4 as the main result. Keep source project/code/logs as working artifacts unless export-only delivery is requested.
 13. Report the exact output path, measured runtime/resolution/fps/codecs, QA results, unperformed checks, and remaining issues.
 
