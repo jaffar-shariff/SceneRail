@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -17,6 +18,13 @@ VALID_SCENE_TYPES = {
     "chapter_card", "custom",
 }
 ID_PATTERN = re.compile(r"^[a-zA-Z0-9_-]+$")
+TOP_LEVEL_FIELDS = {"fps", "width", "height", "title", "scenes", "narration", "captions", "audio_cues"}
+SCENE_FIELDS = set(REQUIRED_SCENE_FIELDS) | {"chapter", "narration_segment_id", "caption_segment_ids", "transition_in", "transition_out", "asset_ids", "notes"}
+VALID_AUDIO_TYPES = {"music", "sfx", "silence", "voiceover"}
+
+
+def is_finite_number(value: Any) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
 
 
 def is_int(value: Any) -> bool:
@@ -29,10 +37,15 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
     if not isinstance(data, dict):
         return ["top-level JSON value must be an object"], warnings, None
 
-    for field, minimum in (("fps", 1), ("width", 16), ("height", 16)):
+    for field in sorted(set(data) - TOP_LEVEL_FIELDS):
+        errors.append(f"unknown top-level field '{field}' (not allowed by SCENE_SCHEMA.json)")
+    for field, minimum, maximum in (("fps", 1, 120), ("width", 16, None), ("height", 16, None)):
         value = data.get(field)
-        if not is_int(value) or value < minimum:
-            errors.append(f"'{field}' must be an integer >= {minimum}")
+        if not is_int(value) or value < minimum or (maximum is not None and value > maximum):
+            limit = f"between {minimum} and {maximum}" if maximum is not None else f">= {minimum}"
+            errors.append(f"'{field}' must be an integer {limit}")
+    if "title" in data and not isinstance(data["title"], str):
+        errors.append("'title' must be a string")
 
     scenes = data.get("scenes")
     if not isinstance(scenes, list):
@@ -46,6 +59,8 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
         if not isinstance(scene, dict):
             errors.append(f"{prefix} must be an object")
             continue
+        for field in sorted(set(scene) - SCENE_FIELDS):
+            errors.append(f"{prefix} has unknown field '{field}' (not allowed by SCENE_SCHEMA.json)")
         for field in REQUIRED_SCENE_FIELDS:
             if field not in scene:
                 errors.append(f"{prefix} is missing required field '{field}'")
@@ -71,12 +86,22 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
         if not isinstance(scene.get("purpose"), str) or not scene["purpose"].strip():
             errors.append(f"{prefix}.purpose must be a non-empty string")
 
-        caption_ids = scene.get("caption_segment_ids", [])
-        if not isinstance(caption_ids, list) or any(not isinstance(value, str) for value in caption_ids):
-            errors.append(f"{prefix}.caption_segment_ids must be an array of strings")
+        for field in ("chapter", "transition_in", "transition_out", "notes"):
+            if field in scene and not isinstance(scene[field], str):
+                errors.append(f"{prefix}.{field} must be a string")
+        narration_ref = scene.get("narration_segment_id")
+        if narration_ref is not None and not isinstance(narration_ref, str):
+            errors.append(f"{prefix}.narration_segment_id must be a string or null")
+        for field in ("caption_segment_ids", "asset_ids"):
+            if field in scene:
+                values = scene[field]
+                if not isinstance(values, list) or any(not isinstance(value, str) for value in values):
+                    errors.append(f"{prefix}.{field} must be an array of strings")
         valid_scenes.append((start, start + duration, str(scene_id)))
 
     valid_scenes.sort()
+    if valid_scenes and valid_scenes[0][0] > 0:
+        warnings.append(f"timeline begins at frame {valid_scenes[0][0]}; confirm the initial blank interval is intentional")
     for previous, current in zip(valid_scenes, valid_scenes[1:]):
         _, prev_end, prev_id = previous
         cur_start, _, cur_id = current
@@ -118,11 +143,28 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
                 ids.add(item_id)
             start = item.get("start_frame")
             end = item.get("end_frame")
-            if not is_int(start) or start < 0:
+            start_valid = is_int(start) and start >= 0
+            end_valid = is_int(end) and end >= 1
+            if not start_valid:
                 errors.append(f"{prefix}.start_frame must be an integer >= 0")
-            if not is_int(end) or (is_int(start) and end <= start):
-                errors.append(f"{prefix}.end_frame must be an integer greater than start_frame")
-            if is_int(end) and duration_frames and end > duration_frames:
+            if not end_valid:
+                errors.append(f"{prefix}.end_frame must be an integer >= 1")
+            elif start_valid and end <= start:
+                errors.append(f"{prefix}.end_frame must be greater than start_frame")
+            if collection_name in {"narration", "captions"}:
+                if not isinstance(item.get("text"), str) or not item["text"].strip():
+                    errors.append(f"{prefix}.text must be a non-empty string")
+            else:
+                cue_type = item.get("type")
+                if not isinstance(cue_type, str) or cue_type not in VALID_AUDIO_TYPES:
+                    errors.append(f"{prefix}.type must be one of: {', '.join(sorted(VALID_AUDIO_TYPES))}")
+                if "asset_id" in item and item["asset_id"] is not None and not isinstance(item["asset_id"], str):
+                    errors.append(f"{prefix}.asset_id must be a string or null")
+                if "gain_db" in item and not is_finite_number(item["gain_db"]):
+                    errors.append(f"{prefix}.gain_db must be a finite number")
+                if "notes" in item and not isinstance(item["notes"], str):
+                    errors.append(f"{prefix}.notes must be a string")
+            if end_valid and duration_frames and end > duration_frames:
                 warnings.append(
                     f"{prefix} ends at frame {end}, beyond current visual timeline end {duration_frames}"
                 )
@@ -133,12 +175,12 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
         if not isinstance(scene, dict):
             continue
         narration_id = scene.get("narration_segment_id")
-        if narration_id is not None and narration_id not in narration_ids:
+        if isinstance(narration_id, str) and narration_id not in narration_ids:
             errors.append(f"scenes[{index}] references missing narration segment '{narration_id}'")
         caption_ids_for_scene = scene.get("caption_segment_ids", [])
         if isinstance(caption_ids_for_scene, list):
             for caption_id in caption_ids_for_scene:
-                if caption_id not in caption_ids:
+                if isinstance(caption_id, str) and caption_id not in caption_ids:
                     errors.append(f"scenes[{index}] references missing caption segment '{caption_id}'")
 
     return errors, warnings, duration_frames
@@ -174,7 +216,10 @@ def main() -> int:
         print(f"FAIL: strict mode rejects {len(warnings)} warning(s)")
         return 1
     scene_count = len(data["scenes"]) if isinstance(data.get("scenes"), list) else 0
-    print(f"PASS: timeline structure valid; {scene_count} scene(s), {duration or 0} total frames")
+    if warnings:
+        print(f"REVIEW: timeline structure valid with {len(warnings)} warning(s); {scene_count} scene(s)")
+    else:
+        print(f"PASS: timeline structure valid; {scene_count} scene(s), {duration or 0} total frames")
     return 0
 
 
