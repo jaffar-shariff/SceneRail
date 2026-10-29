@@ -81,7 +81,7 @@ const RateRow:React.FC<{label:string;gpt:number;opus:number;max:number;frame:num
  return <div style={{marginTop:22}}>
   <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:19,marginBottom:10}}><span style={{color:K.muted,fontWeight:700,letterSpacing:.5}}>{label}</span><span style={{fontSize:14,color:K.dim}}>USD / 1M tokens</span></div>
   {[{name:"GPT-6.1 Sol",v:gpt,c:K.teal},{name:"Opus 5.5",v:opus,c:K.purple}].map(row=><div key={row.name} style={{display:"grid",gridTemplateColumns:"125px 1fr 90px",alignItems:"center",gap:15,marginBottom:9}}>
-   <span style={{fontSize:15,color:row.c,fontWeight:850}}>{row.name}</span><div style={{height:19,borderRadius:4,background:"#223547",overflow:"hidden"}}><div style={{width:(row.v/max*100*p)+"%",height:"100%",background:"linear-gradient(90deg,"+row.c+","+color+")",boxShadow:"0 0 24px "+row.c+"44"}}/></div><span style={{fontSize:23,fontWeight:900,textAlign:"right"}>{"$"+row.v.toFixed(2)}</span>
+   <span style={{fontSize:15,color:row.c,fontWeight:850}}>{row.name}</span><div style={{height:19,borderRadius:4,background:"#223547",overflow:"hidden"}}><div style={{width:(row.v/max*100*p)+"%",height:"100%",background:"linear-gradient(90deg,"+row.c+","+color+")",boxShadow:"0 0 24px "+row.c+"44"}}/></div><span style={{fontSize:23,fontWeight:900,textAlign:"right"}>{"$"}{row.v.toFixed(2)}</span>
   </div>)}
   <TokenStream frame={frame} color={color} count={8}/>
  </div>;
