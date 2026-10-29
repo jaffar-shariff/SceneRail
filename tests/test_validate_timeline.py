@@ -105,5 +105,55 @@ class TimelineValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
 
+    def test_malformed_narration_reference_does_not_crash(self):
+        data = self.base()
+        data["scenes"][0]["narration_segment_id"] = ["unhashable"]
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("must be a string or null", result.stdout)
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_malformed_caption_ids_do_not_crash(self):
+        data = self.base()
+        data["scenes"][0]["caption_segment_ids"] = [["unhashable"]]
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("must be an array of strings", result.stdout)
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_empty_timed_text_and_invalid_end_frame_fail(self):
+        data = self.base()
+        data["captions"] = [{"id": "empty-caption", "start_frame": 0, "end_frame": 0, "text": "   "}]
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("end_frame must be an integer >= 1", result.stdout)
+        self.assertIn("text must be a non-empty string", result.stdout)
+
+    def test_audio_cue_requires_supported_type(self):
+        data = self.base()
+        data["audio_cues"] = [{"id": "music-1", "start_frame": 0, "end_frame": 20, "type": {"bad": "shape"}}]
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("type must be one of", result.stdout)
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_initial_blank_interval_is_reported_and_strictly_rejected(self):
+        data = self.base()
+        data["scenes"][0]["start_frame"] = 5
+        data["scenes"][1]["start_frame"] = 35
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("timeline begins at frame 5", result.stdout)
+        strict = self.validate(data, "--strict")
+        self.assertEqual(strict.returncode, 1)
+
+    def test_unknown_fields_match_closed_timeline_schema(self):
+        data = self.base()
+        data["scenes"][0]["surprise"] = True
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("unknown field 'surprise'", result.stdout)
+
+
 if __name__ == "__main__":
     unittest.main()
