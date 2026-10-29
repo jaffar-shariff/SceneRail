@@ -56,7 +56,7 @@ class TimelineValidatorTests(unittest.TestCase):
         data["fps"] = 0
         result = self.validate(data)
         self.assertEqual(result.returncode, 1)
-        self.assertIn("'fps' must be an integer >= 1", result.stdout)
+        self.assertIn("'fps' must be an integer between 1 and 120", result.stdout)
 
     def test_duplicate_ids_fail(self):
         data = self.base()
