@@ -52,10 +52,14 @@ The sample is a visual test composition with illustrative chart values and no na
 - `PROMPT.md` — reusable master production prompt.
 - `docs/ARCHITECTURE.md` — pipeline and renderer architecture.
 - `docs/QUALITY_GATES.md` — acceptance criteria and QA loop.
-- `docs/REFERENCE_ANALYSIS.md` — first-pass analysis of the seven reference repositories.
+- `docs/REFERENCE_ANALYSIS.md` — cross-repository technical synthesis.
+- `docs/SKILL_AUDIT.md` — skill-by-skill decisions for the supplied references.
+- `docs/STYLE_PRESETS.md` — original visual style systems to choose from.
+- `docs/RENDERER.md` — renderer setup, licensing notes and current limitations.
+- `docs/QUALITY_GATES.md` — measurable checks and delivery criteria.
 - `docs/ROADMAP.md` — phased build plan.
 - `templates/` — project brief, style bible, and scene timeline schema.
-- `skills/` — focused production skills loaded only when relevant.
+- `skills/` — focused production skills loaded only when relevant, including long-form narrative, scene craft, narration timing, asset provenance, rendering/verification and skill routing.
 - `scripts/` — production and validation utilities as they are implemented.
 
 ## Current status
