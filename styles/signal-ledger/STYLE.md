@@ -10,7 +10,11 @@ description: Original visual style guide for Signal Ledger; suited to finance, e
 **Best suited for:** Finance, economics, company analysis  
 **Example concept:** Why a $5 product can anchor a billion-dollar business
 
-[← Browse all styles](../STYLEBOOK.md#signal-ledger)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#signal-ledger)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for signal-ledger, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

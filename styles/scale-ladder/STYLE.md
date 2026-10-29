@@ -10,7 +10,11 @@ description: Original visual style guide for Scale Ladder; suited to tech, scien
 **Best suited for:** Tech, science, infrastructure  
 **Example concept:** From one data packet to a global network
 
-[← Browse all styles](../STYLEBOOK.md#scale-ladder)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#scale-ladder)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for scale-ladder, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

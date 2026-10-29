@@ -10,7 +10,11 @@ description: Original visual style guide for Shadow Cabinet; suited to mystery, 
 **Best suited for:** Mystery, invention, historical turning points  
 **Example concept:** The invention that changed a factory floor
 
-[← Browse all styles](../STYLEBOOK.md#shadow-cabinet)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#shadow-cabinet)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for shadow-cabinet, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

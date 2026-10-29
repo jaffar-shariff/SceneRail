@@ -10,7 +10,11 @@ description: Original visual style guide for Signal Bloom; suited to networks, s
 **Best suited for:** Networks, signals, invisible systems  
 **Example concept:** How information spreads through a network
 
-[← Browse all styles](../STYLEBOOK.md#signal-bloom)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#signal-bloom)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for signal-bloom, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

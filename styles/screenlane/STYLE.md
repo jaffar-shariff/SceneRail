@@ -10,7 +10,11 @@ description: Original visual style guide for Screenlane; suited to software, app
 **Best suited for:** Software, apps, workflows  
 **Example concept:** How an order travels through an online store
 
-[← Browse all styles](../STYLEBOOK.md#screenlane)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#screenlane)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for screenlane, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

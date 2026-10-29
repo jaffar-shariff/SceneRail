@@ -10,7 +10,11 @@ description: Original visual style guide for Particle Grammar; suited to physics
 **Best suited for:** Physics, scale, emergence  
 **Example concept:** How many small interactions create a large pattern
 
-[← Browse all styles](../STYLEBOOK.md#particle-grammar)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#particle-grammar)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for particle-grammar, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

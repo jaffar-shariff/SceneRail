@@ -10,7 +10,11 @@ description: Original visual style guide for Scribble Circuit; suited to friendl
 **Best suited for:** Friendly explainers, creator-led stories  
 **Example concept:** The surprisingly simple loop behind a subscription
 
-[← Browse all styles](../STYLEBOOK.md#scribble-circuit)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#scribble-circuit)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for scribble-circuit, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 
