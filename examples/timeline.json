@@ -1,0 +1,77 @@
+{
+  "title": "Masteraiskill sample explainer",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "opening",
+      "chapter": "Introduction",
+      "start_frame": 0,
+      "duration_frames": 120,
+      "type": "title",
+      "purpose": "Introduce the subject and the central question.",
+      "narration_segment_id": "vo-001",
+      "caption_segment_ids": ["cap-001"],
+      "transition_in": "fade",
+      "transition_out": "match-cut",
+      "asset_ids": [],
+      "notes": "Open with one clear visual promise."
+    },
+    {
+      "id": "mechanism",
+      "chapter": "How it works",
+      "start_frame": 120,
+      "duration_frames": 180,
+      "type": "diagram",
+      "purpose": "Reveal the main mechanism progressively.",
+      "narration_segment_id": "vo-002",
+      "caption_segment_ids": ["cap-002"],
+      "transition_in": "match-cut",
+      "transition_out": "wipe",
+      "asset_ids": [],
+      "notes": "Reveal nodes before edges and labels."
+    },
+    {
+      "id": "evidence",
+      "chapter": "Evidence",
+      "start_frame": 300,
+      "duration_frames": 180,
+      "type": "chart",
+      "purpose": "Show verified evidence relevant to the thesis.",
+      "narration_segment_id": "vo-003",
+      "caption_segment_ids": ["cap-003"],
+      "transition_in": "wipe",
+      "transition_out": "dissolve",
+      "asset_ids": ["chart-source-001"],
+      "notes": "All plotted values must be traceable to the source ledger."
+    },
+    {
+      "id": "closing",
+      "chapter": "Conclusion",
+      "start_frame": 480,
+      "duration_frames": 120,
+      "type": "chapter_card",
+      "purpose": "Pay off the opening question and leave one memorable takeaway.",
+      "narration_segment_id": "vo-004",
+      "caption_segment_ids": ["cap-004"],
+      "transition_in": "dissolve",
+      "transition_out": "fade",
+      "asset_ids": [],
+      "notes": "Leave enough hold time to read the takeaway."
+    }
+  ],
+  "narration": [
+    {"id": "vo-001", "start_frame": 0, "end_frame": 119, "text": "Opening narration goes here."},
+    {"id": "vo-002", "start_frame": 120, "end_frame": 299, "text": "Mechanism narration goes here."},
+    {"id": "vo-003", "start_frame": 300, "end_frame": 479, "text": "Evidence narration goes here."},
+    {"id": "vo-004", "start_frame": 480, "end_frame": 599, "text": "Closing narration goes here."}
+  ],
+  "captions": [
+    {"id": "cap-001", "start_frame": 12, "end_frame": 105, "text": "Opening caption placeholder."},
+    {"id": "cap-002", "start_frame": 132, "end_frame": 278, "text": "Mechanism caption placeholder."},
+    {"id": "cap-003", "start_frame": 315, "end_frame": 461, "text": "Evidence caption placeholder."},
+    {"id": "cap-004", "start_frame": 492, "end_frame": 580, "text": "Closing caption placeholder."}
+  ],
+  "audio_cues": []
+}
