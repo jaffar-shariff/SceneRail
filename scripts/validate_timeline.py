@@ -142,9 +142,7 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
                     errors.append(f"scenes[{index}] references missing caption segment '{caption_id}'")
 
     fps = data.get("fps")
-    if is_int(fps) and fps > 0:
-        warnings.append(f"computed timeline duration: {duration_frames} frames ({duration_frames / fps:.3f} seconds)")
-    return errors, warnings, duration_frames
+      return errors, warnings, duration_frames
 
 
 def main() -> int:
@@ -167,6 +165,9 @@ def main() -> int:
         print(f"ERROR: {message}")
     for message in warnings:
         print(f"WARNING: {message}")
+    fps = data.get("fps") if isinstance(data, dict) else None
+    if is_int(fps) and fps > 0:
+        print(f"INFO: computed timeline duration: {duration or 0} frames ({(duration or 0) / fps:.3f} seconds)")
     if errors:
         print(f"FAIL: {len(errors)} error(s)")
         return 1
