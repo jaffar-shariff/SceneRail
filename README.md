@@ -108,6 +108,7 @@ For each new video, keep a project brief, script, source ledger, storyboard, sty
 - [`skills/`](skills/) — task-focused production instructions.
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — system architecture.
 - [`docs/STYLE_PRESETS.md`](docs/STYLE_PRESETS.md) — original visual style systems.
+- [`docs/VIDEO_FORMATS.md`](docs/VIDEO_FORMATS.md) — production playbooks for Shorts, long-form, explainers, documentaries, data stories, and more.
 - [`docs/QUALITY_GATES.md`](docs/QUALITY_GATES.md) — production acceptance criteria.
 - [`docs/RENDERER.md`](docs/RENDERER.md) — renderer usage and configuration.
 - [`scripts/`](scripts/) — environment preflight, timeline validation, frame sampling, contact sheets, and MP4 inspection.
