@@ -1,0 +1,17 @@
+{
+  "name": "masteraiskill-video-studio",
+  "version": "1.0.0",
+  "description": "Plan, research, storyboard, style, render, and quality-check original videos from Shorts to long-form explainers.",
+  "author": {
+    "name": "Jaffar Shariff",
+    "url": "https://github.com/jaffar-shariff"
+  },
+  "homepage": "https://github.com/jaffar-shariff/Masteraiskill",
+  "repository": "https://github.com/jaffar-shariff/Masteraiskill",
+  "keywords": [
+    "video-production",
+    "motion-graphics",
+    "remotion",
+    "explainer-video"
+  ]
+}
