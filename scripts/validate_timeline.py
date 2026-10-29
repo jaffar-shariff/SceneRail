@@ -141,8 +141,7 @@ def validate(data: Any) -> tuple[list[str], list[str], int | None]:
                 if caption_id not in caption_ids:
                     errors.append(f"scenes[{index}] references missing caption segment '{caption_id}'")
 
-    fps = data.get("fps")
-      return errors, warnings, duration_frames
+    return errors, warnings, duration_frames
 
 
 def main() -> int:
