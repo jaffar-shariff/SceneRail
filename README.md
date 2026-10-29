@@ -54,7 +54,9 @@ See [INSTALL.md](INSTALL.md) for global installation, native Claude Code plugin 
 | **Documentary and mixed-media edits** | Approved footage, archival visuals, maps, annotations, captions, and original graphics unified by one visual system |
 | **Motion-graphics-led videos** | Kinetic typography, title sequences, lower thirds, charts, transitions, and data-driven animations |
 
-Browse the [Masteraiskill Style Atlas](styles/STYLEBOOK.md) for an original visual style index with named directions, example concepts, and practical recipes. Choose one primary visual system for a film and vary scenes to suit the explanation. The aim is cohesive storytelling—not a grab bag of unrelated effects.
+Browse the [Masteraiskill Style Atlas](styles/STYLEBOOK.md) for original visual directions and individual recipes.
+
+**The Frame Purpose Contract** makes quality more than a prompt promise. Every planned scene states the viewer's question, visual argument, concrete on-screen action, topic-specific reason, composition, change from the prior scene, motion purpose, and hold reason. Claims and asset rights must be traceable too. Run `npm run validate:all` before rendering and complete the [Creative Quality review](docs/CREATIVE_QUALITY.md) on actual output frames. The checks are designed to catch generic and repetitive plans; they do not pretend a script can certify artistic quality by itself.
 
 ## How the production workflow works
 
@@ -131,13 +133,15 @@ For each new video, keep a project brief, script, source ledger, storyboard, sty
 - [`templates/PROJECT_BRIEF.md`](templates/PROJECT_BRIEF.md) — video brief template.
 - [`templates/STYLE_BIBLE.md`](templates/STYLE_BIBLE.md) — visual identity template.
 - [`templates/SCENE_SCHEMA.json`](templates/SCENE_SCHEMA.json) — canonical scene/timeline structure.
+- [`templates/STORYBOARD.schema.json`](templates/STORYBOARD.schema.json) and [`examples/storyboard.json`](examples/storyboard.json) — the Frame Purpose Contract and example plan.
+- [`docs/CREATIVE_QUALITY.md`](docs/CREATIVE_QUALITY.md) and [`templates/CREATIVE_REVIEW.md`](templates/CREATIVE_REVIEW.md) — original-scene standards and the final creative review sheet.
 - [`skills/`](skills/) — task-focused production instructions in portable `SKILL.md` format.
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — system architecture.
 - [`docs/STYLE_PRESETS.md`](docs/STYLE_PRESETS.md) — core visual production principles.
 - [`docs/VIDEO_FORMATS.md`](docs/VIDEO_FORMATS.md) — production playbooks for Shorts, long-form, explainers, documentaries, data stories, and more.
 - [`docs/QUALITY_GATES.md`](docs/QUALITY_GATES.md) — production acceptance criteria.
 - [`docs/RENDERER.md`](docs/RENDERER.md) — renderer usage and configuration.
-- [`scripts/`](scripts/) — environment preflight, timeline validation, frame sampling, contact sheets, and MP4 inspection.
+- [`scripts/`](scripts/) — environment preflight, storyboard/timeline validation, internal-link checks, frame sampling, contact sheets, and MP4 inspection.
 
 ## Quality standard
 
