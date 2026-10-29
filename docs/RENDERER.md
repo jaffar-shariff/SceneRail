@@ -1,31 +1,52 @@
-# Initial Renderer: Remotion
+# Rendering with Remotion
 
-## Why start here
+Masteraiskill uses Remotion and React for frame-driven motion scenes, typography, diagrams, charts, transitions, and MP4 export. Remotion is the primary example renderer; specialist scene types can use other appropriate tools when they add real value.
 
-The first renderer is a small Remotion/React composition because scene geometry, typography, charts, and transitions can be driven by exact frames in one deterministic composition. This is an initial implementation choice—not a claim that Remotion is best for every future scene. Other render strategies can be added behind focused adapters when they materially improve the video.
+## Included composition
 
-## Current sample
+`src/Root.tsx` registers `MasteraiskillDemo`: a 25-second, 1920×1080, 30 fps motion-design composition with an opening title, progressive diagram reveal, animated comparison bars, and closing card. The demo gives the project a known composition that can be previewed, rendered and checked end to end.
 
-`src/Root.tsx` registers the `MasteraiskillDemo` composition: a 25-second, 1920×1080, 30 fps motion-design sample with an intro, progressive diagram reveal, animated comparison bars, and ending card. Values in the sample chart are explicitly illustrative and must not be presented as factual research.
+Its chart values are explicitly illustrative. Replace them with researched, sourced values before presenting any chart as factual content.
 
 ## Run locally
 
-1. Install a compatible Node.js LTS release and FFmpeg if required by the local renderer.
-2. From the repository root run `npm install`.
-3. Run `npm run studio` to preview the composition.
-4. Run `npm run render:sample` to render `out/masteraiskill-demo.mp4`.
-5. Run `python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 --expect-fps 30`.
+Requirements: a compatible Node.js LTS release plus FFmpeg/ffprobe for media inspection.
 
-The sample composition has no narration by default, so it intentionally does not embed a fake voice track. To use an approved narration file, place it in the Remotion public folder (for example, `public/audio/narration.mp3`) and set the composition's `narrationFile` prop to `audio/narration.mp3`. Audio timing and captions must be aligned to the actual narration for a real production project.
+```bash
+npm install
+npm run studio
+npm run render:sample
+python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 --expect-fps 30
+python -m unittest discover -s tests -v
+```
 
-## Version discipline
+The rendered MP4 is written to `out/masteraiskill-demo.mp4`.
 
-Remotion packages are pinned to the same exact version in `package.json`; upgrade all Remotion packages together and rerun preview/render checks. As of 29 October 2026, npm lists Remotion and `@remotion/cli` 4.0.539 as the latest release. See [Remotion on npm](https://www.npmjs.com/package/remotion) and [Remotion CLI on npm](https://www.npmjs.com/package/@remotion/cli).
+## Use narration
 
-## Licensing
+The example deliberately has no narration by default. To add an approved narration file:
 
-Remotion has its own license terms. Its published policy provides a free license for eligible individuals and small companies of up to three people, subject to terms; larger organizations may require a company license. Review the [official license and pricing](https://www.remotion.dev/docs/license/pricing) for the actual situation. Masteraiskill does not sell or relicense Remotion. This repository uses it as an external dependency; installing it does not grant rights beyond Remotion's own terms.
+1. Place the file under `public/audio/` (for example, `public/audio/narration.mp3`).
+2. Set the composition's `narrationFile` prop to `audio/narration.mp3`.
+3. Align scene changes, captions and sound cues to the real voice timing.
+4. Preview frames across the video to confirm that the visual at each sampled moment matches the spoken line.
 
-## Known limitation
+Do not fabricate word-level timestamps from a script and report them as actual speech alignment.
 
-This is an initial demonstration composition, not yet a full brief-to-final-video engine. The roadmap tracks canonical timeline ingestion, narration/caption alignment, scene caching, contact-sheet inspection, and end-to-end long-form validation.
+## Timing and deterministic scenes
+
+- Drive each visual from `useCurrentFrame()` and explicit props.
+- Keep the timeline and all media timing on one FPS basis.
+- Use stable scene IDs and frame intervals so content can be rerendered reproducibly.
+- Avoid wall-clock timers and unseeded randomness in rendered compositions.
+- Test each distinct scene type at its starting frame, a motion frame and its settled frame.
+
+## Dependency management
+
+Remotion packages are pinned to the same exact version in `package.json`. Upgrade them together, review the applicable dependency terms, and rerun TypeScript, render, media-probe and frame-inspection checks after changes.
+
+Remotion is an external dependency with separate license and pricing terms. Review the [official Remotion license and pricing](https://www.remotion.dev/docs/license/pricing) for your circumstances. Masteraiskill does not relicense Remotion.
+
+## From a composition to a project video
+
+For a specific production, create a brief, script, storyboard, style bible, source/asset manifest and canonical frame timeline as needed. The agent should map approved scene data onto the renderer, add approved narration/captions/audio, render preview frames, inspect contact sheets, fix issues and render the requested final MP4. Use the included sample as a working rendering reference—not as factual content to publish unchanged.
