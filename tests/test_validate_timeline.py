@@ -56,7 +56,7 @@ class TimelineValidatorTests(unittest.TestCase):
         data["fps"] = 0
         result = self.validate(data)
         self.assertEqual(result.returncode, 1)
-        self.assertIn("'fps' must be a positive integer", result.stdout)
+        self.assertIn("'fps' must be an integer >= 1", result.stdout)
 
     def test_duplicate_ids_fail(self):
         data = self.base()
@@ -92,6 +92,17 @@ class TimelineValidatorTests(unittest.TestCase):
         result = self.validate(data)
         self.assertEqual(result.returncode, 0)
         self.assertIn("overlap", result.stdout)
+
+    def test_missing_caption_reference_fails(self):
+        data = self.base()
+        data["scenes"][0]["caption_segment_ids"] = ["missing-caption"]
+        result = self.validate(data)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("references missing caption segment", result.stdout)
+
+    def test_strict_mode_passes_clean_timeline(self):
+        result = self.validate(self.base(), "--strict")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
 
 if __name__ == "__main__":
