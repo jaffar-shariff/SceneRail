@@ -27,7 +27,10 @@ Turn the user's brief into a coherent, technically verified video. The finished 
 
 - Select a primary visual direction from the Style Atlas or define an original one. Use one primary style and at most one supporting style unless the brief calls for a purposeful mixed-media approach.
 - Define palette and color semantics, type hierarchy, layout, texture/material, composition, transition grammar, movement, captions, and audio character in a style bible.
-- Divide narration into visual beats. Every scene should serve a stated explanatory purpose. Record onscreen text, visual metaphor, source/asset provenance, transition, duration, and audio cues.
+- Divide narration into visual beats. Every scene should serve a stated explanatory purpose. Record on-screen text, visual metaphor, source/asset provenance, transition, duration, and audio cues.
+- Satisfy the [Frame Purpose Contract](../../docs/CREATIVE_QUALITY.md): specify the viewer question, visual argument, concrete action, topic-specific detail, composition, change from the prior scene, motion purpose, and hold reason for every scene.
+- Run `python scripts/validate_storyboard.py project/storyboard.json --strict --report project/qa/storyboard-report.json` after adapting the path. Fix structural errors before implementation; review all warnings. If only this skill is installed, do not pretend the validator exists—use the contract as a manual checklist or clone the repository with permission.
+- Do not let a style preset replace a topic-specific concept. Reject interchangeable captions like “show growth,” generic stock/icon soup, meaningless particles, random zooms, and repeated layouts. Every scene must add evidence, a relationship, a reveal, a change of scale, or an intentional emotional beat.
 - Preserve a consistent design language. Use references to understand broad design principles, not to copy a creator's distinctive signature style or reuse protected assets without permission.
 
 ### 3. Timing and implementation
