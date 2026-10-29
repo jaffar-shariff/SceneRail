@@ -1,0 +1,25 @@
+{
+  "name": "masteraiskill-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Initial deterministic video-rendering scaffold for Masteraiskill",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:sample": "remotion render src/index.ts MasteraiskillDemo out/masteraiskill-demo.mp4 --codec=h264",
+    "render:sample:preview": "remotion render src/index.ts MasteraiskillDemo out/masteraiskill-preview.mp4 --scale=0.5 --codec=h264",
+    "preflight": "python scripts/preflight.py",
+    "validate:timeline": "python scripts/validate_timeline.py examples/timeline.json",
+    "probe:sample": "python scripts/probe_mp4.py out/masteraiskill-demo.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "remotion": "4.0.539",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.7",
+    "typescript": "5.8.3"
+  }
+}
