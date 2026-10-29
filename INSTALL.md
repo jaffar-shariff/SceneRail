@@ -57,7 +57,8 @@ Use `PROMPT.md` to start a production task. Read `AGENTS.md` for repository-leve
 
 - **Claude Code:** install via the marketplace commands above, or copy a skill folder into `~/.claude/skills/<skill-name>/` or `.claude/skills/<skill-name>/`.
 - **Codex:** use the CLI above, or install skill folders under `~/.agents/skills/<skill-name>/` or `.agents/skills/<skill-name>/` in the workspace.
-- **Google Antigravity:** use the CLI above, or install skill folders under `~/.gemini/antigravity/skills/<skill-name>/` (global) or `.agents/skills/<skill-name>/` (workspace). Antigravity variants may use different global locations.
+- **Google Antigravity App / IDE:** use the CLI above, or install in `.agents/skills/<skill-name>/` in the workspace or `~/.gemini/config/skills/<skill-name>/` globally.
+- **Google Antigravity CLI:** use `.agents/skills/<skill-name>/` in the workspace or `~/.gemini/antigravity-cli/skills/<skill-name>/` globally. When supported by your installed CLI, its plugin installer can also install a bundle directly from a repository URL.
 - **Other supported agents:** use `npx skills add` and select the agent identifier shown by the CLI. For unsupported hosts, copy the skill directory into the host's documented skill location and confirm that it supports the Agent Skills `SKILL.md` format.
 
 ## Troubleshooting
