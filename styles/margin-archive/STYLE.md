@@ -10,7 +10,11 @@ description: Original visual style guide for Margin Archive; suited to history, 
 **Best suited for:** History, research, policy  
 **Example concept:** The small clause that changed an industry
 
-[← Browse all styles](../STYLEBOOK.md#margin-archive)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#margin-archive)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for margin-archive, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

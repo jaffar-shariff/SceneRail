@@ -10,7 +10,11 @@ description: Original visual style guide for Orbit Assembly; suited to technolog
 **Best suited for:** Technology, mechanisms, system architecture  
 **Example concept:** The pieces that make a recommendation engine work
 
-[← Browse all styles](../STYLEBOOK.md#orbit-assembly)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#orbit-assembly)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for orbit-assembly, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

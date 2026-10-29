@@ -10,7 +10,11 @@ description: Original visual style guide for Microcosm Engine; suited to biology
 **Best suited for:** Biology, materials, computation  
 **Example concept:** A microscopic process explained through three states
 
-[← Browse all styles](../STYLEBOOK.md#microcosm-engine)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#microcosm-engine)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for microcosm-engine, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

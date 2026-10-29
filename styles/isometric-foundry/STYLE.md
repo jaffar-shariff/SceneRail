@@ -10,7 +10,11 @@ description: Original visual style guide for Isometric Foundry; suited to factor
 **Best suited for:** Factories, platforms, cities, networks  
 **Example concept:** How an online order moves through a warehouse
 
-[← Browse all styles](../STYLEBOOK.md#isometric-foundry)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#isometric-foundry)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for isometric-foundry, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

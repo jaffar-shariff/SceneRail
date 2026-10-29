@@ -10,7 +10,11 @@ description: Original visual style guide for Number Stage; suited to statistics,
 **Best suited for:** Statistics, business, finance  
 **Example concept:** The cost hidden inside a monthly subscription
 
-[← Browse all styles](../STYLEBOOK.md#number-stage)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#number-stage)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for number-stage, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

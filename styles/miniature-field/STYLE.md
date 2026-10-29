@@ -10,7 +10,11 @@ description: Original visual style guide for Miniature Field; suited to cities, 
 **Best suited for:** Cities, transport, scale, environment  
 **Example concept:** A city reduced to its essential moving systems
 
-[← Browse all styles](../STYLEBOOK.md#miniature-field)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#miniature-field)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for miniature-field, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

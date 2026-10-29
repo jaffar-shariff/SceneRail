@@ -10,7 +10,11 @@ description: Original visual style guide for Paper Signal; suited to finance, bu
 **Best suited for:** Finance, business, explainers  
 **Example concept:** A tiny price tag connected to a huge system
 
-[← Browse all styles](../STYLEBOOK.md#paper-signal)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#paper-signal)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for paper-signal, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 

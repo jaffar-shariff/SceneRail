@@ -10,7 +10,11 @@ description: Original visual style guide for Market Mechanics; suited to markets
 **Best suited for:** Markets, pricing, business models  
 **Example concept:** Why two similar products sell at very different prices
 
-[← Browse all styles](../STYLEBOOK.md#market-mechanics)
+[← Back to the SceneRail Style Atlas](../STYLEBOOK.md#market-mechanics)
+
+<p align="center"><img src="preview.svg" alt="SceneRail visual preview for market-mechanics, an original style study" width="100%"></p>
+
+<sub>Illustrative style study, not a finished video frame or factual evidence.</sub>
 
 ## Style recipe
 
