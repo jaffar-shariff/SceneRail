@@ -28,3 +28,14 @@ Uses `ffprobe` to report measured container, duration, size, video stream and au
 
 ## Scope note
 These utilities are the initial validation layer, not a complete renderer. The rendering engine and frame/contact-sheet workflow are tracked in `docs/ROADMAP.md`.
+## Sample frames and contact sheet
+
+After rendering an MP4 and ensuring FFmpeg/ffprobe are on PATH:
+
+```bash
+python -m pip install -r requirements-qa.txt
+python scripts/render_qa_frames.py out/masteraiskill-demo.mp4 --count 12 --output-dir out/qa/frames
+python scripts/create_contact_sheet.py out/qa/frames --output out/qa/contact-sheet.png
+```
+
+The frame extractor samples evenly across the encoded video and writes a JSON manifest with each sample timestamp. The contact-sheet script uses Pillow to create a labelled grid. Inspect the resulting image; creating it alone is not visual inspection.
