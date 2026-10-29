@@ -33,6 +33,10 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Ensure Remotion browser
         run: npx remotion browser ensure
+      - name: Install FFmpeg for MP4 verification
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
       - name: Type-check renderer
         run: npx tsc --noEmit
       - name: Render sample MP4
