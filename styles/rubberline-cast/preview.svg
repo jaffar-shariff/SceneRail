@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Rubberline Cast — original Masteraiskill visual study</title>
+<desc id="desc">An original vector composition illustrating the visual grammar of the Rubberline Cast production recipe. It is an illustrative design sample, not factual evidence or a finished video.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5eddf"/><stop offset="1" stop-color="#fffaf0"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#8c8f88" stroke-width=".7" opacity=".18"/></pattern><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8755e"/><stop offset="1" stop-color="#4b8fb6"/></linearGradient></defs>
+<rect width="640" height="360" rx="18" fill="url(#bg)"/><rect width="640" height="360" rx="18" fill="url(#grid)"/>
+<path d="M0 78 H640" stroke="#8c8f88" stroke-width="1" opacity=".35"/>
+<text x="30" y="37" fill="#293744" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Rubberline Cast</text>
+<text x="31" y="58" fill="#8c8f88" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">31 / VISUAL SYSTEM</text>
+<rect x="548" y="23" width="58" height="24" rx="12" fill="#e8755e" opacity=".2"/><text x="577" y="39" text-anchor="middle" fill="#293744" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">SVG</text>
+<g stroke="#293744" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="205" cy="152" r="27" fill="#e8755e"/><path d="M205 179 Q190 211 212 237 L179 276 M211 237 L251 271 M197 205 L151 228 M199 201 L249 205"/><path d="M346 280 L357 234 L386 208 L404 240 M357 234 L322 255 M386 208 L374 170" stroke="#4b8fb6" stroke-width="7"/></g><circle cx="196" cy="148" r="3.5" fill="#293744"/><circle cx="214" cy="148" r="3.5" fill="#293744"/><path d="M194 162 Q205 171 217 160" fill="none" stroke="#293744" stroke-width="3"/>
+<path d="M30 322 H610" stroke="#8c8f88" stroke-width="1" opacity=".3"/><rect x="30" y="333" width="45" height="4" rx="2" fill="url(#bar)"/>
+<text x="87" y="340" fill="#8c8f88" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.4">ORIGINAL STUDY  •  NOT A FINAL FRAME</text></svg>

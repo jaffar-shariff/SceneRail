@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Inkline Journey — original Masteraiskill visual study</title>
+<desc id="desc">An original vector composition illustrating the visual grammar of the Inkline Journey production recipe. It is an illustrative design sample, not factual evidence or a finished video.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eddf"/><stop offset="1" stop-color="#fffaf0"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#8b8e85" stroke-width=".7" opacity=".18"/></pattern><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#457e83"/><stop offset="1" stop-color="#d4855d"/></linearGradient></defs>
+<rect width="640" height="360" rx="18" fill="url(#bg)"/><rect width="640" height="360" rx="18" fill="url(#grid)"/>
+<path d="M0 78 H640" stroke="#8b8e85" stroke-width="1" opacity=".35"/>
+<text x="30" y="37" fill="#26383d" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Inkline Journey</text>
+<text x="31" y="58" fill="#8b8e85" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">10 / VISUAL SYSTEM</text>
+<rect x="548" y="23" width="58" height="24" rx="12" fill="#457e83" opacity=".2"/><text x="577" y="39" text-anchor="middle" fill="#26383d" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">SVG</text>
+<g fill="none" stroke="#26383d" stroke-linecap="round" stroke-linejoin="round"><path d="M81 270 L164 165 L218 234 L289 126 L368 237 L430 173 L556 270" stroke-width="3"/><path d="M98 276 C170 258 205 280 275 264 S415 244 540 271" stroke="#457e83" stroke-width="4"/><path d="M125 291 Q160 280 195 291 T265 291 T335 291 T405 291 T475 291" stroke="#d4855d" stroke-width="2"/></g><circle cx="465" cy="133" r="23" fill="#457e83"/>
+<path d="M30 322 H610" stroke="#8b8e85" stroke-width="1" opacity=".3"/><rect x="30" y="333" width="45" height="4" rx="2" fill="url(#bar)"/>
+<text x="87" y="340" fill="#8b8e85" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.4">ORIGINAL STUDY  •  NOT A FINAL FRAME</text></svg>

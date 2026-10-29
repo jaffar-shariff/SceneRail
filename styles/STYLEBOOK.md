@@ -4,6 +4,72 @@ A visual index for original, code-driven video design. Pick a style by the job t
 
 **How to use this atlas:** choose one lead style and, only when useful, one supporting style. Read its recipe, adapt the rules to the topic, then record the final palette, type, composition, materials, motion, captions, and audio in the project's style bible. Render an opening frame, a dense information frame, and a closing frame before building the full video.
 
+## Visual sampler
+
+Every tile is an original, editable SVG study built for this repository. It communicates the recipe's visual grammar; it is not a claim that a complete video in that style has been rendered.
+
+<table>
+<tr>
+<td width="25%" align="center" valign="top"><a href="signal-ledger/STYLE.md"><img src="signal-ledger/preview.svg" width="200" alt="Signal Ledger original visual study"></a><br><strong><a href="signal-ledger/STYLE.md">Signal Ledger</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="margin-archive/STYLE.md"><img src="margin-archive/preview.svg" width="200" alt="Margin Archive original visual study"></a><br><strong><a href="margin-archive/STYLE.md">Margin Archive</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="casefile-motion/STYLE.md"><img src="casefile-motion/preview.svg" width="200" alt="Casefile Motion original visual study"></a><br><strong><a href="casefile-motion/STYLE.md">Casefile Motion</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="timecode-atlas/STYLE.md"><img src="timecode-atlas/preview.svg" width="200" alt="Timecode Atlas original visual study"></a><br><strong><a href="timecode-atlas/STYLE.md">Timecode Atlas</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="groundtruth-grid/STYLE.md"><img src="groundtruth-grid/preview.svg" width="200" alt="Groundtruth Grid original visual study"></a><br><strong><a href="groundtruth-grid/STYLE.md">Groundtruth Grid</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="broadcast-pulse/STYLE.md"><img src="broadcast-pulse/preview.svg" width="200" alt="Broadcast Pulse original visual study"></a><br><strong><a href="broadcast-pulse/STYLE.md">Broadcast Pulse</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="foundry-notes/STYLE.md"><img src="foundry-notes/preview.svg" width="200" alt="Foundry Notes original visual study"></a><br><strong><a href="foundry-notes/STYLE.md">Foundry Notes</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="paper-signal/STYLE.md"><img src="paper-signal/preview.svg" width="200" alt="Paper Signal original visual study"></a><br><strong><a href="paper-signal/STYLE.md">Paper Signal</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="cutshape-theatre/STYLE.md"><img src="cutshape-theatre/preview.svg" width="200" alt="Cutshape Theatre original visual study"></a><br><strong><a href="cutshape-theatre/STYLE.md">Cutshape Theatre</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="inkline-journey/STYLE.md"><img src="inkline-journey/preview.svg" width="200" alt="Inkline Journey original visual study"></a><br><strong><a href="inkline-journey/STYLE.md">Inkline Journey</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="chalkthread-lab/STYLE.md"><img src="chalkthread-lab/preview.svg" width="200" alt="Chalkthread Lab original visual study"></a><br><strong><a href="chalkthread-lab/STYLE.md">Chalkthread Lab</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="scribble-circuit/STYLE.md"><img src="scribble-circuit/preview.svg" width="200" alt="Scribble Circuit original visual study"></a><br><strong><a href="scribble-circuit/STYLE.md">Scribble Circuit</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="storybook-drift/STYLE.md"><img src="storybook-drift/preview.svg" width="200" alt="Storybook Drift original visual study"></a><br><strong><a href="storybook-drift/STYLE.md">Storybook Drift</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="collage-current/STYLE.md"><img src="collage-current/preview.svg" width="200" alt="Collage Current original visual study"></a><br><strong><a href="collage-current/STYLE.md">Collage Current</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="number-stage/STYLE.md"><img src="number-stage/preview.svg" width="200" alt="Number Stage original visual study"></a><br><strong><a href="number-stage/STYLE.md">Number Stage</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="causal-loom/STYLE.md"><img src="causal-loom/preview.svg" width="200" alt="Causal Loom original visual study"></a><br><strong><a href="causal-loom/STYLE.md">Causal Loom</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="flowline-atlas/STYLE.md"><img src="flowline-atlas/preview.svg" width="200" alt="Flowline Atlas original visual study"></a><br><strong><a href="flowline-atlas/STYLE.md">Flowline Atlas</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="market-mechanics/STYLE.md"><img src="market-mechanics/preview.svg" width="200" alt="Market Mechanics original visual study"></a><br><strong><a href="market-mechanics/STYLE.md">Market Mechanics</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="scale-ladder/STYLE.md"><img src="scale-ladder/preview.svg" width="200" alt="Scale Ladder original visual study"></a><br><strong><a href="scale-ladder/STYLE.md">Scale Ladder</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="branching-logic/STYLE.md"><img src="branching-logic/preview.svg" width="200" alt="Branching Logic original visual study"></a><br><strong><a href="branching-logic/STYLE.md">Branching Logic</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="type-pulse/STYLE.md"><img src="type-pulse/preview.svg" width="200" alt="Type Pulse original visual study"></a><br><strong><a href="type-pulse/STYLE.md">Type Pulse</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="screenlane/STYLE.md"><img src="screenlane/preview.svg" width="200" alt="Screenlane original visual study"></a><br><strong><a href="screenlane/STYLE.md">Screenlane</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="glyph-reactor/STYLE.md"><img src="glyph-reactor/preview.svg" width="200" alt="Glyph Reactor original visual study"></a><br><strong><a href="glyph-reactor/STYLE.md">Glyph Reactor</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="interface-theatre/STYLE.md"><img src="interface-theatre/preview.svg" width="200" alt="Interface Theatre original visual study"></a><br><strong><a href="interface-theatre/STYLE.md">Interface Theatre</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="terminal-bloom/STYLE.md"><img src="terminal-bloom/preview.svg" width="200" alt="Terminal Bloom original visual study"></a><br><strong><a href="terminal-bloom/STYLE.md">Terminal Bloom</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="isometric-foundry/STYLE.md"><img src="isometric-foundry/preview.svg" width="200" alt="Isometric Foundry original visual study"></a><br><strong><a href="isometric-foundry/STYLE.md">Isometric Foundry</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="cross-section-studio/STYLE.md"><img src="cross-section-studio/preview.svg" width="200" alt="Cross-Section Studio original visual study"></a><br><strong><a href="cross-section-studio/STYLE.md">Cross-Section Studio</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="orbit-assembly/STYLE.md"><img src="orbit-assembly/preview.svg" width="200" alt="Orbit Assembly original visual study"></a><br><strong><a href="orbit-assembly/STYLE.md">Orbit Assembly</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="miniature-field/STYLE.md"><img src="miniature-field/preview.svg" width="200" alt="Miniature Field original visual study"></a><br><strong><a href="miniature-field/STYLE.md">Miniature Field</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="shadow-cabinet/STYLE.md"><img src="shadow-cabinet/preview.svg" width="200" alt="Shadow Cabinet original visual study"></a><br><strong><a href="shadow-cabinet/STYLE.md">Shadow Cabinet</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="rubberline-cast/STYLE.md"><img src="rubberline-cast/preview.svg" width="200" alt="Rubberline Cast original visual study"></a><br><strong><a href="rubberline-cast/STYLE.md">Rubberline Cast</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="cel-memory/STYLE.md"><img src="cel-memory/preview.svg" width="200" alt="Cel Memory original visual study"></a><br><strong><a href="cel-memory/STYLE.md">Cel Memory</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="silhouette-folio/STYLE.md"><img src="silhouette-folio/preview.svg" width="200" alt="Silhouette Folio original visual study"></a><br><strong><a href="silhouette-folio/STYLE.md">Silhouette Folio</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="signal-bloom/STYLE.md"><img src="signal-bloom/preview.svg" width="200" alt="Signal Bloom original visual study"></a><br><strong><a href="signal-bloom/STYLE.md">Signal Bloom</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="particle-grammar/STYLE.md"><img src="particle-grammar/preview.svg" width="200" alt="Particle Grammar original visual study"></a><br><strong><a href="particle-grammar/STYLE.md">Particle Grammar</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+<td width="25%" align="center" valign="top"><a href="microcosm-engine/STYLE.md"><img src="microcosm-engine/preview.svg" width="200" alt="Microcosm Engine original visual study"></a><br><strong><a href="microcosm-engine/STYLE.md">Microcosm Engine</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="depth-signal/STYLE.md"><img src="depth-signal/preview.svg" width="200" alt="Depth Signal original visual study"></a><br><strong><a href="depth-signal/STYLE.md">Depth Signal</a></strong><br><sub>Original vector study · Recipe included</sub></td>
+</tr>
+</table>
+
+---
+
 ## Style index
 
 ### Evidence, editorial, and documentary

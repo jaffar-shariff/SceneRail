@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Causal Loom — original Masteraiskill visual study</title>
+<desc id="desc">An original vector composition illustrating the visual grammar of the Causal Loom production recipe. It is an illustrative design sample, not factual evidence or a finished video.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0e9df"/><stop offset="1" stop-color="#fbf7ef"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#8c958f" stroke-width=".7" opacity=".18"/></pattern><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e37b60"/><stop offset="1" stop-color="#518ba5"/></linearGradient></defs>
+<rect width="640" height="360" rx="18" fill="url(#bg)"/><rect width="640" height="360" rx="18" fill="url(#grid)"/>
+<path d="M0 78 H640" stroke="#8c958f" stroke-width="1" opacity=".35"/>
+<text x="30" y="37" fill="#2d3b47" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Causal Loom</text>
+<text x="31" y="58" fill="#8c958f" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">16 / VISUAL SYSTEM</text>
+<rect x="548" y="23" width="58" height="24" rx="12" fill="#e37b60" opacity=".2"/><text x="577" y="39" text-anchor="middle" fill="#2d3b47" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">SVG</text>
+<g fill="none" stroke="#8c958f" stroke-width="3"><path d="M144 156 L278 205 L426 149 M278 205 L418 267 M144 156 L150 267"/></g><circle cx="144" cy="156" r="29" fill="#e37b60" stroke="#fbf7ef" stroke-width="3"/><circle cx="278" cy="205" r="35" fill="#518ba5" stroke="#fbf7ef" stroke-width="3"/><circle cx="426" cy="149" r="29" fill="#e37b60" stroke="#fbf7ef" stroke-width="3"/><circle cx="150" cy="267" r="22" fill="#518ba5" stroke="#fbf7ef" stroke-width="3"/><circle cx="418" cy="267" r="26" fill="#e37b60" stroke="#fbf7ef" stroke-width="3"/><path d="M266 194 L284 205 L267 216" fill="none" stroke="#f0e9df" stroke-width="3"/>
+<path d="M30 322 H610" stroke="#8c958f" stroke-width="1" opacity=".3"/><rect x="30" y="333" width="45" height="4" rx="2" fill="url(#bar)"/>
+<text x="87" y="340" fill="#8c958f" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.4">ORIGINAL STUDY  •  NOT A FINAL FRAME</text></svg>

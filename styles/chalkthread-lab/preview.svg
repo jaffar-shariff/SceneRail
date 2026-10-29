@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Chalkthread Lab — original Masteraiskill visual study</title>
+<desc id="desc">An original vector composition illustrating the visual grammar of the Chalkthread Lab production recipe. It is an illustrative design sample, not factual evidence or a finished video.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#162921"/><stop offset="1" stop-color="#203a2f"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#a9bda9" stroke-width=".7" opacity=".18"/></pattern><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f5d77c"/><stop offset="1" stop-color="#8ad5b4"/></linearGradient></defs>
+<rect width="640" height="360" rx="18" fill="url(#bg)"/><rect width="640" height="360" rx="18" fill="url(#grid)"/>
+<path d="M0 78 H640" stroke="#a9bda9" stroke-width="1" opacity=".35"/>
+<text x="30" y="37" fill="#f4f2dc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Chalkthread Lab</text>
+<text x="31" y="58" fill="#a9bda9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">11 / VISUAL SYSTEM</text>
+<rect x="548" y="23" width="58" height="24" rx="12" fill="#f5d77c" opacity=".2"/><text x="577" y="39" text-anchor="middle" fill="#f4f2dc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">SVG</text>
+<g stroke="#f4f2dc" stroke-width="2" opacity=".7" stroke-linecap="round"><path d="M104 267 V124 M104 267 H530"/><path d="M126 244 C177 244 206 226 245 204 S313 178 361 147 S431 128 504 116" fill="none" stroke="#f5d77c" stroke-width="4"/><path d="M126 147 L174 180 L219 141 L274 174 L325 130" fill="none" stroke="#8ad5b4" stroke-width="3" stroke-dasharray="6 8"/></g><text x="117" y="111" font-size="19" font-family="monospace" fill="#f4f2dc">A → B → C</text>
+<path d="M30 322 H610" stroke="#a9bda9" stroke-width="1" opacity=".3"/><rect x="30" y="333" width="45" height="4" rx="2" fill="url(#bar)"/>
+<text x="87" y="340" fill="#a9bda9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.4">ORIGINAL STUDY  •  NOT A FINAL FRAME</text></svg>

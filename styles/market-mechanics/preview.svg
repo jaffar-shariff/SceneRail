@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Market Mechanics — original Masteraiskill visual study</title>
+<desc id="desc">An original vector composition illustrating the visual grammar of the Market Mechanics production recipe. It is an illustrative design sample, not factual evidence or a finished video.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5ebda"/><stop offset="1" stop-color="#fff8ec"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#8e8a7e" stroke-width=".7" opacity=".18"/></pattern><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d96c55"/><stop offset="1" stop-color="#498b88"/></linearGradient></defs>
+<rect width="640" height="360" rx="18" fill="url(#bg)"/><rect width="640" height="360" rx="18" fill="url(#grid)"/>
+<path d="M0 78 H640" stroke="#8e8a7e" stroke-width="1" opacity=".35"/>
+<text x="30" y="37" fill="#303c43" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Market Mechanics</text>
+<text x="31" y="58" fill="#8e8a7e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">18 / VISUAL SYSTEM</text>
+<rect x="548" y="23" width="58" height="24" rx="12" fill="#d96c55" opacity=".2"/><text x="577" y="39" text-anchor="middle" fill="#303c43" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">SVG</text>
+<path d="M322 150 V262 M240 270 L322 150 L404 270 Z" stroke="#303c43" stroke-width="5" fill="#d96c55" opacity=".8"/><path d="M149 168 L481 205" stroke="#498b88" stroke-width="8" stroke-linecap="round"/><path d="M180 171 V218 M151 218 H209 M447 201 V248 M417 248 H477" stroke="#303c43" stroke-width="2"/><rect x="95" y="113" width="101" height="34" rx="17" fill="#fff8ec" stroke="#8e8a7e"/><rect x="422" y="113" width="101" height="34" rx="17" fill="#fff8ec" stroke="#8e8a7e"/><text x="146" y="135" font-size="12" text-anchor="middle" fill="#303c43">OFFER</text><text x="472" y="135" font-size="12" text-anchor="middle" fill="#303c43">DEMAND</text>
+<path d="M30 322 H610" stroke="#8e8a7e" stroke-width="1" opacity=".3"/><rect x="30" y="333" width="45" height="4" rx="2" fill="url(#bar)"/>
+<text x="87" y="340" fill="#8e8a7e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.4">ORIGINAL STUDY  •  NOT A FINAL FRAME</text></svg>

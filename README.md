@@ -1,14 +1,12 @@
 # Masteraiskill
 
-<p align="center">
-  <strong>From an idea to a finished video.</strong><br>
-  An AI-agent video studio for short-form, long-form, and motion-driven storytelling.
-</p>
+<p align="center"><img src="assets/masteraiskill-hero.svg" alt="Masteraiskill — agent-native video production from story through visual design to verified MP4" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/jaffar-shariff/Masteraiskill/actions/workflows/ci.yml"><img src="https://github.com/jaffar-shariff/Masteraiskill/actions/workflows/ci.yml/badge.svg" alt="Masteraiskill CI"></a>
   <img src="https://img.shields.io/badge/Output-MP4-3b82f6" alt="MP4 output">
   <img src="https://img.shields.io/badge/Renderer-Remotion%20%2B%20FFmpeg-8b5cf6" alt="Remotion and FFmpeg">
+  <img src="https://img.shields.io/badge/Style%20Atlas-37%20recipes-14b8a6" alt="37 original style recipes">
 </p>
 
 Masteraiskill gives AI coding agents a structured production workflow for turning a topic, script, research pack, or creative brief into a coherent video. It brings narrative planning, original motion design, scene timing, narration, captions, rendering, and quality checks into one code-first workspace.
@@ -55,6 +53,25 @@ See [INSTALL.md](INSTALL.md) for global installation, native Claude Code plugin 
 | **Motion-graphics-led videos** | Kinetic typography, title sequences, lower thirds, charts, transitions, and data-driven animations |
 
 Browse the [Masteraiskill Style Atlas](styles/STYLEBOOK.md) for original visual directions and individual recipes.
+
+### A few visual directions
+
+These original vector studies show the intended visual grammar; they are not screenshots of finished videos or factual evidence.
+
+<table>
+<tr>
+<td width="25%" align="center" valign="top"><a href="styles/paper-signal/STYLE.md"><img src="styles/paper-signal/preview.svg" width="230" alt="Paper Signal visual sample"></a><br><strong><a href="styles/paper-signal/STYLE.md">Paper Signal</a></strong><br><sub>Tactile 2D cut-paper</sub></td>
+<td width="25%" align="center" valign="top"><a href="styles/signal-ledger/STYLE.md"><img src="styles/signal-ledger/preview.svg" width="230" alt="Signal Ledger visual sample"></a><br><strong><a href="styles/signal-ledger/STYLE.md">Signal Ledger</a></strong><br><sub>Evidence-led editorial data</sub></td>
+<td width="25%" align="center" valign="top"><a href="styles/chalkthread-lab/STYLE.md"><img src="styles/chalkthread-lab/preview.svg" width="230" alt="Chalkthread Lab visual sample"></a><br><strong><a href="styles/chalkthread-lab/STYLE.md">Chalkthread Lab</a></strong><br><sub>Chalkboard reasoning</sub></td>
+<td width="25%" align="center" valign="top"><a href="styles/causal-loom/STYLE.md"><img src="styles/causal-loom/preview.svg" width="230" alt="Causal Loom visual sample"></a><br><strong><a href="styles/causal-loom/STYLE.md">Causal Loom</a></strong><br><sub>Causal links and systems</sub></td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="top"><a href="styles/isometric-foundry/STYLE.md"><img src="styles/isometric-foundry/preview.svg" width="230" alt="Isometric Foundry visual sample"></a><br><strong><a href="styles/isometric-foundry/STYLE.md">Isometric Foundry</a></strong><br><sub>Spatial systems and layers</sub></td>
+<td width="25%" align="center" valign="top"><a href="styles/terminal-bloom/STYLE.md"><img src="styles/terminal-bloom/preview.svg" width="230" alt="Terminal Bloom visual sample"></a><br><strong><a href="styles/terminal-bloom/STYLE.md">Terminal Bloom</a></strong><br><sub>Dark interface and restrained light</sub></td>
+<td width="25%" align="center" valign="top"><a href="styles/storybook-drift/STYLE.md"><img src="styles/storybook-drift/preview.svg" width="230" alt="Storybook Drift visual sample"></a><br><strong><a href="styles/storybook-drift/STYLE.md">Storybook Drift</a></strong><br><sub>Warm illustrated scenes</sub></td>
+<td width="25%" align="center" valign="top"><a href="styles/groundtruth-grid/STYLE.md"><img src="styles/groundtruth-grid/preview.svg" width="230" alt="Groundtruth Grid visual sample"></a><br><strong><a href="styles/groundtruth-grid/STYLE.md">Groundtruth Grid</a></strong><br><sub>Measured routes and maps</sub></td>
+</tr>
+</table>
 
 **The Frame Purpose Contract** makes quality more than a prompt promise. Every planned scene states the viewer's question, visual argument, concrete on-screen action, topic-specific reason, composition, change from the prior scene, motion purpose, and hold reason. Claims and asset rights must be traceable too. Run `npm run validate:all` before rendering and complete the [Creative Quality review](docs/CREATIVE_QUALITY.md) on actual output frames. The checks are designed to catch generic and repetitive plans; they do not pretend a script can certify artistic quality by itself.
 

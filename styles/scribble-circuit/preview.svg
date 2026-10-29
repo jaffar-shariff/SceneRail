@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Scribble Circuit — original Masteraiskill visual study</title>
+<desc id="desc">An original vector composition illustrating the visual grammar of the Scribble Circuit production recipe. It is an illustrative design sample, not factual evidence or a finished video.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f2e8"/><stop offset="1" stop-color="#fffdf5"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#8c9694" stroke-width=".7" opacity=".18"/></pattern><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#db665a"/><stop offset="1" stop-color="#458fb4"/></linearGradient></defs>
+<rect width="640" height="360" rx="18" fill="url(#bg)"/><rect width="640" height="360" rx="18" fill="url(#grid)"/>
+<path d="M0 78 H640" stroke="#8c9694" stroke-width="1" opacity=".35"/>
+<text x="30" y="37" fill="#25323e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Scribble Circuit</text>
+<text x="31" y="58" fill="#8c9694" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">12 / VISUAL SYSTEM</text>
+<rect x="548" y="23" width="58" height="24" rx="12" fill="#db665a" opacity=".2"/><text x="577" y="39" text-anchor="middle" fill="#25323e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700">SVG</text>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M94 221 C117 141 173 160 192 208 S244 278 272 211 S329 139 358 198 S415 258 441 188 S505 157 542 214" stroke="#db665a" stroke-width="5"/><path d="M104 262 C160 280 183 237 215 245 S279 294 320 244 S399 170 435 234 S502 269 538 249" stroke="#458fb4" stroke-width="3" stroke-dasharray="4 8"/></g><circle cx="192" cy="208" r="10" fill="#fffdf5" stroke="#25323e" stroke-width="2"/><circle cx="358" cy="198" r="10" fill="#fffdf5" stroke="#25323e" stroke-width="2"/><circle cx="441" cy="188" r="10" fill="#fffdf5" stroke="#25323e" stroke-width="2"/>
+<path d="M30 322 H610" stroke="#8c9694" stroke-width="1" opacity=".3"/><rect x="30" y="333" width="45" height="4" rx="2" fill="url(#bar)"/>
+<text x="87" y="340" fill="#8c9694" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.4">ORIGINAL STUDY  •  NOT A FINAL FRAME</text></svg>
