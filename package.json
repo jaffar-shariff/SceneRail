@@ -1,18 +1,18 @@
 {
-  "name": "masteraiskill-renderer",
+  "name": "scenerail-renderer",
   "version": "0.1.0",
   "private": true,
   "description": "Agent-neutral video production workflow with deterministic rendering and creative quality gates",
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render:sample": "remotion render src/index.ts MasteraiskillDemo out/masteraiskill-demo.mp4 --codec=h264",
-    "render:sample:preview": "remotion render src/index.ts MasteraiskillDemo out/masteraiskill-preview.mp4 --scale=0.5 --codec=h264",
+    "render:sample": "remotion render src/index.ts SceneRailDemo out/scenerail-demo.mp4 --codec=h264",
+    "render:sample:preview": "remotion render src/index.ts SceneRailDemo out/scenerail-preview.mp4 --scale=0.5 --codec=h264",
     "preflight": "python scripts/preflight.py",
     "validate:timeline": "python scripts/validate_timeline.py examples/timeline.json --strict",
     "validate:storyboard": "python scripts/validate_storyboard.py examples/storyboard.json --strict",
     "validate:links": "python scripts/check_repo_links.py",
     "validate:all": "npm run validate:timeline && npm run validate:storyboard && npm run validate:links",
-    "probe:sample": "python scripts/probe_mp4.py out/masteraiskill-demo.mp4",
+    "probe:sample": "python scripts/probe_mp4.py out/scenerail-demo.mp4",
     "test": "python -m unittest discover -s tests -v"
   },
   "dependencies": {

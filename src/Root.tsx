@@ -62,7 +62,7 @@ const Opening: React.FC<{title: string}> = ({title}) => {
   return (
     <SceneFrame frame={frame} duration={150}>
       <div style={{...BASE, position: "absolute", left: 132, top: 152, right: 120}}>
-        <Eyebrow>Masteraiskill · Render study 001</Eyebrow>
+        <Eyebrow>SceneRail · Render study 001</Eyebrow>
         <div style={{height: 46}}/>
         <div style={{fontSize: 90, lineHeight: 1.04, fontWeight: 850, letterSpacing: -4, maxWidth: 1300, transform: `translateY(${shift}px)`, opacity: enter}}>
           {title}
@@ -168,14 +168,14 @@ const Closing: React.FC = () => {
       <div style={{...BASE, position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: 100}}>
         <Eyebrow>Built to be checked</Eyebrow>
         <div style={{fontSize: 84, lineHeight: 1.02, letterSpacing: -4, fontWeight: 850, marginTop: 32, maxWidth: 1250, transform: `scale(${scale})`}}>Render. Inspect. Improve. Deliver.</div>
-        <div style={{fontSize: 31, color: C.muted, marginTop: 30}}>Masteraiskill · deterministic video workflow</div>
+        <div style={{fontSize: 31, color: C.muted, marginTop: 30}}>SceneRail · deterministic video workflow</div>
         <div style={{marginTop: 58, padding: "18px 34px", borderRadius: 999, background: C.lime, color: C.background, fontSize: 23, fontWeight: 850}}>FINAL MP4 FIRST</div>
       </div>
     </SceneFrame>
   );
 };
 
-const MasteraiskillDemo: React.FC<DemoProps> = ({videoTitle, narrationFile}) => {
+const SceneRailDemo: React.FC<DemoProps> = ({videoTitle, narrationFile}) => {
   const {fps} = useVideoConfig();
   return (
     <AbsoluteFill style={{backgroundColor: C.background}}>
@@ -195,8 +195,8 @@ const MasteraiskillDemo: React.FC<DemoProps> = ({videoTitle, narrationFile}) => 
 export const Root: React.FC = () => (
   <>
     <Composition
-      id="MasteraiskillDemo"
-      component={MasteraiskillDemo}
+      id="SceneRailDemo"
+      component={SceneRailDemo}
       durationInFrames={750}
       fps={30}
       width={1920}

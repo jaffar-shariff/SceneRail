@@ -1,14 +1,14 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "masteraiskill-video-studio",
+  "name": "scenerail-video-studio",
   "version": "1.0.0",
   "description": "Portable AI-agent video production skills for short-form and long-form explainers, motion graphics, narration, captions, rendering, and quality assurance.",
   "author": {
     "name": "Jaffar Shariff",
     "url": "https://github.com/jaffar-shariff"
   },
-  "homepage": "https://github.com/jaffar-shariff/Masteraiskill",
-  "repository": "https://github.com/jaffar-shariff/Masteraiskill",
+  "homepage": "https://github.com/jaffar-shariff/SceneRail",
+  "repository": "https://github.com/jaffar-shariff/SceneRail",
   "keywords": [
     "video-production",
     "motion-graphics",
@@ -19,7 +19,7 @@
   ],
   "extensions": {
     "com.openai": {
-      "onboardingSkill": "./skills/masteraiskill-video-studio/SKILL.md"
+      "onboardingSkill": "./skills/scenerail-video-studio/SKILL.md"
     }
   }
 }

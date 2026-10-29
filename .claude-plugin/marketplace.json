@@ -1,5 +1,5 @@
 {
-  "name": "masteraiskill",
+  "name": "scenerail",
   "owner": {
     "name": "Jaffar Shariff"
   },
@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "masteraiskill-video-studio",
+      "name": "scenerail-video-studio",
       "source": "./",
       "description": "Create original short-form and long-form videos with agent-neutral production skills.",
       "version": "1.0.0",

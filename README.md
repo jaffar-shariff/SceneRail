@@ -1,15 +1,15 @@
-# Masteraiskill
+# SceneRail
 
-<p align="center"><img src="assets/masteraiskill-hero.svg" alt="Masteraiskill — agent-native video production from story through visual design to verified MP4" width="100%"></p>
+<p align="center"><img src="assets/scenerail-hero.svg" alt="SceneRail — agent-native video production from story through visual design to verified MP4" width="100%"></p>
 
 <p align="center">
-  <a href="https://github.com/jaffar-shariff/Masteraiskill/actions/workflows/ci.yml"><img src="https://github.com/jaffar-shariff/Masteraiskill/actions/workflows/ci.yml/badge.svg" alt="Masteraiskill CI"></a>
+  <a href="https://github.com/jaffar-shariff/SceneRail/actions/workflows/ci.yml"><img src="https://github.com/jaffar-shariff/SceneRail/actions/workflows/ci.yml/badge.svg" alt="SceneRail CI"></a>
   <img src="https://img.shields.io/badge/Output-MP4-3b82f6" alt="MP4 output">
   <img src="https://img.shields.io/badge/Renderer-Remotion%20%2B%20FFmpeg-8b5cf6" alt="Remotion and FFmpeg">
   <img src="https://img.shields.io/badge/Style%20Atlas-37%20recipes-14b8a6" alt="37 original style recipes">
 </p>
 
-Masteraiskill gives AI coding agents a structured production workflow for turning a topic, script, research pack, or creative brief into a coherent video. It brings narrative planning, original motion design, scene timing, narration, captions, rendering, and quality checks into one code-first workspace.
+SceneRail gives AI coding agents a structured production workflow for turning a topic, script, research pack, or creative brief into a coherent video. It brings narrative planning, original motion design, scene timing, narration, captions, rendering, and quality checks into one code-first workspace.
 
 Use it with Claude Code, OpenAI Codex, Google Antigravity, and many other compatible coding agents. The production instructions use a portable Agent Skills format, with a native Claude Code plugin package as an additional installation option.
 
@@ -18,19 +18,19 @@ Use it with Claude Code, OpenAI Codex, Google Antigravity, and many other compat
 **Recommended — install the skill collection and choose your agent:**
 
 ```bash
-npx skills add jaffar-shariff/Masteraiskill
+npx skills add jaffar-shariff/SceneRail
 ```
 
-**Install all Masteraiskill skills into all agent types recognized by the installer:**
+**Install all SceneRail skills into all agent types recognized by the installer:**
 
 ```bash
-npx skills add jaffar-shariff/Masteraiskill --skill '*' --agent '*'
+npx skills add jaffar-shariff/SceneRail --skill '*' --agent '*'
 ```
 
 **Or target Claude Code, Codex, and Antigravity specifically:**
 
 ```bash
-npx skills add jaffar-shariff/Masteraiskill --skill '*' -a claude-code -a codex -a antigravity
+npx skills add jaffar-shariff/SceneRail --skill '*' -a claude-code -a codex -a antigravity
 ```
 
 See [INSTALL.md](INSTALL.md) for global installation, native Claude Code plugin setup, manual paths, and renderer requirements. The skill installer brings in the instructions; the full video workspace and its renderer dependencies are available by cloning this repository.
@@ -52,7 +52,7 @@ See [INSTALL.md](INSTALL.md) for global installation, native Claude Code plugin 
 | **Documentary and mixed-media edits** | Approved footage, archival visuals, maps, annotations, captions, and original graphics unified by one visual system |
 | **Motion-graphics-led videos** | Kinetic typography, title sequences, lower thirds, charts, transitions, and data-driven animations |
 
-Browse the [Masteraiskill Style Atlas](styles/STYLEBOOK.md) for original visual directions and individual recipes.
+Browse the [SceneRail Style Atlas](styles/STYLEBOOK.md) for original visual directions and individual recipes.
 
 ### A few visual directions
 
@@ -112,13 +112,13 @@ These original vector studies show the intended visual grammar; they are not scr
 ### Run the included composition
 
 ```bash
-git clone https://github.com/jaffar-shariff/Masteraiskill.git
-cd Masteraiskill
+git clone https://github.com/jaffar-shariff/SceneRail.git
+cd SceneRail
 
 npm install
 npm run studio
 npm run render:sample
-python scripts/probe_mp4.py out/masteraiskill-demo.mp4 --expect-size 1920x1080 --expect-fps 30
+python scripts/probe_mp4.py out/scenerail-demo.mp4 --expect-size 1920x1080 --expect-fps 30
 python -m unittest discover -s tests -v
 ```
 
@@ -126,13 +126,13 @@ To create a contact sheet for visual review:
 
 ```bash
 python -m pip install -r requirements-qa.txt
-python scripts/render_qa_frames.py out/masteraiskill-demo.mp4 --count 12 --output-dir out/qa/frames
+python scripts/render_qa_frames.py out/scenerail-demo.mp4 --count 12 --output-dir out/qa/frames
 python scripts/create_contact_sheet.py out/qa/frames --output out/qa/contact-sheet.png
 ```
 
 The included Remotion composition demonstrates a title sequence, progressive diagram, animated comparison bars, and closing card. Its example chart uses illustrative values—not factual research data—and narration is optional in the sample composition.
 
-## Use Masteraiskill with your own topic
+## Use SceneRail with your own topic
 
 Open this repository in your coding agent and start with [`PROMPT.md`](PROMPT.md). Provide the topic, audience, target duration, desired format, visual direction, narration preference, and any required sources or assets. Read [`AGENTS.md`](AGENTS.md) for the full operating contract.
 
