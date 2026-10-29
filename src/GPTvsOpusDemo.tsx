@@ -19,7 +19,7 @@ const Backdrop:React.FC<{frame:number}> = ({frame}) => {
 };
 
 const Shell:React.FC<{index:string;section:string;source:string;duration:number;children:ReactNode}> = ({index,section,source,duration,children}) => {
- const f=useCurrentFrame();
+ const f=useCurrentFrame(), wipe=prog(f,0,23);
  return <AbsoluteFill style={{background:K.bg,overflow:"hidden"}}>
   <Backdrop frame={f}/>
   <div style={{...BASE,position:"absolute",top:27,left:76,right:76,height:49,display:"flex",alignItems:"center",justifyContent:"space-between",borderBottom:"1px solid "+K.line,paddingBottom:13}}>
@@ -30,8 +30,10 @@ const Shell:React.FC<{index:string;section:string;source:string;duration:number;
    <div style={{display:"flex",alignItems:"center",gap:15}}><span style={{fontSize:12,letterSpacing:2.5,color:K.dim,fontWeight:850}}>MODEL FIELD NOTES</span><span style={{fontSize:14,background:K.panel,border:"1px solid "+K.line,padding:"7px 11px",borderRadius:7}}>{index} / 06</span></div>
   </div>
   {children}
-  <div style={{position:"absolute",left:76,right:76,bottom:29,height:2,background:"#253748",overflow:"hidden"}}><div style={{height:"100%",width:(Math.min(1,f/Math.max(1,duration-1))*100)+"%",background:"linear-gradient(90deg, "+K.teal+", "+K.cyan+", "+K.purple+")"}}/></div>
-  <div style={{...BASE,position:"absolute",left:78,right:78,bottom:39,display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:12,color:K.dim,letterSpacing:.2}}><span>GPT-6.1 SOL × CLAUDE OPUS 5.5</span><span>{source}</span></div>
+  <div style={{position:"absolute",inset:0,background:K.bg,clipPath:"polygon(0 0, "+(100-wipe*120)+"% 0, "+(114-wipe*120)+"% 100%, 0 100%)",pointerEvents:"none",zIndex:8}}/>
+  <div style={{position:"absolute",top:0,bottom:0,left:(100-wipe*120)+"%",width:4,background:"linear-gradient(180deg, "+K.cyan+", "+K.teal+")",boxShadow:"0 0 28px "+K.cyan,transform:"skewX(-10deg)",opacity:1-wipe,pointerEvents:"none",zIndex:9}}/>
+  <div style={{position:"absolute",left:76,right:76,bottom:29,height:2,background:"#253748",overflow:"hidden",zIndex:10}}><div style={{height:"100%",width:(Math.min(1,f/Math.max(1,duration-1))*100)+"%",background:"linear-gradient(90deg, "+K.teal+", "+K.cyan+", "+K.purple+")"}}/></div>
+  <div style={{...BASE,position:"absolute",left:78,right:78,bottom:39,display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:12,color:K.dim,letterSpacing:.2,zIndex:10}}><span>GPT-6.1 SOL × CLAUDE OPUS 5.5</span><span>{source}</span></div>
  </AbsoluteFill>;
 };
 
@@ -110,7 +112,7 @@ const Price:React.FC=()=>{
  return <Shell index="02" section="Price" source="Sources: OpenAI GPT-6.1 Sol · Anthropic Claude Opus 5.5" duration={240}>
   <div style={{position:"absolute",left:88,right:88,top:120,opacity:h,transform:"translateY("+interpolate(h,[0,1],[22,0])+"px)"}}><Heading kicker="01 / Listed API rates" title="The same token costs half as much." subtitle="Standard input and output rates per one million tokens. Lower rates are an advantage—not a guarantee of lower cost for every task."/></div>
   <div style={{position:"absolute",left:105,top:345,width:800,opacity:big,transform:"translateY("+interpolate(big,[0,1],[28,0])+"px)"}}>
-   <div style={{display:"flex",alignItems:"center",gap:25}}><div style={{fontSize:190,lineHeight:.86,fontWeight:950,letterSpacing:-10,color:K.teal,textShadow:"0 0 48px "+K.teal+"33"}}>2<span style={{fontSize:88,color:K.ink,letterSpacing:-3}}>×</span></div><div style={{fontSize:26,lineHeight:1.23,fontWeight:850}}>lower standard<br/>input and output rates</div></div>
+   <div style={{display:"flex",alignItems:"center",gap:25}}><div style={{fontSize:190,lineHeight:.86,fontWeight:950,letterSpacing:-10,color:K.teal,textShadow:"0 0 48px "+K.teal+"33"}}>2<span style={{fontSize:88,color:K.ink,letterSpacing:-3}}>×</span></div><div style={{fontSize:28,lineHeight:1.23,fontWeight:850,color:K.ink}}>lower standard<br/>input and output rates</div></div>
    <div style={{display:"flex",gap:8,marginTop:32}}>{Array.from({length:20},(_,i)=><div key={i} style={{height:7,flex:1,borderRadius:3,background:i<cells?K.teal:"#263849",boxShadow:i<cells?"0 0 15px "+K.teal+"55":"none"}}/>)}</div>
    <div style={{fontSize:16,color:K.dim,marginTop:14}}>20 illuminated units = 2× the listed price</div>
   </div>
