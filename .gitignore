@@ -1,0 +1,15 @@
+node_modules/
+out/
+dist/
+build/
+.cache/
+.temp/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+*.log
+project/generated/
+project/cache/
+project/renders/
