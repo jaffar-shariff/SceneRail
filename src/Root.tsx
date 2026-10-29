@@ -101,7 +101,9 @@ const Mechanism: React.FC = () => {
       <svg viewBox="0 0 1200 250" style={{position: "absolute", left: 130, top: 365, width: 1200, height: 250}}>
         {nodes.slice(0, 2).map((node, i) => {
           const progress = interpolate(frame, [40 + i * 38, 82 + i * 38], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"});
-          return <path key={node.title} d={`M ${node.x + 220} 126 L ${node.x + 370} 126`} stroke={C.cyan} strokeWidth="4" strokeLinecap="round" strokeDasharray="150" strokeDashoffset={150 * (1-progress)} fill="none"/>;
+          const lineStart = 300 + i * 400;
+          const lineEnd = lineStart + 100;
+          return <path key={node.title} d={`M ${lineStart} 126 L ${lineEnd} 126`} stroke={C.cyan} strokeWidth="4" strokeLinecap="round" strokeDasharray="100" strokeDashoffset={100 * (1-progress)} fill="none"/>;
         })}
       </svg>
       {nodes.map((node, i) => {
