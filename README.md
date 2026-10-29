@@ -13,7 +13,29 @@
 
 Masteraiskill gives AI coding agents a structured production workflow for turning a topic, script, research pack, or creative brief into a coherent video. It brings narrative planning, original motion design, scene timing, narration, captions, rendering, and quality checks into one code-first workspace.
 
-Use it with coding agents such as Claude Code, OpenAI Codex, Google Antigravity, or another agent with repository and terminal access. The core instructions are agent-neutral; individual tools and integrations depend on your environment.
+Use it with Claude Code, OpenAI Codex, Google Antigravity, and many other compatible coding agents. The production instructions use a portable Agent Skills format, with a native Claude Code plugin package as an additional installation option.
+
+## Install in your AI coding agent
+
+**Recommended — install the skill collection and choose your agent:**
+
+```bash
+npx skills add jaffar-shariff/Masteraiskill
+```
+
+**Install all Masteraiskill skills into all agent types recognized by the installer:**
+
+```bash
+npx skills add jaffar-shariff/Masteraiskill --skill '*' --agent '*'
+```
+
+**Or target Claude Code, Codex, and Antigravity specifically:**
+
+```bash
+npx skills add jaffar-shariff/Masteraiskill --skill '*' -a claude-code -a codex -a antigravity
+```
+
+See [INSTALL.md](INSTALL.md) for global installation, native Claude Code plugin setup, manual paths, and renderer requirements. The skill installer brings in the instructions; the full video workspace and its renderer dependencies are available by cloning this repository.
 
 ## What you can create
 
@@ -32,7 +54,7 @@ Use it with coding agents such as Claude Code, OpenAI Codex, Google Antigravity,
 | **Documentary and mixed-media edits** | Approved footage, archival visuals, maps, annotations, captions, and original graphics unified by one visual system |
 | **Motion-graphics-led videos** | Kinetic typography, title sequences, lower thirds, charts, transitions, and data-driven animations |
 
-Choose one primary visual system for a film and vary scenes to suit the explanation. The aim is cohesive storytelling—not a grab bag of unrelated effects.
+Browse the [Masteraiskill Style Atlas](styles/STYLEBOOK.md) for an original visual style index with named directions, example concepts, and practical recipes. Choose one primary visual system for a film and vary scenes to suit the explanation. The aim is cohesive storytelling—not a grab bag of unrelated effects.
 
 ## How the production workflow works
 
@@ -59,16 +81,16 @@ Choose one primary visual system for a film and vary scenes to suit the explanat
 - **Evidence-first debugging:** reproduce a failure, find the smallest responsible cause, fix it, and verify the correction.
 - **Source-aware assets:** maintain provenance for research claims, footage, images, fonts, and audio.
 
-## Quick start
+## Quick start: preview and render
 
 ### Requirements
 
-- Node.js LTS compatible with the pinned Remotion packages
+- Node.js compatible with the pinned Remotion packages
 - FFmpeg and ffprobe for MP4 verification and frame sampling
 - Python 3 for validation utilities
 - Pillow for creating labelled contact sheets
 
-### Preview and render the included composition
+### Run the included composition
 
 ```bash
 git clone https://github.com/jaffar-shariff/Masteraiskill.git
@@ -93,21 +115,25 @@ The included Remotion composition demonstrates a title sequence, progressive dia
 
 ## Use Masteraiskill with your own topic
 
-Open the repository in your coding agent, then start with [`PROMPT.md`](PROMPT.md). Provide the topic, audience, target duration, desired format, visual direction, narration preference, and any required sources or assets. Read [`AGENTS.md`](AGENTS.md) for the full operating contract.
+Open this repository in your coding agent and start with [`PROMPT.md`](PROMPT.md). Provide the topic, audience, target duration, desired format, visual direction, narration preference, and any required sources or assets. Read [`AGENTS.md`](AGENTS.md) for the full operating contract.
 
 For each new video, keep a project brief, script, source ledger, storyboard, style bible, canonical timeline, asset manifest, and QA record as appropriate to the task. The final MP4 remains the primary deliverable.
 
 ## Project map
 
+- [`INSTALL.md`](INSTALL.md) — cross-agent installation and renderer setup.
+- [`plugin.json`](plugin.json) — portable Agent Plugins manifest.
+- [`.claude-plugin/`](.claude-plugin/) — Claude Code plugin and marketplace manifests.
 - [`AGENTS.md`](AGENTS.md) — production rules for the coding agent.
 - [`PROMPT.md`](PROMPT.md) — master production prompt.
+- [`styles/STYLEBOOK.md`](styles/STYLEBOOK.md) — named visual style index and practical recipes.
 - [`src/Root.tsx`](src/Root.tsx) — included Remotion sample composition.
 - [`templates/PROJECT_BRIEF.md`](templates/PROJECT_BRIEF.md) — video brief template.
 - [`templates/STYLE_BIBLE.md`](templates/STYLE_BIBLE.md) — visual identity template.
 - [`templates/SCENE_SCHEMA.json`](templates/SCENE_SCHEMA.json) — canonical scene/timeline structure.
-- [`skills/`](skills/) — task-focused production instructions.
+- [`skills/`](skills/) — task-focused production instructions in portable `SKILL.md` format.
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — system architecture.
-- [`docs/STYLE_PRESETS.md`](docs/STYLE_PRESETS.md) — original visual style systems.
+- [`docs/STYLE_PRESETS.md`](docs/STYLE_PRESETS.md) — core visual production principles.
 - [`docs/VIDEO_FORMATS.md`](docs/VIDEO_FORMATS.md) — production playbooks for Shorts, long-form, explainers, documentaries, data stories, and more.
 - [`docs/QUALITY_GATES.md`](docs/QUALITY_GATES.md) — production acceptance criteria.
 - [`docs/RENDERER.md`](docs/RENDERER.md) — renderer usage and configuration.
