@@ -62,10 +62,10 @@
     }
   ],
   "narration": [
-    {"id": "vo-001", "start_frame": 0, "end_frame": 119, "text": "Opening narration goes here."},
-    {"id": "vo-002", "start_frame": 120, "end_frame": 299, "text": "Mechanism narration goes here."},
-    {"id": "vo-003", "start_frame": 300, "end_frame": 479, "text": "Evidence narration goes here."},
-    {"id": "vo-004", "start_frame": 480, "end_frame": 599, "text": "Closing narration goes here."}
+    {"id": "vo-001", "start_frame": 0, "end_frame": 120, "text": "Opening narration goes here."},
+    {"id": "vo-002", "start_frame": 120, "end_frame": 300, "text": "Mechanism narration goes here."},
+    {"id": "vo-003", "start_frame": 300, "end_frame": 480, "text": "Evidence narration goes here."},
+    {"id": "vo-004", "start_frame": 480, "end_frame": 600, "text": "Closing narration goes here."}
   ],
   "captions": [
     {"id": "cap-001", "start_frame": 12, "end_frame": 105, "text": "Opening caption placeholder."},
