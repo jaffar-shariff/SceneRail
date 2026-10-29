@@ -12,10 +12,27 @@ Reports Python, Node/npm, FFmpeg/ffprobe, Git and optional Python modules. Missi
 
 ## Timeline structure validator
 ```bash
-python scripts/validate_timeline.py examples/timeline.json
+python scripts/validate_timeline.py examples/timeline.json --strict
 ```
 
-Checks the timeline JSON structure, required scene fields, unique IDs, frame values and obvious timeline gaps/overlaps. Gaps and overlaps are warnings by default because some may be intentional; use `--strict` to reject them.
+Checks timeline field types, required scene fields, unique IDs, cross-references, timed text, audio cues, and obvious gaps/overlaps. Gaps and overlaps are warnings by default because some may be intentional; use `--strict` to reject unreviewed warnings.
+
+## Frame Purpose Contract
+
+```bash
+python scripts/validate_storyboard.py examples/storyboard.json --strict
+python scripts/validate_storyboard.py examples/storyboard.json --strict --report out/qa/storyboard-report.json
+```
+
+Checks whether a plan states audience, thesis, payoff, visual system, chapters, claim/source links, asset rights, and concrete scene-by-scene intent. It flags exact repeated scene descriptions and low variety in visual operations or composition language. Warnings require review; they are not proof of poor art. The report sets `artistic_quality_certified` to `false`: rendered frames still need inspection using the [Creative Quality playbook](../docs/CREATIVE_QUALITY.md) and [review sheet](../templates/CREATIVE_REVIEW.md).
+
+## Internal Markdown links
+
+```bash
+python scripts/check_repo_links.py
+```
+
+Checks local Markdown targets throughout the repository so moving or removing a document does not leave silent broken links.
 
 ## Inspect a rendered media file
 ```bash
@@ -27,7 +44,7 @@ python scripts/probe_mp4.py path/to/final.mp4 --json
 Uses `ffprobe` to report measured container, duration, size, video stream and audio stream details. It does not perform aesthetic checks or prove captions/narration are synchronized.
 
 ## Scope note
-These utilities are the initial validation layer, not a complete renderer. The rendering engine and frame/contact-sheet workflow are tracked in `docs/ROADMAP.md`.
+These checks catch structural defects and some repetition signals; they cannot certify storytelling, visual taste, pacing, or viewer experience. Combine them with the [Creative Quality playbook](../docs/CREATIVE_QUALITY.md), the [scene-by-scene review sheet](../templates/CREATIVE_REVIEW.md), rendered-frame inspection, and measured media verification.
 ## Sample frames and contact sheet
 
 After rendering an MP4 and ensuring FFmpeg/ffprobe are on PATH:

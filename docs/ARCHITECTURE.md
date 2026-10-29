@@ -11,6 +11,7 @@ Brief + references
   -> thesis + narration script
   -> beat map / narration timing
   -> storyboard + style bible
+  -> Frame Purpose Contract validation + creative review
   -> canonical timeline + asset ledger
   -> scene components
   -> voice / captions / music / SFX
@@ -27,7 +28,7 @@ Brief + references
 - `project/sources.json`: factual claim/source ledger.
 - `project/script.md`: final narration split by chapter and beat.
 - `project/beats.json`: narrative beats, intent, and approximate duration.
-- `project/storyboard.json`: scene purpose, composition, transitions, narration link.
+- `project/storyboard.json`: scene purpose, composition, transitions, narration link, and Frame Purpose Contract fields. The schema is in `templates/STORYBOARD.schema.json`, with an example in `examples/storyboard.json`.
 - `project/style-bible.md`: typography, color semantics, motion, texture, layout, audio.
 - `project/timeline.json`: canonical frame-aligned scenes, voice, captions, and sound cues.
 - `project/assets.json`: asset paths, origins and provenance.
@@ -60,6 +61,12 @@ Implement only when required by real projects:
 - chapter transition and closing summary.
 
 Components accept explicit props and frame/time; they render deterministically and provide a way to preview relevant frames.
+
+## Frame Purpose Contract
+
+Before scene implementation, each scene must explain its viewer question, visual argument, concrete on-screen action, topic-specific idea, composition, meaningful change from the previous scene, motion purpose, and required hold time. Claim IDs and asset IDs must resolve to the ledgers. The contract catches missing detail and obvious repetition, but it cannot certify the rendered image or the viewer's response.
+
+Run `python scripts/validate_storyboard.py path/to/storyboard.json --strict --report out/qa/storyboard-report.json`. A clean structural report is one gate only. Review rendered frames using [Creative Quality](CREATIVE_QUALITY.md) and complete the project review sheet before accepting delivery.
 
 ## Timeline contract
 One canonical timeline owns:

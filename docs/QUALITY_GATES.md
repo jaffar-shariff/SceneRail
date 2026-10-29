@@ -18,10 +18,22 @@ Successful encoding is necessary but does not prove that the video is good. Dist
 
 ## Gate 2 — Visual system
 - [ ] Style bible defines palette/color semantics, type, layout, motion, texture and captions.
+- [ ] A topic-specific motif is developed from the story rather than imported as generic template content.
 - [ ] Opening, representative scene, dense-data scene and ending frames inspected.
 - [ ] Visuals explain the spoken point; no distracting decorative motion.
-- [ ] Scenes belong to one coherent visual system.
+- [ ] Scenes share one coherent visual system while varying composition intentionally.
 - [ ] Contrast, safe areas, line lengths and smallest text are readable at output resolution.
+
+## Gate 2.5 — Frame Purpose Contract and originality
+- [ ] Every scene states the viewer question, visual argument, visible action, topic-specific reason, composition, change from the previous scene, motion purpose and hold reason.
+- [ ] Every fact or estimate resolves to a source ID; every asset resolves to provenance and rights evidence.
+- [ ] The opening establishes a question or promise and the ending pays it off.
+- [ ] No scene relies only on vague instructions such as “cinematic visuals,” “engaging animation,” or “add effects.”
+- [ ] Recurring motifs change meaning; duplicated scene descriptions and interchangeable filler are rewritten.
+- [ ] Each scene's visual operation serves the explanation; movement is purposeful, not decorative.
+- [ ] The storyboard contract passes in strict mode and the validation report is saved.
+
+Use the [Creative Quality playbook](CREATIVE_QUALITY.md) and [review sheet](../templates/CREATIVE_REVIEW.md). Structural checks reveal common weaknesses; they do not certify aesthetics or replace inspection of the rendered output.
 
 ## Gate 3 — Timing and rough cut
 - [ ] One timeline drives scenes, narration, captions, transitions and sound.
