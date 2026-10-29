@@ -62,7 +62,7 @@ Browse the [SceneRail Style Atlas](styles/STYLEBOOK.md) for original visual dire
 
 ### Demo: GPT vs Opus — Interface Theatre
 
-A 45-second, source-led demo comparing GPT-6.1 Sol with Claude Opus 5.5. It covers public token pricing, selected vendor-reported workflow results, and a counterexample where Opus leads a reported coding benchmark. See the [demo project and source ledger](examples/demos/gpt-vs-opus/README.md), or render it with `npm run render:gpt-vs-opus`.
+A 45-second, source-led motion-graphics demo comparing GPT-6.1 Sol with Claude Opus 5.5. It uses kinetic typography, animated token streams, a radial metric dial, scaled scientific-task cost bars, and an animated coding-benchmark counterexample. See the [demo project and source ledger](examples/demos/gpt-vs-opus/README.md), or render it with `npm run render:gpt-vs-opus`.
 
 
 ### A few visual directions

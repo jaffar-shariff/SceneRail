@@ -1,6 +1,6 @@
 # GPT vs Opus — SceneRail demo
 
-An original 45-second, 16:9 Interface Theatre composition comparing **GPT-6.1 Sol** with **Claude Opus 5.5** using public vendor-reported pricing and benchmark claims.
+An original 45-second, 16:9 Interface Theatre motion-graphics composition comparing **GPT-6.1 Sol** with **Claude Opus 5.5** using public vendor-reported pricing and benchmark claims. The updated visual pass uses kinetic typography, orbiting system diagrams, moving token streams, a radial metric reveal, scaled task-cost bars, and an animated coding-benchmark counterexample.
 
 ## What the video argues
 
@@ -16,7 +16,7 @@ npm run render:gpt-vs-opus
 python scripts/probe_mp4.py out/gpt-vs-opus-interface-theatre.mp4 --expect-size 1920x1080 --expect-fps 30
 ```
 
-This first render is **silent** and uses on-screen visual explanations and labels. The timed voiceover script is in [narration.txt](narration.txt). The source ledger is in [sources.md](sources.md); the production plan is in [storyboard.json](storyboard.json) and [timeline.json](timeline.json).
+This render is **silent** and uses on-screen visual explanations and labels. Motion is composed from deterministic frame-driven vectors rather than static comparison panels with simple entrance fades. The timed voiceover script is in [narration.txt](narration.txt). The source ledger is in [sources.md](sources.md); the production plan is in [storyboard.json](storyboard.json) and [timeline.json](timeline.json).
 
 ## Evidence and limitations
 
